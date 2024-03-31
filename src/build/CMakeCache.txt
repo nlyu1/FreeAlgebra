@@ -194,7 +194,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=PrettyComplexProject
+CMAKE_PROJECT_NAME:STATIC=FreeAlgebraProject
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=2.6.1
@@ -295,6 +295,15 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of pybind11
 FETCHCONTENT_UPDATES_DISCONNECTED_PYBIND11:BOOL=OFF
+
+//Value Computed by CMake
+FreeAlgebraProject_BINARY_DIR:STATIC=/Users/nicholaslyu/Code/algebra/src/build
+
+//Value Computed by CMake
+FreeAlgebraProject_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+FreeAlgebraProject_SOURCE_DIR:STATIC=/Users/nicholaslyu/Code/algebra/src
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git

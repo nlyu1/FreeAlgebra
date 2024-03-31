@@ -913,6 +913,7 @@ CMakeFiles/freealgebra.dir/freealgebra.cpp.o
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stddef.h
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdint.h
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/share/asan_ignorelist.txt
  /Users/nicholaslyu/Code/algebra/src/build/_deps/pybind11-src/include/pybind11/attr.h
  /Users/nicholaslyu/Code/algebra/src/build/_deps/pybind11-src/include/pybind11/buffer_info.h
  /Users/nicholaslyu/Code/algebra/src/build/_deps/pybind11-src/include/pybind11/cast.h

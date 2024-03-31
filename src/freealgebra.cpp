@@ -9,23 +9,22 @@
 namespace py = pybind11;
 
 PYBIND11_MODULE(freealgebra, m) {
-    py::class_<AlgebraElement>(m, "AlgebraElement")
-        .def(py::init<const std::vector<Complex>&>())
-        // Miscellaneous operations
-        .def("n", &AlgebraElement::n)
-        .def("v", &AlgebraElement::coeffs)
-        // Scalar operations
-        .def("__add__", static_cast<AlgebraElement (AlgebraElement::*)(const Complex&) const>(&AlgebraElement::operator+))
-        .def("__sub__", static_cast<AlgebraElement (AlgebraElement::*)(const Complex&) const>(&AlgebraElement::operator-))
-        .def("__mul__", static_cast<AlgebraElement (AlgebraElement::*)(const Complex&) const>(&AlgebraElement::operator*))
-        .def("__truediv__", static_cast<AlgebraElement (AlgebraElement::*)(const Complex&) const>(&AlgebraElement::operator/))
-        // Vector operations
-        .def("__add__", static_cast<AlgebraElement (AlgebraElement::*)(const AlgebraElement&) const>(&AlgebraElement::operator+))
-        .def("__sub__", static_cast<AlgebraElement (AlgebraElement::*)(const AlgebraElement&) const>(&AlgebraElement::operator-));
+    // py::class_<AlgebraElement>(m, "AlgebraElement");
+    //     // Miscellaneous operations
+    //     .def("n", &AlgebraElement::n)
+    //     .def("v", &AlgebraElement::coeffs)
+    //     // Scalar operations
+    //     .def("__add__", static_cast<AlgebraElement (AlgebraElement::*)(const Complex&) const>(&AlgebraElement::operator+))
+    //     .def("__sub__", static_cast<AlgebraElement (AlgebraElement::*)(const Complex&) const>(&AlgebraElement::operator-))
+    //     .def("__mul__", static_cast<AlgebraElement (AlgebraElement::*)(const Complex&) const>(&AlgebraElement::operator*))
+    //     .def("__truediv__", static_cast<AlgebraElement (AlgebraElement::*)(const Complex&) const>(&AlgebraElement::operator/))
+    //     // Vector operations
+    //     .def("__add__", static_cast<AlgebraElement (AlgebraElement::*)(const AlgebraElement&) const>(&AlgebraElement::operator+))
+    //     .def("__sub__", static_cast<AlgebraElement (AlgebraElement::*)(const AlgebraElement&) const>(&AlgebraElement::operator-));
 
-    py::class_<DiracGrassmannElement, AlgebraElement>(m, "DiracGrassmannElement")
-        .def(py::init<const std::vector<Complex>&>())
-        .def("__mul__", &DiracGrassmannElement::operator*);
+    // py::class_<DiracGrassmannElement, AlgebraElement>(m, "DiracGrassmannElement")
+    //     .def(py::init<const std::vector<Complex>&>())
+    //     .def("__mul__", &DiracGrassmannElement::operator*);
 
         // .def("n", &DiracGrassmannElement::n)
         // .def("v", &DiracGrassmannElement::coeffs)
