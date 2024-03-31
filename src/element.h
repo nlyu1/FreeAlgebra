@@ -1,13 +1,11 @@
 #ifndef ELEMENT_H
 #define ELEMENT_H
-// #include <vector>
-// #include <complex>
 #include <Eigen/Dense>
 #include <fmt/core.h> 
 #include "utils.h"
 using namespace std; 
 
-template<typename CommutationRelation>
+template<typename AlgebraRelation>
 class AlgebraElement {
 public:
     CoeffMap coeffs;
@@ -16,12 +14,14 @@ public:
     // Constructor taking an rvalue reference (move constructor)
     AlgebraElement(CoeffMap&& map, uint n)
         : coeffs(std::move(map)), n(n)  {
+        filter_coeffs_();
         validateKeys();
     }
 
     // Constructor taking a const lvalue reference
     AlgebraElement(const CoeffMap& map, uint n)
         : coeffs(map), n(n) {
+        filter_coeffs_();
         validateKeys();
     }
 
@@ -49,12 +49,14 @@ public:
         } else {
             coeffs[zero] = scalar;
         }
+        filter_coeffs_();
     }
 
     void mul_(const Complex& scalar) {
         for (const auto& pair:coeffs) {
             coeffs.at(pair.first) = pair.second * scalar;
         }
+        filter_coeffs_();
     }
 
     AlgebraElement operator+(const Complex& scalar) const {
@@ -89,6 +91,7 @@ public:
                 coeffs[pair.first] = pair.second; 
             }
         }
+        filter_coeffs_();
     }
 
     AlgebraElement operator+(const AlgebraElement& other) const {
@@ -115,6 +118,51 @@ public:
         return result;
     }
 
+    AlgebraElement pow(uint k) {
+        auto self = operator+(Complex(0., 0.));
+        auto result = (self - self) + 1.; // Identity operator
+        cout << "Self:" << prettyPrint(self) << endl;
+        cout << "Result:" << prettyPrint(result) << endl;
+        auto niters = min(static_cast<int>(coeffs.size()), static_cast<int>(n)); 
+        for (auto j=0; j<k; j++){
+            result = result * self;
+            cout << "Result:" << j << "    " << prettyPrint(result) << endl;
+        }
+        return result;
+    }
+
+    // Conjugation relation
+    AlgebraElement conj() const {
+        AlgebraRelation R;
+        AlgebraElement result({}, n);
+        for (const auto& pair: coeffs) {
+            KeyType I; 
+            auto K = power_to_gen_repr(pair.first); 
+            if (K.size() == 0) {
+                result.add_(std::conj(pair.second));
+                return result; 
+            }
+            for (int j=K.size()-1; j>=0; j--){
+                I.push_back(R.conj(K[j]));
+            }
+            // cout << "Reordering: " << prettyPrint(I) << endl;
+            reorder(I, std::conj(pair.second), result);
+        }
+        result.filter_coeffs_();
+        return result; 
+    }
+
+    // Filters null coefficients
+    void filter_coeffs_() {
+        for (auto it = coeffs.begin(); it != coeffs.end(); ) {
+            if (it->second == Complex(0.0, 0.0)) { // Check if the value is 0
+                it = coeffs.erase(it); // Remove the entry and update the iterator
+            } else {
+                ++it; // Move to the next entry
+            }
+        }
+    }
+
 private:
     void validateKeys() {
         for (const auto& pair : coeffs) {
@@ -127,6 +175,7 @@ private:
             }
         }
     }
+
     // Given an accumulator and multi-indices in generator multiplication 
     //   representation (and an existing scale), adds to accum the 
     //   corresponding multiplication argument 
@@ -143,15 +192,22 @@ private:
         auto idx = order_violate_idx(I);
         // If in canonical order, then add to accum
         if (idx == I.size()) {
+            // Enforce canonical anticommutation relation now: duplicates go to 0
+            //  In the future: enforce non-fixed points
             AlgebraElement entry({{gen_to_power_repr(I, n), scale}}, n);
+            for (auto i=0; i<I.size() - 1; i++){
+                if (I[i] == I[i+1]) {
+                    entry = entry * Complex(0., 0.);
+                }
+            }
             // cout << "    Reorder adding:" << prettyPrint(entry) << endl;
             accum.add_(entry);
             return;
         }
-        CommutationRelation cr;
+        AlgebraRelation R;
         // Use commutation relation on the first pair of 
         //  non-canonical product, then recursively call 
-        auto L = cr.commute(I[idx], I[idx + 1]);
+        auto L = R.commute(I[idx], I[idx + 1]);
         for (const auto& pair: L) {
             auto newI = KeyType(I.begin(), I.begin()+idx);
             newI.insert(newI.end(), pair.first.begin(), pair.first.end());
@@ -166,39 +222,4 @@ template<typename T>
 std::string prettyPrint(const AlgebraElement<T>& a) {
     return prettyPrint(a.coeffs);
 }
-
-
-// Grassmann commutation relation 
-struct GCR {
-    CoeffMap commute(uint i, uint j) const {
-        CoeffMap result;
-        if (i < j) {
-            throw(std::invalid_argument("Expects non-canonical ordering"));
-        }
-        if (i > j) {
-            result[{j, i}] = Complex(-1., 0.);
-        }
-        return result; 
-    }
-};
-
-// Dirac commutation relation
-struct DCR {
-    CoeffMap commute(uint i, uint j) const {
-        CoeffMap result;
-        if (i < j) {
-            throw(std::invalid_argument("Expects non-canonical ordering"));
-        }
-        if (i > j) {
-            if (i % 2 == 1 && j == i - 1) {
-                result[{}] = Complex(1., 0.);
-            }   
-            result[{j, i}] = Complex(-1., 0.);
-        }
-        return result; 
-    }
-};
-
-typedef AlgebraElement<DCR> DiracElm;
-typedef AlgebraElement<GCR> ExtElm;
 #endif

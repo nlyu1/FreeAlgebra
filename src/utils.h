@@ -183,4 +183,12 @@ std::vector<T> mergeVectors(const std::vector<T>& I, const std::vector<T>& J) {
         return merged;
     }
 }
+
+unsigned long long factorial(unsigned int n) {
+    unsigned long long result = 1;
+    for (unsigned int i = 1; i <= n; ++i) {
+        result *= i;
+    }
+    return result;
+}
 #endif
