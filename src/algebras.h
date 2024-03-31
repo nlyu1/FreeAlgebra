@@ -5,6 +5,9 @@ using namespace std;
 
 // Algebraic relations for exterior algebra elements with conjugation
 // Canonical ordering (a1, a1*, a2, a2*, ...)
+// Everything about the algebra is encoded in the following struct 
+//    templated on the number of generators 
+template<uint n>
 struct ExtConjRelation {
     CoeffMap commute(uint i, uint j) const {
         CoeffMap result;
@@ -20,10 +23,15 @@ struct ExtConjRelation {
     uint conj(uint i) const {
         return (i % 2 == 0) ? i+1 : i-1;
     }
+
+    static constexpr uint num_generators() {
+        return n;
+    }
 };
 
 // Dirac commutation relation (CAR)
 // Canonical ordering (a1, a1*, a2, a2*, ...)
+template<uint n>
 struct DirRelation {
     CoeffMap commute(uint i, uint j) const {
         CoeffMap result;
@@ -42,26 +50,29 @@ struct DirRelation {
     uint conj(uint i) const {
         return (i % 2 == 0) ? i+1 : i-1;
     }
+
+    static constexpr uint num_generators() {
+        return n;
+    }
 };
 
-typedef AlgebraElement<DirRelation> DiracElm;
-typedef AlgebraElement<ExtConjRelation> ExtElm;
 
-// Exterior conjugation algebra
+// The algebra itself is templated on 
+//   the number of modes (half the number of generators)
+template<uint n>
 class ExtConjAlg {
 public:
-    uint n; // Number of modes, there are 2*n generators in total
-    
-    ExtConjAlg(uint n): n(n) {};
+    ExtConjAlg() = default;
 
-    ExtElm a(uint i) {
+    // Returns the corresponding annihilator
+    AlgebraElement<ExtConjRelation<2*n>> operator()(uint i) const {
         assert(i >= 0 && i<n); 
         KeyType coeffs({2*i});
-        return ExtElm({{gen_to_power_repr(coeffs, 2*n), 1}}, 2*n);
+        return AlgebraElement<ExtConjRelation<2*n>>({{gen_to_power_repr(coeffs, 2*n), 1}});
     }
 
     // Grassmann exponentiation: only need to compute a few terms, yeah
-    ExtElm exp(const ExtElm& a) {
+    AlgebraElement<ExtConjRelation<2*n>> exp(const AlgebraElement<ExtConjRelation<2*n>>& a) {
         auto power = a.one(), result=a.one(); // Start with the multiplicative identity;
         uint niters = min(static_cast<uint>(a.coeffs.size()), 2*n);
         for (uint j=1; j<=niters; j++) {
@@ -71,8 +82,8 @@ public:
         return result;
     }
 
-    // Taylor expansion definition of logarithm. 
-    ExtElm log(const ExtElm& a) {
+    // Taylor expansion definition of the logarithm. 
+    AlgebraElement<ExtConjRelation<2*n>> log(const AlgebraElement<ExtConjRelation<2*n>>& a) {
         auto b = a - Complex(1.);
         auto power = a.one(), result = a.zero();
         uint niters = min(static_cast<uint>(b.coeffs.size()), 2*n);
@@ -83,4 +94,5 @@ public:
         return result;
     }
 };
+
 #endif

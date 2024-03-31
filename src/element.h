@@ -9,23 +9,21 @@ template<typename AlgebraRelation>
 class AlgebraElement {
 public:
     CoeffMap coeffs;
-    uint n; // Number of free generators
 
     // Constructor taking an rvalue reference (move constructor)
-    AlgebraElement(CoeffMap&& map, uint n)
-        : coeffs(std::move(map)), n(n)  {
+    AlgebraElement(CoeffMap&& map) : 
+            coeffs(std::move(map)), n(AlgebraRelation::num_generators()) {
         filter_coeffs_();
         validateKeys();
     }
 
-    // Constructor taking a const lvalue reference
-    AlgebraElement(const CoeffMap& map, uint n)
-        : coeffs(map), n(n) {
+    AlgebraElement(const CoeffMap& map) : 
+            coeffs(map), n(AlgebraRelation::num_generators()) {
         filter_coeffs_();
         validateKeys();
     }
 
-    inline uint num_generators() { return n; }
+    inline uint num_generators() const { return n; }
 
     inline static void assert_eqsize(size_t a, size_t b) {
         if (a != b) {
@@ -34,16 +32,16 @@ public:
     }
 
     AlgebraElement clone() const {
-        return AlgebraElement(clone_map(coeffs), n);
+        return AlgebraElement(clone_map(coeffs));
     }
 
     // Construct a zero element (additive identity) of the algebra
     AlgebraElement zero() const {
-        return AlgebraElement(CoeffMap({}), n);
+        return AlgebraElement(CoeffMap({}));
     }
 
     AlgebraElement one() const {
-        return AlgebraElement(CoeffMap({{KeyType(n, 0u), Complex(1., 0.)}}), n);
+        return AlgebraElement(CoeffMap({{KeyType(n, 0u), Complex(1., 0.)}}));
     }
     
     // Scalar operations 
@@ -74,6 +72,10 @@ public:
         return coeffs == other.coeffs;
     }
 
+    bool isreal() const {
+        return operator==(conj());
+    }
+
     AlgebraElement operator+(const Complex& scalar) const {
         auto a = clone();
         a.add_(scalar);
@@ -98,7 +100,7 @@ public:
 
     // Pointwise linear addition 
     void add_(const AlgebraElement& other) {
-        assert_eqsize(this->n, other.n);
+        assert_eqsize(this->n, other.num_generators());
         for (const auto& pair : other.coeffs) {
             if (coeffs.contains(pair.first)) {
                 coeffs.at(pair.first) += pair.second; 
@@ -120,7 +122,7 @@ public:
     }
 
     AlgebraElement operator*(const AlgebraElement& other) const {
-        AlgebraElement result({}, n);
+        AlgebraElement result({});
         for (const auto& pair1: coeffs) {
             for (const auto& pair2: other.coeffs) {
                 reorder(
@@ -145,7 +147,7 @@ public:
     // Conjugation relation
     AlgebraElement conj() const {
         AlgebraRelation R;
-        AlgebraElement result({}, n);
+        AlgebraElement result({});
         for (const auto& pair: coeffs) {
             KeyType I; 
             auto K = power_to_gen_repr(pair.first); 
@@ -175,6 +177,7 @@ public:
     }
 
 private:
+    uint n; 
     void validateKeys() {
         for (const auto& pair : coeffs) {
             if (pair.first.size() != n) {
@@ -205,7 +208,7 @@ private:
         if (idx == I.size()) {
             // Enforce canonical anticommutation relation now: duplicates go to 0
             //  In the future: enforce non-fixed points
-            AlgebraElement entry({{gen_to_power_repr(I, n), scale}}, n);
+            AlgebraElement entry({{gen_to_power_repr(I, n), scale}});
             for (size_t i=0; i<I.size() - 1; i++){ // Zero duplicates
                 if (I[i] == I[i+1]) {
                     entry = entry * Complex(0., 0.);
@@ -232,5 +235,11 @@ private:
 template<typename T>
 std::string prettyPrint(const AlgebraElement<T>& a) {
     return prettyPrint(a.coeffs);
+}
+
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const AlgebraElement<T>& element) {
+    os << prettyPrint(element);
+    return os;
 }
 #endif
