@@ -151,7 +151,7 @@ private:
         CommutationRelation cr;
         // Use commutation relation on the first pair of 
         //  non-canonical product, then recursively call 
-        auto L = cr(I[idx], I[idx + 1]);
+        auto L = cr.commute(I[idx], I[idx + 1]);
         for (const auto& pair: L) {
             auto newI = KeyType(I.begin(), I.begin()+idx);
             newI.insert(newI.end(), pair.first.begin(), pair.first.end());
@@ -166,4 +166,39 @@ template<typename T>
 std::string prettyPrint(const AlgebraElement<T>& a) {
     return prettyPrint(a.coeffs);
 }
+
+
+// Grassmann commutation relation 
+struct GCR {
+    CoeffMap commute(uint i, uint j) const {
+        CoeffMap result;
+        if (i < j) {
+            throw(std::invalid_argument("Expects non-canonical ordering"));
+        }
+        if (i > j) {
+            result[{j, i}] = Complex(-1., 0.);
+        }
+        return result; 
+    }
+};
+
+// Dirac commutation relation
+struct DCR {
+    CoeffMap commute(uint i, uint j) const {
+        CoeffMap result;
+        if (i < j) {
+            throw(std::invalid_argument("Expects non-canonical ordering"));
+        }
+        if (i > j) {
+            if (i % 2 == 1 && j == i - 1) {
+                result[{}] = Complex(1., 0.);
+            }   
+            result[{j, i}] = Complex(-1., 0.);
+        }
+        return result; 
+    }
+};
+
+typedef AlgebraElement<DCR> DiracElm;
+typedef AlgebraElement<GCR> ExtElm;
 #endif
