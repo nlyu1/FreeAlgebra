@@ -215,7 +215,7 @@ public:
         }
         auto result = stream.str();
         if (coeffs.size() != 0) {
-            result.erase(result.length() - 3);
+            result.erase(result.length() - 2);
         }
         return result + "\n";
     }
