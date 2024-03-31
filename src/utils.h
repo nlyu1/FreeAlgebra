@@ -58,31 +58,13 @@ std::string prettyPrint(Complex z) {
         }
         result += prettyPrint(im) + "i";
     }
-    return result.empty() ? "0" : "("+result+")";
-}
-
-bool isPowerOfTwo(size_t n) {
-        return n > 0 && (n & (n - 1)) == 0;
-}
-
-// Binary and integer conversion 
-uint32_t binaryToInt(const std::vector<int>& binary) {
-    uint32_t result = 0;
-    int power = 0;
-    for (int i = binary.size() - 1; i >= 0; --i) {
-        result += binary[i] * static_cast<uint32_t>(pow(2, power));
-        ++power;
+    if (result.empty()) {
+        return 0;
+    } else if (re == 0. || im == 0.) {
+        return result; 
+    } else {
+        return "("+result+")";
     }
-    return result;
-}
-
-std::vector<int> intToBinary(uint32_t k, int n) {
-    std::vector<int> binary(n, 0);
-    for (int i = n - 1; i >= 0 && k > 0; --i) {
-        binary[i] = k % 2;
-        k /= 2;
-    }
-    return binary;
 }
 
 std::string prettyPrint(const KeyType& x) {

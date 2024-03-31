@@ -9,7 +9,6 @@ template<typename AlgebraRelation>
 class AlgebraElement {
 public:
     CoeffMap coeffs;
-
     // Constructor taking an rvalue reference (move constructor)
     AlgebraElement(CoeffMap&& map) : 
             coeffs(std::move(map)), n(AlgebraRelation::num_generators()) {
@@ -72,6 +71,7 @@ public:
         return coeffs == other.coeffs;
     }
 
+    // An element is real if it is its own complex conjugate 
     bool isreal() const {
         return operator==(conj());
     }
@@ -165,6 +165,7 @@ public:
         return result; 
     }
 
+    // Miscellaneous helpers:
     // Filters null coefficients
     void filter_coeffs_() {
         for (auto it = coeffs.begin(); it != coeffs.end(); ) {
@@ -176,6 +177,48 @@ public:
         }
     }
 
+    // std::string to_string() const {
+    //     std::stringstream stream;
+    //     stream << "{\n";
+    //     for (const auto& pair: coeffs) {
+    //         stream << "    (";
+    //         auto I = power_to_gen_repr(pair.first);
+    //         stream << "[";
+    //         for (size_t i = 0; i < I.size(); ++i) {
+    //             if (i > 0) {
+    //                 stream << ", "; // Add a comma before every element except the first
+    //             }
+    //             stream << AlgebraRelation::to_string(I[i]);
+    //         }
+    //         stream << "], " << prettyPrint(pair.second) << "), \n";
+    //     }
+    //     auto result = stream.str();
+    //     if (coeffs.size() != 0) {
+    //         result.erase(result.length() - 3);
+    //     }
+    //     return result + "\n}";
+    // }
+
+    std::string to_string() const {
+        std::stringstream stream;
+        for (const auto& pair: coeffs) {
+            stream << "    ";
+            auto I = power_to_gen_repr(pair.first);
+            stream << "(";
+            for (size_t i = 0; i < I.size(); ++i) {
+                if (i > 0) {
+                    stream << ", "; // Add a comma before every element except the first
+                }
+                stream << AlgebraRelation::to_string(I[i]);
+            }
+            stream << "): " << prettyPrint(pair.second) << " \n";
+        }
+        auto result = stream.str();
+        if (coeffs.size() != 0) {
+            result.erase(result.length() - 3);
+        }
+        return result + "\n";
+    }
 private:
     uint n; 
     void validateKeys() {
@@ -202,7 +245,6 @@ private:
         // cout << "Reorder input: " 
         //     << prettyPrint(I) << ": " << scale 
         //     << "    " << prettyPrint(accum) << endl;
-
         auto idx = order_violate_idx(I);
         // If in canonical order, then add to accum
         if (idx == I.size()) {
@@ -233,13 +275,8 @@ private:
 };
 
 template<typename T>
-std::string prettyPrint(const AlgebraElement<T>& a) {
-    return prettyPrint(a.coeffs);
-}
-
-template<typename T>
 std::ostream& operator<<(std::ostream& os, const AlgebraElement<T>& element) {
-    os << prettyPrint(element);
+    os << element.to_string(); 
     return os;
 }
 #endif

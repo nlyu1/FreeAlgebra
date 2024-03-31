@@ -27,6 +27,10 @@ struct ExtConjRelation {
     static constexpr uint num_generators() {
         return n;
     }
+
+    static std::string to_string(uint v) {
+        return v%2==0 ? std::to_string(v/2) : std::to_string(v/2)+"*";
+    }
 };
 
 // Dirac commutation relation (CAR)
