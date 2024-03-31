@@ -37,7 +37,7 @@ int main(){
     // cout << prettyPrint(x2.conj()) << endl;
 
     ExtConjAlg alpha(4);
-    auto j = alpha.a(0)*alpha.a(1) + alpha.a(2)*alpha.a(3);
-    cout << prettyPrint(j * j) << endl;
+    auto j = alpha.a(0)*alpha.a(2) + alpha.a(1)*alpha.a(3) + alpha.a(3).conj()* alpha.a(2).conj(); 
+    cout << ((alpha.log(alpha.exp(j)) - j) == 0) << endl;
     return 0;
 }

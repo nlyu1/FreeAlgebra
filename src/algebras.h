@@ -50,7 +50,7 @@ typedef AlgebraElement<ExtConjRelation> ExtElm;
 // Exterior conjugation algebra
 class ExtConjAlg {
 public:
-    uint n; // Number of modes
+    uint n; // Number of modes, there are 2*n generators in total
     
     ExtConjAlg(uint n): n(n) {};
 
@@ -60,8 +60,27 @@ public:
         return ExtElm({{gen_to_power_repr(coeffs, 2*n), 1}}, 2*n);
     }
 
-    ExtElm exp(ExtElm a) {
+    // Grassmann exponentiation: only need to compute a few terms, yeah
+    ExtElm exp(const ExtElm& a) {
+        auto power = a.one(), result=a.one(); // Start with the multiplicative identity;
+        uint niters = min(static_cast<uint>(a.coeffs.size()), 2*n);
+        for (uint j=1; j<=niters; j++) {
+            power = power * a;
+            result.add_(power * Complex(1./static_cast<double>(factorial(j)), 0));
+        }
+        return result;
+    }
 
+    // Taylor expansion definition of logarithm. 
+    ExtElm log(const ExtElm& a) {
+        auto b = a - Complex(1.);
+        auto power = a.one(), result = a.zero();
+        uint niters = min(static_cast<uint>(b.coeffs.size()), 2*n);
+        for (uint j=1; j<=niters; j++) {
+            power = power * b;
+            result.add_(power * Complex(pow(-1, j+1) / j, 0.));
+        }
+        return result;
     }
 };
 #endif

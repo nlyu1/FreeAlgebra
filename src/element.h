@@ -25,10 +25,6 @@ public:
         validateKeys();
     }
 
-    std::string tostring() {
-        return prettyPrint(this->coeffs);
-    }
-
     inline uint num_generators() { return n; }
 
     inline static void assert_eqsize(size_t a, size_t b) {
@@ -39,6 +35,15 @@ public:
 
     AlgebraElement clone() const {
         return AlgebraElement(clone_map(coeffs), n);
+    }
+
+    // Construct a zero element (additive identity) of the algebra
+    AlgebraElement zero() const {
+        return AlgebraElement(CoeffMap({}), n);
+    }
+
+    AlgebraElement one() const {
+        return AlgebraElement(CoeffMap({{KeyType(n, 0u), Complex(1., 0.)}}), n);
     }
     
     // Scalar operations 
@@ -57,6 +62,16 @@ public:
             coeffs.at(pair.first) = pair.second * scalar;
         }
         filter_coeffs_();
+    }
+
+    // Comparison with scalar is considered comparison with scalar * multiplicative identity 
+    bool operator==(const Complex& scalar) const {
+        return operator==(one() * scalar);
+    }
+
+    // Assumes both well-filtered
+    bool operator==(const AlgebraElement& other) const {
+        return coeffs == other.coeffs;
     }
 
     AlgebraElement operator+(const Complex& scalar) const {
@@ -119,14 +134,10 @@ public:
     }
 
     AlgebraElement pow(uint k) {
-        auto self = operator+(Complex(0., 0.));
-        auto result = (self - self) + 1.; // Identity operator
-        cout << "Self:" << prettyPrint(self) << endl;
-        cout << "Result:" << prettyPrint(result) << endl;
-        auto niters = min(static_cast<int>(coeffs.size()), static_cast<int>(n)); 
-        for (auto j=0; j<k; j++){
-            result = result * self;
-            cout << "Result:" << j << "    " << prettyPrint(result) << endl;
+        auto result = one(); // Multiplicative identity
+        // cout << "Self:" << prettyPrint(self) << endl;
+        for (uint j=0; j<k; j++){
+            result = operator*(result);
         }
         return result;
     }
@@ -195,7 +206,7 @@ private:
             // Enforce canonical anticommutation relation now: duplicates go to 0
             //  In the future: enforce non-fixed points
             AlgebraElement entry({{gen_to_power_repr(I, n), scale}}, n);
-            for (auto i=0; i<I.size() - 1; i++){
+            for (size_t i=0; i<I.size() - 1; i++){ // Zero duplicates
                 if (I[i] == I[i+1]) {
                     entry = entry * Complex(0., 0.);
                 }
