@@ -74,9 +74,58 @@ struct SelfConjRelation: public BaseRelation<n> {
     }
 };
 
-// Takes the generators of two constituent relations to be opposite each other
-template<typename RelA, typename RelB>
-struct AltProductRelation : 
+template<typename AlgRelation>
+class BaseAlgebra {
+public:
+    using Element = AlgebraElement<AlgRelation>; 
+    using Relation = AlgRelation; 
+    BaseAlgebra<AlgRelation>() = default;
+
+    // Returns the corresponding annihilator
+    Element operator()(uint i) const {
+        assert(i >= 0 && i< Relation::num_generators()); 
+        KeyType coeffs({i});
+        return Element({{gen_to_power_repr(coeffs, Relation::num_generators()), 1}});
+    }
+
+    Element zero() const {
+        return Element(CoeffMap({}));
+    }
+
+    Element one() const {
+        return Element(
+            CoeffMap({{KeyType(Relation::num_generators(), 0u), Complex(1., 0.)}})
+        );
+    }
+
+    Element commutator(const Element& a, const Element& b){
+        return a * b - b * a;
+    }
+
+    Element anticommutator(const Element& a, const Element& b){
+        return a * b + b * a;
+    }
+};
+
+
+
+
+// Complex template parameter
+// Right now double-types are not supported, so we use int divided by 1e5
+template<int real, int imag>
+struct ComplexParameter {
+    static constexpr Complex value{real/100000, imag/100000};
+};
+// Pass these into the third template argument of ProdAlgebra 
+//    to obtain commuting (resp. anticommuting) tensor product algebras
+constexpr ComplexParameter<100000, 0> PROD_COMMUTE;
+constexpr ComplexParameter<-100000, 0> PROD_ANTICOMMUTE;
+
+
+// Takes the generators of two constituent relations commute with each other 
+//    up to a complex phase specified by CommutePhase
+template<typename RelA, typename RelB, typename CommutePhase>
+struct ProductRelation: 
     public BaseRelation<RelA::num_generators() + RelB::num_generators()> { 
 
     // The return-type should be power representation 
@@ -84,7 +133,8 @@ struct AltProductRelation :
         auto pivot = RelA::num_generators();
         CoeffMap result; 
         if (j < pivot && i >= pivot) { // j < pivot <= i
-            result[{j, i}] = Complex(-1., 0.);
+            /// Replace this Complex(-1., 0.) with the third template argument
+            result[{j, i}] = CommutePhase::value; 
         } else if (i < pivot) { 
             // then j < i < pivot
             //  Compute CR using RelB then extend to the whole algebra
@@ -123,35 +173,84 @@ struct AltProductRelation :
 };
 
 
-template<typename AlgRelation>
-class BaseAlgebra {
+template<typename LAlg, typename RAlg, typename CommutePhase>
+class ProductAlgebra: 
+    public BaseAlgebra<ProductRelation<
+        typename LAlg::Relation, typename RAlg::Relation, CommutePhase
+    >> {
 public:
-    using Element = AlgebraElement<AlgRelation>; 
-    BaseAlgebra<AlgRelation>() = default;
+    using LRel = typename LAlg::Relation; 
+    using RRel = typename RAlg::Relation;
+    using LElm = typename LAlg::Element; 
+    using RElm = typename RAlg::Element; 
+    using Relation = ProductRelation<typename LAlg::Relation, 
+                    typename RAlg::Relation, CommutePhase>; 
+    using Element = typename BaseAlgebra<Relation>::Element; 
 
-    // Returns the corresponding annihilator
-    Element operator()(uint i) const {
-        assert(i >= 0 && i< AlgRelation::num_generators()); 
-        KeyType coeffs({i});
-        return Element({{gen_to_power_repr(coeffs, AlgRelation::num_generators()), 1}});
+    // Extend an element of the left algebra to the right 
+    Element extR(const LElm& x) {
+        CoeffMap coeffs;
+        for (auto const& pair:x.coeffs) {
+            coeffs[mergeVectors(
+                    pair.first, 
+                    KeyType(RRel::num_generators(), 0u)
+                )] = pair.second; 
+        }
+        return Element(coeffs);
     }
 
-    Element zero() const {
-        return Element(CoeffMap({}));
+    // Extend an element of the right algebra to the left
+    Element extL(const RElm& x) {
+        CoeffMap coeffs;
+        for (auto const& pair:x.coeffs) {
+            coeffs[mergeVectors(
+                    KeyType(LRel::num_generators(), 0u),
+                    pair.first
+                )] = pair.second; 
+        }
+        return Element(coeffs);
     }
 
-    Element one() const {
-        return Element(
-            CoeffMap({{KeyType(AlgRelation::num_generators(), 0u), Complex(1., 0.)}})
-        );
+    // Project a product element to the left algebra. 
+    //    Any component with nontrivial support on the right altegra is thrown away
+    LElm projL(const Element& x) {
+        CoeffMap coeffs;
+        for (auto const& pair:x.coeffs) {
+            if (std::abs(pair.second) == 0.) continue; 
+            bool inspan = true;
+            // Detect whether this component is uniquely supported 
+            //    on the left generators 
+            for (uint i=LRel::num_generators(); i<pair.first.size(); i++) {
+                if (pair.first[i] != 0) {
+                    inspan = false; 
+                    break;
+                }
+            }
+            if (!inspan) continue; // Ignore not-in-span components
+            KeyType key(pair.first.begin(), 
+                pair.first.begin()+LRel::num_generators());
+            coeffs[key] = pair.second; 
+        }
+        return LElm(coeffs);
     }
 
-    Element commutator(const Element& a, const Element& b){
-        return a * b - b * a;
-    }
-
-    Element anticommutator(const Element& a, const Element& b){
-        return a * b + b * a;
+    RElm projR(const Element& x) {
+        CoeffMap coeffs;
+        for (auto const& pair:x.coeffs) {
+            if (std::abs(pair.second) == 0.) continue; 
+            bool inspan = true;
+            for (uint i=0; i<LRel::num_generators(); i++) {
+                if (pair.first[i] != 0) {
+                    inspan = false; 
+                    break;
+                }
+            }
+            if (!inspan) continue;
+            KeyType key(pair.first.begin()+LRel::num_generators(), 
+                pair.first.end());
+            coeffs[key] = pair.second; 
+        }
+        return RElm(coeffs);
     }
 };
 #endif

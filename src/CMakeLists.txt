@@ -4,6 +4,7 @@ project(FreeAlgebraProject)
 # Specify C++ Standard
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+message(STATUS "C++ compiler: ${CMAKE_CXX_COMPILER}")
 
 if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   # Add the most pedantic warnings and treat all warnings as errors.
@@ -15,6 +16,8 @@ if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   # Enable AddressSanitizer (a fast memory error detector)
   add_compile_options(-fsanitize=address)
   add_link_options(-fsanitize=address)
+
+  # add_compile_options(-O3 -march=native)
 endif()
 
 

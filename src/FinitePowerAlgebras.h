@@ -88,7 +88,9 @@ struct CliffordCommRelation: public ConjRelation {
 };
 
 template<uint n>
-using CliffordAlgebra = BaseAlgebra<CliffordCommRelation<SelfConjRelation<n>>>;
+using CliffordRelation = CliffordCommRelation<SelfConjRelation<n>>;
+template<uint n>
+using CliffordAlgebra = BaseAlgebra<CliffordRelation<n>>;
 
 
 // CAR algebra using fermionic creation / annihilation operators

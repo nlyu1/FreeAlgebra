@@ -8,26 +8,21 @@ auto z(const GammaType& gamma) {
     return gamma(0).conj() * gamma(1) + gamma(3);
 }
 
-
-typedef AltProductRelation<
-            CliffordCommRelation<SelfConjRelation<2>>, 
-            ExteriorCommRelation<SelfConjRelation<2>>
-        > customRelation;
+typedef CliffordAlgebra<3> LAlg;
+typedef CARAlgebra<4> RAlg; 
 
 int main(){
-    // BaseAlgebra<customRelation> gamma; 
-    CliffordAlgebra<3> gamma;
-    // auto x = gamma(2) * gamma(1) * gamma(1) + Complex(4., 3.);
-    // cout << gamma.anticommutator(gamma(0), gamma(1)) << endl;
-    // cout << x << endl;
-    // cout << x.norm() << endl;
-
-    CARAlgebra<24> alpha; 
-    auto result = alpha.one();
-    for (auto j=0; j<12; j++) {
-        result = result * alpha(2*j+1) * alpha(2*j);
-    }
-    cout << result << endl;
+    LAlg alpha;
+    RAlg beta;
+    ProductAlgebra<LAlg, RAlg, decltype(PROD_ANTICOMMUTE)> gamma; 
+    // cout << alpha(0) << endl;
+    // cout << beta(0) << endl;
+    // cout << gamma.extR(alpha(0)) << gamma.extL(beta(0)) << endl;
+    // cout << gamma.anticommutator(gamma.extR(alpha(0)), gamma.extL(beta(0))) << endl; 
+    // cout << (gamma.projL(gamma.extR(alpha(0)) + gamma.extL(beta(0)))) << endl;
+    cout << gamma.extL(beta(0)) << endl;
+    cout << (gamma.projL(gamma.extL(beta(0)))) << endl;
+    cout << (gamma.projR(gamma.extR(alpha(0))) == beta.zero()) << endl;
     return 0;
 
 }

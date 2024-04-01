@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "_deps/pybind11-build",
+					"jsonFile" : "directory-_deps.pybind11-build-Debug-50c5ca9cb84dcac7cbde.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/Users/nicholaslyu/Code/algebra/build/_deps/pybind11-src"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "FreeAlgebraProject",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "pybind11",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "freealgebra::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-freealgebra-Debug-9d49c754d7cb38d1b091.json",
+					"name" : "freealgebra",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_algebra::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_algebra-Debug-0fa2ccebc0ed4d91583d.json",
+					"name" : "test_algebra",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/nicholaslyu/Code/algebra/build",
+		"source" : "/Users/nicholaslyu/Code/algebra/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
