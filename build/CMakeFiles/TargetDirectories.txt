@@ -1,6 +1,0 @@
-/Users/nicholaslyu/Code/algebra/build/CMakeFiles/freealgebra.dir
-/Users/nicholaslyu/Code/algebra/build/CMakeFiles/test_algebra.dir
-/Users/nicholaslyu/Code/algebra/build/CMakeFiles/edit_cache.dir
-/Users/nicholaslyu/Code/algebra/build/CMakeFiles/rebuild_cache.dir
-/Users/nicholaslyu/Code/algebra/build/_deps/pybind11-build/CMakeFiles/edit_cache.dir
-/Users/nicholaslyu/Code/algebra/build/_deps/pybind11-build/CMakeFiles/rebuild_cache.dir
