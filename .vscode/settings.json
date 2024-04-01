@@ -67,5 +67,6 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "functional": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/Users/nicholaslyu/Code/algebra/src"
 }

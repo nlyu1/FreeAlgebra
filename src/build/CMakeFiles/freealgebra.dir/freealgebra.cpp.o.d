@@ -1024,7 +1024,7 @@ CMakeFiles/freealgebra.dir/freealgebra.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/complex \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/sstream \
   /Users/nicholaslyu/Code/algebra/src/build/_deps/pybind11-src/include/pybind11/operators.h \
-  /Users/nicholaslyu/Code/algebra/src/element.h \
+  /Users/nicholaslyu/Code/algebra/src/Elements.h \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Dense \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Core \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -1220,5 +1220,4 @@ CMakeFiles/freealgebra.dir/freealgebra.cpp.o: \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /opt/homebrew/Cellar/fmt/10.2.1_1/include/fmt/core.h \
   /Users/nicholaslyu/Code/algebra/src/utils.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip \
-  /Users/nicholaslyu/Code/algebra/src/dirac.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip

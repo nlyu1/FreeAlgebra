@@ -5,6 +5,7 @@
 #include "utils.h"
 using namespace std; 
 
+// Base class for algebra element operations
 template<typename AlgebraRelation>
 class AlgebraElement {
 public:
@@ -26,7 +27,8 @@ public:
 
     inline static void assert_eqsize(size_t a, size_t b) {
         if (a != b) {
-            throw std::invalid_argument(fmt::format("Element sizes {} and {} do not match", a, b));
+            throw std::invalid_argument(
+                fmt::format("Element sizes {} and {} do not match", a, b));
         }
     }
 
@@ -61,7 +63,8 @@ public:
         filter_coeffs_();
     }
 
-    // Comparison with scalar is considered comparison with scalar * multiplicative identity 
+    // Comparison with scalar is considered comparison 
+    //      with scalar * multiplicative identity 
     bool operator==(const Complex& scalar) const {
         return operator==(one() * scalar);
     }
@@ -177,39 +180,18 @@ public:
         }
     }
 
-    // std::string to_string() const {
-    //     std::stringstream stream;
-    //     stream << "{\n";
-    //     for (const auto& pair: coeffs) {
-    //         stream << "    (";
-    //         auto I = power_to_gen_repr(pair.first);
-    //         stream << "[";
-    //         for (size_t i = 0; i < I.size(); ++i) {
-    //             if (i > 0) {
-    //                 stream << ", "; // Add a comma before every element except the first
-    //             }
-    //             stream << AlgebraRelation::to_string(I[i]);
-    //         }
-    //         stream << "], " << prettyPrint(pair.second) << "), \n";
-    //     }
-    //     auto result = stream.str();
-    //     if (coeffs.size() != 0) {
-    //         result.erase(result.length() - 3);
-    //     }
-    //     return result + "\n}";
-    // }
-
     std::string to_string() const {
         std::stringstream stream;
+        stream << "[\n";
         for (const auto& pair: coeffs) {
             stream << "    ";
             auto I = power_to_gen_repr(pair.first);
             stream << "(";
             for (size_t i = 0; i < I.size(); ++i) {
                 if (i > 0) {
-                    stream << ", "; // Add a comma before every element except the first
+                    stream << ", "; 
                 }
-                stream << AlgebraRelation::to_string(I[i]);
+                stream << AlgebraRelation().to_string(I[i]);
             }
             stream << "): " << prettyPrint(pair.second) << " \n";
         }
@@ -217,8 +199,18 @@ public:
         if (coeffs.size() != 0) {
             result.erase(result.length() - 2);
         }
-        return result + "\n";
+        return result + "\n]";
     }
+
+    // Treating as a vector, collect the absolute norm squared
+    double norm() {
+        double result = 0;
+        for (const auto& pair: coeffs) {
+            result += std::pow(std::abs(pair.second), 2);
+        }
+        return std::pow(result, 0.5);
+    }
+
 private:
     uint n; 
     void validateKeys() {
@@ -226,7 +218,8 @@ private:
             if (pair.first.size() != n) {
                 throw std::invalid_argument(
                     fmt::format(
-                        "Expected keys to have size {} but got {}", n, prettyPrint(pair.first)
+                        "Expected keys to have size {} but got {}", 
+                        n, prettyPrint(pair.first)
                     )
                 );
             }
@@ -236,7 +229,7 @@ private:
     // Given an accumulator and multi-indices in generator multiplication 
     //   representation (and an existing scale), adds to accum the 
     //   corresponding multiplication argument 
-    void reorder(const KeyType& I, ValueType scale, 
+    void reorder(const KeyType& I, Complex scale, 
         AlgebraElement& accum) const {
         if (I.size() == 0) {
             accum.add_(scale);
@@ -244,26 +237,32 @@ private:
         }
         // cout << "Reorder input: " 
         //     << prettyPrint(I) << ": " << scale 
-        //     << "    " << prettyPrint(accum) << endl;
+        //     << "    " << accum << endl;
         auto idx = order_violate_idx(I);
-        // If in canonical order, then add to accum
+        // If in canonical order, arrange homogeneous power then accumulate 
         if (idx == I.size()) {
-            // Enforce canonical anticommutation relation now: duplicates go to 0
-            //  In the future: enforce non-fixed points
-            AlgebraElement entry({{gen_to_power_repr(I, n), scale}});
-            for (size_t i=0; i<I.size() - 1; i++){ // Zero duplicates
-                if (I[i] == I[i+1]) {
-                    entry = entry * Complex(0., 0.);
+            Complex scale_accum = scale; 
+            auto J = gen_to_power_repr(I, n);
+            // cout << "Original: " << prettyPrint(J) << endl;
+            for (size_t i=0; i<J.size(); i++) {
+                auto t = AlgebraRelation().homogeneous_exponent(i, J[i]);
+                scale_accum *= std::get<1>(t);
+                J[i] = std::get<0>(t); 
+                // Shortcut: no change if the scale is already 0 
+                if (std::abs(scale_accum) == 0.) {
+                    return;
                 }
             }
-            // cout << "    Reorder adding:" << prettyPrint(entry) << endl;
+            AlgebraElement entry({{J, scale_accum}});
+            // cout << "New index: " << prettyPrint(J) << endl;
+            // cout << "    Reorder adding:" << entry << endl;
             accum.add_(entry);
             return;
         }
-        AlgebraRelation R;
+        // AlgebraRelation R;
         // Use commutation relation on the first pair of 
         //  non-canonical product, then recursively call 
-        auto L = R.commute(I[idx], I[idx + 1]);
+        auto L = AlgebraRelation().commute(I[idx], I[idx + 1]);
         for (const auto& pair: L) {
             auto newI = KeyType(I.begin(), I.begin()+idx);
             newI.insert(newI.end(), pair.first.begin(), pair.first.end());
@@ -273,6 +272,7 @@ private:
         return;
     }
 };
+
 
 template<typename T>
 std::ostream& operator<<(std::ostream& os, const AlgebraElement<T>& element) {

@@ -913,6 +913,7 @@ CMakeFiles/freealgebra.dir/freealgebra.cpp.o: /Users/nicholaslyu/Code/algebra/sr
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/share/asan_ignorelist.txt \
+  /Users/nicholaslyu/Code/algebra/src/Elements.h \
   _deps/pybind11-src/include/pybind11/attr.h \
   _deps/pybind11-src/include/pybind11/buffer_info.h \
   _deps/pybind11-src/include/pybind11/cast.h \
@@ -931,8 +932,6 @@ CMakeFiles/freealgebra.dir/freealgebra.cpp.o: /Users/nicholaslyu/Code/algebra/sr
   _deps/pybind11-src/include/pybind11/pybind11.h \
   _deps/pybind11-src/include/pybind11/pytypes.h \
   _deps/pybind11-src/include/pybind11/stl.h \
-  /Users/nicholaslyu/Code/algebra/src/dirac.h \
-  /Users/nicholaslyu/Code/algebra/src/element.h \
   /Users/nicholaslyu/Code/algebra/src/utils.h \
   /Users/nicholaslyu/anaconda3/include/python3.10/Python.h \
   /Users/nicholaslyu/anaconda3/include/python3.10/abstract.h \
@@ -3240,6 +3239,8 @@ _deps/pybind11-src/include/pybind11/detail/internals.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_copy.h:
 
+/Users/nicholaslyu/Code/algebra/src/Elements.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_generate_n.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_copy.h:
@@ -3303,8 +3304,6 @@ _deps/pybind11-src/include/pybind11/detail/internals.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/unwrap_ref.h:
-
-/Users/nicholaslyu/Code/algebra/src/dirac.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/arm/signal.h:
 
@@ -3523,8 +3522,6 @@ _deps/pybind11-src/include/pybind11/detail/internals.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_final.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_remove.h:
-
-/Users/nicholaslyu/Code/algebra/src/element.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_reference.h:
 

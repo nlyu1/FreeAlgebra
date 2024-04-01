@@ -3,8 +3,7 @@
 #include <pybind11/complex.h>
 #include <pybind11/operators.h>
 #include <unordered_map>
-#include "element.h"
-#include "dirac.h"
+#include "Elements.h"
 
 namespace py = pybind11;
 

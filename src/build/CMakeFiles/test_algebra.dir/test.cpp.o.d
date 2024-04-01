@@ -1,8 +1,9 @@
 CMakeFiles/test_algebra.dir/test.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/share/asan_ignorelist.txt \
   /Users/nicholaslyu/Code/algebra/src/test.cpp \
-  /Users/nicholaslyu/Code/algebra/src/algebras.h \
-  /Users/nicholaslyu/Code/algebra/src/element.h \
+  /Users/nicholaslyu/Code/algebra/src/FinitePowerAlgebras.h \
+  /Users/nicholaslyu/Code/algebra/src/BaseAlgebraRelations.h \
+  /Users/nicholaslyu/Code/algebra/src/Elements.h \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Dense \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Core \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \

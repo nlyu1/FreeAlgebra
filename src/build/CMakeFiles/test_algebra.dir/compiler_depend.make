@@ -886,8 +886,9 @@ CMakeFiles/test_algebra.dir/test.cpp.o: /Users/nicholaslyu/Code/algebra/src/test
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/share/asan_ignorelist.txt \
-  /Users/nicholaslyu/Code/algebra/src/algebras.h \
-  /Users/nicholaslyu/Code/algebra/src/element.h \
+  /Users/nicholaslyu/Code/algebra/src/BaseAlgebraRelations.h \
+  /Users/nicholaslyu/Code/algebra/src/Elements.h \
+  /Users/nicholaslyu/Code/algebra/src/FinitePowerAlgebras.h \
   /Users/nicholaslyu/Code/algebra/src/utils.h \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Cholesky \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Core \
@@ -1086,6 +1087,8 @@ CMakeFiles/test_algebra.dir/test.cpp.o: /Users/nicholaslyu/Code/algebra/src/test
 /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/SVD/BDCSVD.h:
 
 /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/HouseholderQR.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
 
 /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
 
@@ -1321,9 +1324,9 @@ CMakeFiles/test_algebra.dir/test.cpp.o: /Users/nicholaslyu/Code/algebra/src/test
 
 /Users/nicholaslyu/Code/algebra/src/utils.h:
 
-/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
+/Users/nicholaslyu/Code/algebra/src/FinitePowerAlgebras.h:
 
-/Users/nicholaslyu/Code/algebra/src/algebras.h:
+/Users/nicholaslyu/Code/algebra/src/BaseAlgebraRelations.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stddef.h:
 
@@ -1644,8 +1647,6 @@ CMakeFiles/test_algebra.dir/test.cpp.o: /Users/nicholaslyu/Code/algebra/src/test
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/replace.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
-
-/Users/nicholaslyu/Code/algebra/src/element.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_reference.h:
 
@@ -2848,6 +2849,8 @@ CMakeFiles/test_algebra.dir/test.cpp.o: /Users/nicholaslyu/Code/algebra/src/test
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/sort_heap.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_copy.h:
+
+/Users/nicholaslyu/Code/algebra/src/Elements.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_generate_n.h:
 
