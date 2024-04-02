@@ -10,11 +10,13 @@
 #include <cassert>
 #include <vector>
 #include <tuple>
+#include <Eigen/Dense>
 #include <fmt/core.h> 
 #include <torch/torch.h>
 #include <unordered_map>
 #include "complex.h"
 using namespace std; 
+
 
 typedef uint PowType;
 typedef std::vector<PowType> KeyType;
@@ -186,4 +188,57 @@ bool allzero(std::vector<T> v) {
     }
     return true; 
 }
+
+// Returns a vector of vectors which returns all n-tuples of sum deg
+std::vector<KeyType> enumerate_degree_eq(uint n, uint deg) {
+    if (n == 1) {
+        return {{deg}}; 
+    } else {
+        std::vector<KeyType> result; 
+        for (uint d=0; d<=deg; d++) {
+            auto rec = enumerate_degree_eq(n-1, d);
+            for (uint k=0; k<rec.size(); k++) {
+                rec[k].push_back(deg - d);
+            }
+            result.insert(result.end(), rec.begin(), rec.end());
+        }
+        return result; 
+    }
+}
+
+std::vector<KeyType> enumerate_degree_leq(uint n, uint deg) {
+    std::vector<KeyType> result;
+    for (uint m=0; m<=deg; m++){
+        auto rec = enumerate_degree_eq(n, m);
+        result.insert(result.end(), rec.begin(), rec.end());
+    }
+    return result;
+}
+
+
+Eigen::MatrixXcd toEigenMatrixXcd(const vector<vector<FieldType>>& matrix) {
+    const size_t rows = matrix.size();
+    const size_t cols = matrix.empty() ? 0 : matrix[0].size();
+    // Initialize an Eigen matrix of complex doubles
+    Eigen::MatrixXcd eigenMatrix(rows, cols);
+    // Fill the matrix
+    for (size_t i = 0; i < rows; ++i) {
+        for (size_t j = 0; j < cols; ++j) {
+            eigenMatrix(i, j) = matrix[i][j].item(); // Directly assign the complex number
+        }
+    }
+    return eigenMatrix;
+}
+
+KeyType independent_cols(const Eigen::MatrixXcd& matrix) {
+    Eigen::FullPivLU<Eigen::MatrixXcd> lu_decomp(matrix);
+    Eigen::VectorXi indices = lu_decomp.permutationQ().indices();
+
+    KeyType independentCols;
+    for(int i = 0; i < lu_decomp.rank(); ++i) {
+        independentCols.push_back(static_cast<uint>(indices(i)));
+    }
+    return independentCols;
+}
+
 #endif

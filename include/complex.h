@@ -19,7 +19,7 @@ std::string prettyPrint(double value) {
 class ComplexScalar {
 public:
     ComplexScalar() : ComplexScalar(0.0, 0.0) {}
-    
+
     // Constructor from real and imaginary parts
     ComplexScalar(double real, double imag) {
         value = torch::complex(
@@ -43,11 +43,21 @@ public:
 
     // Constructor from a 1x1 complex tensor
     explicit ComplexScalar(const torch::Tensor& tensor) {
-        if (tensor.scalar_type() == torch::kComplexDouble && tensor.numel() == 1){
-            value = tensor;
-        } else {
-            throw std::invalid_argument("Tensor must be 1x1 of complex double type.");
+        if (tensor.numel() != 1) {
+            throw std::invalid_argument("Tensor must be a scalar (1 element) tensor.");
         }
+        if (tensor.scalar_type() == torch::kComplexDouble) {
+            value = tensor;
+        } else if (tensor.scalar_type() == torch::kComplexFloat) {
+            // Automatically promote to double
+            value = tensor.to(torch::kComplexDouble);
+        } else {
+            throw std::invalid_argument("Tensor must be of complex float or complex double type.");
+        }
+    }
+
+    std::complex<double> item() const {
+        return {real(), imag()};
     }
 
     // Operator overloads
@@ -158,6 +168,10 @@ public:
 
     double abs() const {
         return std::pow(absq(), .5);
+    }
+
+    ComplexScalar pow(int exponent) const {
+        return ComplexScalar(torch::pow(value, exponent));
     }
 private:
     torch::Tensor value;

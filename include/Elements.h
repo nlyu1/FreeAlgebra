@@ -60,7 +60,7 @@ public:
     void add_(const FieldType& scalar) {
         KeyType zero(n, 0u); 
         if (coeffs.contains(zero)) {
-            coeffs.at(zero) += scalar; 
+            coeffs.at(zero) = coeffs.at(zero) + scalar; 
         } else {
             coeffs[zero] = scalar;
         }
@@ -133,7 +133,7 @@ public:
         assert_eqsize(this->n, other.num_generators());
         for (const auto& pair : other.coeffs) {
             if (coeffs.contains(pair.first)) {
-                coeffs.at(pair.first) += pair.second; 
+                coeffs.at(pair.first) = coeffs.at(pair.first) + pair.second; 
             } else {
                 coeffs[pair.first] = pair.second; 
             }
@@ -233,7 +233,7 @@ public:
     double norm() const {
         double result = 0;
         for (const auto& pair: coeffs) {
-            result += std::pow(std::abs(pair.second), 2);
+            result += pair.second.absq();
         }
         return std::pow(result, 0.5);
     }
@@ -311,7 +311,7 @@ private:
                 "Expected ({})^2 to be homogeneous in {} but got {}.\n",
                 gidx, gidx, prettyPrint(t)));
         }
-        FieldType pow_scale = std::pow(scale, pow - 1);
+        FieldType pow_scale = scale.pow(pow - 1);
         uint sq_pow = key.size(), power = 0;
 
         // Simplify the power based on specific cases

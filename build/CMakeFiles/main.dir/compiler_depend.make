@@ -949,6 +949,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_wchar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_wctype.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_bf16.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_fp16.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_neon.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/inttypes.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h \
@@ -961,6 +964,195 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
   /Users/nicholaslyu/Code/algebra/include/FinitePowerAlgebras.h \
   /Users/nicholaslyu/Code/algebra/include/complex.h \
   /Users/nicholaslyu/Code/algebra/include/utils.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Cholesky \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Core \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Dense \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Eigenvalues \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Geometry \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Householder \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Jacobi \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/LU \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/QR \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/SVD \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Cholesky/LDLT.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Cholesky/LLT.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Array.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ArrayBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Assign.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/BandMatrix.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Block.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/BooleanRedux.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CommaInitializer.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CoreIterators.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DenseBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DenseStorage.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Diagonal.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Dot.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/EigenBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Fuzzy.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/GeneralProduct.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/IO.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/IndexedView.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Inverse.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Map.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/MapBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/MathFunctions.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Matrix.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/MatrixBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/NestByValue.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/NoAlias.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/NumTraits.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Product.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Random.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Redux.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Ref.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Replicate.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Reshaped.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ReturnByValue.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Reverse.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Select.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Solve.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/SolveTriangular.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/SolverBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/StableNorm.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/StlIterators.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Stride.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Swap.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Transpose.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Transpositions.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/VectorBlock.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Visitor.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/GeneralBlockPanelKernel.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/TypeCasting.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/Constants.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/IntegralConstant.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/Macros.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/Memory.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/Meta.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/XprHelper.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Quaternion.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/RotationBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Scaling.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Transform.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Translation.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Umeyama.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Householder/Householder.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/Determinant.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/InverseImpl.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/PartialPivLU.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/HouseholderQR.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/SVD/SVDBase.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/misc/Image.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/misc/Kernel.h \
+  /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
   /opt/homebrew/Cellar/fmt/10.2.1_1/include/fmt/core.h \
   /opt/homebrew/Cellar/libtorch/include/ATen/ATen.h \
   /opt/homebrew/Cellar/libtorch/include/ATen/CPUGeneratorImpl.h \
@@ -5487,8 +5679,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/ir/ir.h:
 
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/ir/constants.h:
-
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/frontend/source_range.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/api/method.h:
@@ -5526,8 +5716,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/special.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/sparse.h:
-
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/optim/sgd.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/optim/serialize.h:
 
@@ -5729,13 +5917,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/c10/core/impl/VirtualGuardImpl.h:
 
-/opt/homebrew/Cellar/libtorch/include/c10/core/impl/PyObjectSlot.h:
-
 /opt/homebrew/Cellar/libtorch/include/c10/core/impl/PyInterpreter.h:
 
 /opt/homebrew/Cellar/libtorch/include/c10/core/impl/InlineStreamGuard.h:
-
-/opt/homebrew/Cellar/libtorch/include/c10/core/WrapDimMinimal.h:
 
 /opt/homebrew/Cellar/libtorch/include/c10/core/TensorOptions.h:
 
@@ -5935,8 +6119,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/type_as_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/type_as.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/trunc_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/trunc.h:
@@ -6086,8 +6268,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/sym_size.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/sym_numel_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/sym_constrain_range_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/threshold_native.h:
 
@@ -6262,8 +6442,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_laguerre_polynomial_l_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_laguerre_polynomial_l_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_laguerre_polynomial_l_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_i1e_native.h:
 
@@ -6545,8 +6723,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/select_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/select_copy_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/select_copy.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/take_along_dim_ops.h:
@@ -6556,8 +6732,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/c10/core/SymNodeImpl.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/select_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/select.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/segment_reduce_native.h:
 
@@ -6631,8 +6805,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/retains_grad_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/retain_grad_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/sym_storage_offset.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/result_type_ops.h:
@@ -6666,8 +6838,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/reshape.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/requires_grad_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/requires_grad.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/replication_pad3d_ops.h:
 
@@ -6941,8 +7111,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/permute_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/permute_copy_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/runtime/interpreter.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/to_mkldnn_backward_native.h:
@@ -7071,8 +7239,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss2d_backward_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss2d_backward_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss2d.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/nextafter_ops.h:
@@ -7090,8 +7256,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/rnn_relu_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/new_ones_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/new_full_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/new_full.h:
 
@@ -7194,8 +7358,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/narrow_copy.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/narrow.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/nansum_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/nanquantile_ops.h:
 
@@ -7573,10 +7735,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/lu_unpack_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/masked_select_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/lu_unpack_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/lu_solve_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/lu_solve_native.h:
@@ -7909,8 +8067,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_householder_product_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_householder_product.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_eigvalsh.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_eigvals_ops.h:
@@ -7956,8 +8112,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_chebyshev_polynomial_t_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_cholesky.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/lift_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/topk_native.h:
 
@@ -8093,8 +8247,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/isinf_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/isin_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/isin.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/isfinite_native.h:
@@ -8138,8 +8290,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_pinned.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_nonzero_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/is_nonzero.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_neg_native.h:
 
@@ -8233,11 +8383,7 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/index_fill_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_fill_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/index_copy_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_copy.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/index_add_ops.h:
 
@@ -8259,31 +8405,21 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/igammac_ops.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/igammac_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/igamma_ops.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/igamma_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm_gather_stats_with_counts_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/igamma.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/igamma_meta.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/concepts.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_weight_to_int4pack_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/i0_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/i0.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hypot_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hypot_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hypot_meta.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_types/_intmax_t.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hypot.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/huber_loss_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/diag.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/huber_loss_backward_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/huber_loss_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/split_native.h:
 
@@ -8293,33 +8429,35 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hstack_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/c10/util/Half-inl.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/squeeze_copy_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_remove_copy.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hspmm_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hstack.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hspmm_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/rnn_tanh_cell_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hsplit_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact1d_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hspmm.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_copy_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hsplit.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/underlying_type.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_member_object_pointer.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/histogramdd_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/histogramdd_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/histogram_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/histogram.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/histc_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/histc.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hinge_embedding_loss_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hinge_embedding_loss.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/heaviside_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_reduce_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/heaviside_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/api/compilation_unit.h:
 
@@ -8327,25 +8465,19 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/heaviside.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_backward_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/any_of.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/size.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__system_error/errc.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linspace_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/permute_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_hfftn_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish_backward.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/threshold_backward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/api/object.h:
 
@@ -8355,31 +8487,33 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sqrt_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid_backward_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool2d.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_fused_lstm_cell.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_log_softmax_backward_data_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_backward_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_backward_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_backward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_linear_backward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hann_window.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hamming_window_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_ldl_factor.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gt_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gt_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gt.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gru_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/gru_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gru_cell_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/options/pixelshuffle.h:
 
@@ -8401,117 +8535,163 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/group_norm.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_3d_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_3d_backward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_3d_backward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_3d_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_3d.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_slogdet_meta.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_backward.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/autograd/forward_grad.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_bicubic2d_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/pthread/sched.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_backward_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/greater_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/greater_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/greater_equal_ops.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/greater_equal_native.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/greater_equal.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/alloca.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gradient_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/leaky_relu_backward_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gradient_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/greater.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/gradient.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sparse_matmul.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/reciprocal.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_jvp_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/maximum.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_jvp_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_optional_floatlist_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_jvp.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward_jvp_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward_jvp_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward_jvp.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/rand_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/ger_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/slow_conv_transpose3d_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/ger_native.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/ger.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/sign_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/geqrf_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/geqrf_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/geqrf.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/addbmm_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/geometric_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss_nd_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_backward_meta.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_backward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/ge_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sinh_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/ge.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/ge_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/gcd_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backend.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gcd_meta.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/gcd.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_meta.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bit:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/unique_consecutive_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/full_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_backward_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_linear_backward_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hann_window.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/lift_fresh_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/exp2_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_backward.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/amin.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/trunc_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/full_like_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fused_moving_avg_obs_fake_quant_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/functional/pixelshuffle.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fused_moving_avg_obs_fake_quant.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/full_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/t_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/full_like_native.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/full_like.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/from_file_ops.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/from_file_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/from_file.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/from_blob.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/frobenius_norm_ops.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/frobenius_norm_native.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/frobenius_norm.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/reshape_as.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/atan.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/random.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_meta.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_vecdot.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_matrix_power.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool2d_native.h:
 
@@ -8565,8 +8745,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/flipud_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fliplr_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/multiply_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/ceil_ops.h:
@@ -8597,8 +8775,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fix.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/full_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/randperm_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fill_diagonal_ops.h:
@@ -8613,17 +8789,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_rfftn.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_reduce_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/heaviside_meta.h:
-
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/data.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_rfftfreq_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hsplit_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_rfftfreq.h:
 
@@ -8663,9 +8831,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ihfft_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/enable_insertable.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/enable_insertable.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ihfft2_ops.h:
 
@@ -8679,9 +8847,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ifft2_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_jvp.h:
-
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/modules/fold.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/IndexedView.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ifft2.h:
 
@@ -8781,8 +8949,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fbgemm_linear_fp16_weight_fp32_activation.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/from_file.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fbgemm_linear_fp16_weight.h:
@@ -8800,10 +8966,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/nl_types.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fake_quantize_per_tensor_affine_cachemask_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/clone_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fake_quantize_per_tensor_affine.h:
 
@@ -8823,8 +8985,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/eye_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/exponential_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/expand_as.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/logcumsumexp_native.h:
@@ -8838,6 +8998,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/exp_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/three_way_comp_ref_type.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/exp2_ops.h:
 
@@ -8885,9 +9047,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_xlog1py_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_forward_only_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_norm_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_forward_only_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/embedding_renorm_ops.h:
 
@@ -8900,10 +9062,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/to_sparse_csr_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/embedding_renorm.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_copy_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/embedding_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/logical_not_ops.h:
 
@@ -9001,6 +9159,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/diff.h:
 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_fp16.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/diagonal_scatter.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_trilinear_native.h:
@@ -9033,11 +9193,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/diag_embed.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/detach_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/huber_loss_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/diag.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/detach_copy_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hypot_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/blackman_window.h:
 
@@ -9046,6 +9206,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/detach_copy.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/matmul_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fake_quantize_per_channel_affine_ops.h:
 
@@ -9115,15 +9277,7 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_grid_sampler_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_grid_sampler_backward_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_grid_sampler_backward.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/parser_std_format_spec.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool2d_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/histc_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/view_as_real_ops.h:
 
@@ -9134,8 +9288,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_convolution_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_convolution_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_chebyshev_polynomial_v_native.h:
 
@@ -9150,6 +9302,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_batch_norm_backward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_multigammaln_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Quaternion.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_batch_norm.h:
 
@@ -9175,15 +9329,13 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/crow_indices_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/next.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/next.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/rotate.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/crow_indices_copy_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/crow_indices.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_reorder_conv2d_weight.h:
 
@@ -9221,10 +9373,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cosine_embedding_loss_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/isneginf_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/cosine_embedding_loss_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/api/module.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cosh_native.h:
@@ -9239,13 +9387,7 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cos.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_slogdet_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid_meta.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/corrcoef_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/copy_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/convolution_overrideable.h:
 
@@ -9260,6 +9402,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/affine_grid_generator_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/convolution_backward_overrideable_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/GeneralProduct.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_nth_element.h:
 
@@ -9285,8 +9429,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/conv_transpose1d_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/indices_copy_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/conv_transpose1d_native.h:
@@ -9294,12 +9436,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fbgemm_pack_quantized_matrix.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/conv_transpose1d.h:
-
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/optim.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/has_virtual_destructor.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gt_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/resolve_neg.h:
 
@@ -9327,6 +9463,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/conv_depthwise3d.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/conv3d_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/var.h:
@@ -9334,8 +9472,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/log1p_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/conv2d_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/conv2d_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/contiguous_ops.h:
 
@@ -9357,10 +9493,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/constant_pad_nd_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_csr_prod_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/conj_physical_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/core/blob.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_affine_grid_generator_backward.h:
@@ -9372,8 +9504,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/conj.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/concatenate.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/concat.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_cholesky_ex_native.h:
 
@@ -9388,8 +9518,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/col_indices_copy_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/col_indices.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/col2im_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/shuffle.h:
 
@@ -9426,8 +9554,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_is_zerotensor_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/clamp_max_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/histogramdd_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/to_padded_tensor.h:
 
@@ -9487,13 +9613,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/celu_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_backward_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/copy_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/celu_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_shifted_chebyshev_polynomial_w_meta.h:
 
@@ -9543,8 +9665,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cat_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_jvp_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cat_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/log_sigmoid_backward.h:
@@ -9591,6 +9711,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/block_diag_ops.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/IO.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/block_diag_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/flatten_dense_tensors_native.h:
@@ -9600,8 +9722,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_copy_from_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/blackman_window_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/bitwise_xor_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/digamma_ops.h:
 
@@ -9653,8 +9773,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/bitwise_and.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/histogram.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/builtin_new_allocator.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/bmm_meta.h:
@@ -9670,6 +9788,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/roll_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_from_mask_left_aligned.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/binary_cross_entropy_native.h:
 
@@ -9690,8 +9810,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cosh.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/bilinear.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 
@@ -9729,11 +9847,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm_gather_stats_with_counts_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_softmax_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/igamma_meta.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/execution:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hsplit_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm_gather_stats_with_counts_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm_gather_stats_ops.h:
 
@@ -9763,8 +9879,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm_backward_elemt_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/unsqueeze_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/bartlett_window_native.h:
@@ -9791,13 +9905,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool3d.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool1d_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/histc_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/parser_std_format_spec.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool2d_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/tanh.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool1d_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_3d_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/atleast_3d_ops.h:
 
@@ -9806,8 +9922,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/triu_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/atleast_3d.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/ger_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool2d_backward_meta.h:
 
@@ -9886,14 +10000,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/thread.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/argmin_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sum_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/argmax_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/flatten_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/arctanh.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/arctan_native.h:
 
@@ -9999,6 +10105,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/amin_meta.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/full_like_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/exp2_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/amin.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/values_copy.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/amax.h:
@@ -10011,21 +10123,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/allclose.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/geometric_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_modified_bessel_k1_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/all_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fake_quantize_per_channel_affine_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/all_meta.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/align_to_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/lift_fresh_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/align_to_native.h:
 
@@ -10089,6 +10191,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/to.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adjoint_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/affine_grid_generator_backward_native.h:
@@ -10141,8 +10245,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/addcdiv.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_backward.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/addbmm_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/addbmm.h:
@@ -10157,8 +10259,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/add.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool3d_backward_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log1p_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool3d.h:
@@ -10170,8 +10270,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool2d_backward_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gru_cell_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/argwhere_native.h:
 
@@ -10193,8 +10291,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool1d_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_backward_meta.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/weekday.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/flatten_dense_tensors_ops.h:
@@ -10211,10 +10307,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_avg_pool3d_backward_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/miopen_convolution_add_relu_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_avg_pool2d_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/c10/util/python_stub.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range_ops.h:
@@ -10225,9 +10317,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_avg_pool2d.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool3d_backward_meta.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hinge_embedding_loss_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool3d_backward_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_lstm_mps_ops.h:
 
@@ -10239,6 +10331,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_eig.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/embedding_sparse_backward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_avg_pool1d_native.h:
@@ -10248,8 +10342,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cross_entropy_loss.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/acosh_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_3d_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/acosh_native.h:
 
@@ -10351,10 +10443,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_compressed_tensor_args_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/iota.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_compressed_tensor_args_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_compressed_tensor_args.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_bsc_tensor_args_ops.h:
@@ -10373,9 +10461,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_use_cudnn_rnn_flatten_weight_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/eq_meta.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sigmoid_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/eq_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_use_cudnn_rnn_flatten_weight.h:
 
@@ -10441,7 +10529,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact1d_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_backward_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/rnn_tanh_cell_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hspmm.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact1d_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact1d_backward_native.h:
 
@@ -10489,6 +10581,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_bicubic2d_aa_backward_ops.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_csr_tensor_args_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/renorm.h:
@@ -10502,6 +10596,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/kaiser_window.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_unsafe_index_put.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/clone_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_unsafe_index_ops.h:
 
@@ -10551,8 +10649,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_transform_bias_rescale_qkv.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gt.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/core/UnsafeFromTH.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_dense_backward_ops.h:
@@ -10562,10 +10658,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_assignable.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_to_sparse_semi_structured_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/sparse_bsc_tensor.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/geometric_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_to_sparse_native.h:
 
@@ -10629,6 +10721,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool2d_backward.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CoreIterators.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/CPUGeneratorImpl.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool2d_backward_ops.h:
@@ -10636,6 +10730,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_fused_lstm_cell_backward_impl.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_fused_lstm_cell_backward.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_fused_gru_cell_backward_ops.h:
 
@@ -10662,8 +10758,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_backward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_fused_gru_cell.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_differentiable_lstm_cell_backward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/c10/core/MemoryFormat.h:
 
@@ -10695,7 +10789,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_optional_intlist.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_optional_filled_intlist_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/maximum.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_optional_floatlist_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/segment_reduce_ops.h:
 
@@ -10747,13 +10845,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/convolution_backward_overrideable.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_efficient_attention_forward_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/hann_window_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_standard_gamma_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_efficient_attention_forward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/huber_loss_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_standard_gamma_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/ormqr.h:
 
@@ -10763,7 +10859,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sum_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sparse_matmul_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/argmax_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sum_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/row_stack.h:
 
@@ -10774,12 +10872,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/argmax.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_softmax_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/stride_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/size.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_backward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/max_pool2d_with_indices_backward_meta.h:
 
@@ -10805,9 +10897,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_semi_structured_linear.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_mm_reduce_impl_ops.h:
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_mm_reduce_impl_backward_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_mm_reduce_impl_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_max_pool2d_ops.h:
 
@@ -10832,10 +10924,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_csr_tensor_args_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_mask_projection_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/regex:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_mask_projection.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_log_softmax_ops.h:
 
@@ -10873,15 +10961,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_csr_sum.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/and.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_mps_convolution_transpose_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/positive_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_csr_prod_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_csc_tensor_unsafe_native.h:
 
@@ -10892,14 +10976,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/split_with_sizes_copy.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_coo_tensor_unsafe_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/bitwise_left_shift_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ifft2_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_coo_tensor_unsafe_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_copy_ops.h:
 
@@ -10935,10 +11011,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_broadcast_to.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/sign_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/geqrf_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_addmm_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_functorch_fallback.h:
@@ -10963,8 +11035,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_softmax.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_bsc_tensor_unsafe.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_euclidean_dist_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_reshape_alias_copy_native.h:
@@ -10974,10 +11044,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/addcdiv_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_to_sparse_bsr_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_ldl_factor.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gt_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sobol_engine_ff_ops.h:
 
@@ -11012,6 +11078,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/tril_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/arm/types.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_segment_reduce_backward.h:
 
@@ -11075,10 +11143,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_scaled_dot_product_efficient_attention_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_slow_conv2d_forward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_scaled_dot_product_efficient_attention_backward.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_sdp_choice_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/ctc_loss.h:
@@ -11094,10 +11158,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_scaled_dot_product_attention_math.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_saturate_weight_to_fp16_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/combinations.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_saturate_weight_to_fp16.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sample_dirichlet_native.h:
 
@@ -11121,10 +11181,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_reshape_copy_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hstack_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_reshape_copy_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_clamp_min.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cufft_get_plan_cache_size_ops.h:
@@ -11146,8 +11202,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/expand_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_reshape_alias_copy.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/greater_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_remove_batch_dim_ops.h:
 
@@ -11182,6 +11236,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_values.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_pin_memory_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/BooleanRedux.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_pin_memory.h:
 
@@ -11245,10 +11301,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nnpack_spatial_convolution_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int8_t.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hamming_window.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nnpack_available_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_indices_native.h:
@@ -11271,8 +11323,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_view_from_buffer_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/greater_equal_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_solve_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_empty_affine_quantized_native.h:
@@ -11280,10 +11330,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_view_from_buffer_copy_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_view_from_buffer_copy_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/squeeze_copy_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hstack.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month.h:
 
@@ -11337,15 +11383,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_from_mask_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_from_mask_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_from_mask_left_aligned_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_select_backward_ops.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_partition.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_select_backward.h:
 
@@ -11358,6 +11400,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_from_padded_and_nested_example_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_neg_view_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Random.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_neg_view_copy_ops.h:
 
@@ -11399,7 +11443,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/rot90_native.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_native_batch_norm_legit_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/and.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_mps_convolution_transpose_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_mps_convolution_transpose.h:
 
@@ -11436,6 +11488,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Byte.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_softmax_backward_data_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_masked_softmax_native.h:
 
@@ -11480,8 +11534,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_masked_softmax.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_masked_scale_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/greater.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_move_constructible.h:
 
@@ -11551,19 +11603,29 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_logcumsumexp_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_meta.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_logcumsumexp.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/bind.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_ldl_solve_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact2d.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_log_softmax_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_log_softmax_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/vsplit.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/copy_sparse_to_sparse.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_log_softmax_backward_data_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_eigh_ops.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/copy_sparse_to_sparse.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_log_softmax.h:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/enum.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_hermite_polynomial_he_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/amax_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_local_scalar_dense_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/sparse_coo_tensor.h:
 
@@ -11577,7 +11639,41 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_svd_ops.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/log_softmax.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/partition_point.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_conj_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/deg2rad_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_svd_native.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_svd.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/core/DeprecatedTypePropertiesRegistry.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/exponential.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/cosh_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/conv_depthwise3d_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_solve_ex_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/c10/core/PyHandleCache.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_solve_ex_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/runtime/operator.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ihfftn_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_solve_ex_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/triangular_solve_ops.h:
 
@@ -11589,41 +11685,23 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_slogdet_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/to_sparse_bsr_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/cos_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_eigvalsh_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/SavedTensorHooks.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_batch_norm_backward.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_slogdet.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/ormqr_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_eigh_meta.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_const.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fbgemm_pack_gemm_matrix_fp16_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__exception/operations.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_bessel_y1.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_compute_linear_combination.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/cat.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/bit_ceil.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_eigh.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_lu_with_info_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_useconds_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/wctype.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/arcsin_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/to_sparse.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_segment_reduce_backward_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_check_errors.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_check_errors_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/indices.h:
 
@@ -11631,23 +11709,27 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_is_any_true.h:
 
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/functional/conv.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/data_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_ctc_loss.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_is_all_true_ops.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_is_all_true_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/matmul_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_is_all_true.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_push_heap.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_indices_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_int_mm.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_indices_copy_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/default_searcher.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/mv_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_indices_copy_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_slogdet_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/c10/util/string_view.h:
 
@@ -11656,8 +11738,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fmin_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_index_put_impl_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/ge_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_spherical_bessel_j0_meta.h:
 
@@ -11679,41 +11759,81 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_from_bin_tensors_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/modules/utils.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/logit_backward_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/tuple.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/countl.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_from_bin_tensors.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_id_t.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_from_bin_cts_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_bin_edges_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/atan.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/min.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_bin_edges_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_affine_grid_generator_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/format_context.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_autograd_multiple_dispatch_view_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_bin_edges.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/amax_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_same_storage_numel_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss2d_forward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_compatible_shallow_copy_type.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/stack.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/square.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback_native.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tanh_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback_backward_ops.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/frac_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/std_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_nearest3d_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/lt_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/transpose_copy_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/Tensor.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_next_permutation.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_choose_qparams_per_tensor.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/diagonal_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_gather_sparse_backward_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback_backward.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_gather_sparse_backward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hsplit.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_copy_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/minimum_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_copy_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_copy.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_linear_backward_weights.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_sdp_choice_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/angle.h:
 
@@ -11724,6 +11844,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_sdp_choice.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_moving_avg_obs_fq_helper_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_i1e_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/argsort_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_moving_avg_obs_fq_helper_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/threshold_ops.h:
 
@@ -11737,33 +11863,49 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_moving_avg_obs_fq_helper.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/core/ivalue_inl.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_dropout_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/rand.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/q_per_channel_axis.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_dropout_native.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adamw_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/sinh_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adamw_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_aminmax.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adamw.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_unsafe_index_put_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adam_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_vecdot_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_debug_has_internal_overlap_ops.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_pop_heap.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adam.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range_for_size.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback_backward_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_assert_async_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tanh_ops.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/string.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/take.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_assert_async_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cwchar:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/bincount_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/broadcast_tensors_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_weight_to_int4pack_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tanh_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/argmin_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/tril_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_zero.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_trunc_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/atan_ops.h:
 
@@ -11773,53 +11915,55 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tanh.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_unpack_dual.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_multi_dot_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tan_native.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/alias.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sub_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/empty_like_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sub.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/integral_constant.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sqrt.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/diagonal_scatter_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_lu_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/sort.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/strings.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cdist_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_debug_has_internal_overlap_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sqrt_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sign_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/bitwise_xor.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sign_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tuple/tuple_like.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/reciprocal_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_storage_offsets_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_expm1_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sign.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sigmoid_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fmin.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sigmoid.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/q_zero_point_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_pad_enum_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_round_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/erf_ops.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_lstm_mps_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Ref.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/clamp_min_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_reciprocal_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_bessel_y1.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/cat.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_check_errors_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/c10/util/complex_utils.h:
 
@@ -11831,51 +11975,71 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_pow_native.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_norm.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/copysign_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_neg_native.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sinh_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_neg.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/mem_fn.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sum.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/expand_as_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_mul_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_compute_linear_combination_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_optional_floatlist_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_mul.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_minimum_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/enum.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_minimum_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_hermite_polynomial_he_meta.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/all_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_local_scalar_dense_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_minimum.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/amax_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_bsr_tensor_args_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/c10/util/ThreadLocalDebugInfo.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_maximum_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_det_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_maximum_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/reflection_pad3d_backward.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_generate.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool1d.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fill_mem_eff_dropout_mask_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_solve_ex_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_maximum.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_none_of.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/smooth_l1_loss_backward_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log_native.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/in_out_result.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_linear1d_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log2_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/affine_grid_generator_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log2.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/max_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range_for_size_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/backend.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sample_dirichlet_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/as_strided.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_batch_norm_impl_index_backward_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/is_eq.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tan.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log1p.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log1p_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/TensorGeometry.h:
 
@@ -11893,17 +12057,7 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log.h:
 
-/opt/homebrew/Cellar/libtorch/include/c10/util/Float8_e4m3fn-inl.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/q_scale_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/stable_partition.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_reverse.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_lgamma_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_lgamma_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_lerp_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/soft_margin_loss_native.h:
 
@@ -11931,6 +12085,28 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_lerp.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/lift_fresh.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool2d_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_frac_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_scaled_dot_product_efficient_attention_backward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_frac.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tan_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_floor_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/not_equal_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_fftshift.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/outer_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_floor_native.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/scaled_dot_product_attention_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy_n.h:
@@ -11951,16 +12127,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_erf_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_warn_in_autograd_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/bucketize_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/shift_right.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_svd_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_erf.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/rrelu_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__node_handle:
@@ -11972,12 +12138,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdint:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_cosh.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_linear_backward_input.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_reference_wrapper.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_cos_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
 
@@ -11997,8 +12157,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_ceil_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_ceil.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_pow_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_atan.h:
@@ -12014,14 +12172,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/uniform_random_bit_generator_adaptor.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_min.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/blsr.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdint.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/deque:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range_for_size_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/string.h:
 
@@ -12039,16 +12189,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_add_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/triu_indices_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Byte_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_add.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/core/ivalue_inl.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_dropout_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/argwhere.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_copy_n.h:
@@ -12063,33 +12203,21 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_abs.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_copy.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/all_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_minimum.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foobar_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/c10/core/PyHandleCache.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_solve_ex_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sched.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_flash_attention_forward_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_compatible_shallow_copy_type_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_indices.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss_backward_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/GeneralBlockPanelKernel.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_flash_attention_forward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/fft.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_exp_ops.h:
 
@@ -12113,18 +12241,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/affine_grid_generator.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_maximum.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_generate.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fill_mem_eff_dropout_mask_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/as_strided_scatter_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/reduce.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_backward_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fft_c2r.h:
@@ -12138,6 +12254,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc_type.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cumprod.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_pop_heap.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_debug_has_internal_overlap_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fake_quantize_per_tensor_affine_cachemask_tensor_qparams_ops.h:
 
@@ -12161,6 +12281,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fake_quantize_learnable_per_tensor_affine.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fake_quantize_learnable_per_channel_affine_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_cond_native.h:
@@ -12179,6 +12301,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_euclidean_dist_native.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_backward_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/reduce.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_sparse_backward_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_t.h:
@@ -12189,6 +12315,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/options/adaptive.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_per_sample_weights_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/data/worker_exception.h:
@@ -12197,25 +12325,23 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_optional_filled_intlist.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_fill_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_per_sample_weights_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool2d.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_fused_lstm_cell.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_per_sample_weights_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_dense_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_gather_sparse_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/mps_convolution_transpose_backward_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/divide_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/lstm_cell_native.h:
-
-/Users/nicholaslyu/Code/algebra/include/Elements.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_efficientzerotensor_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/inttypes.h:
 
@@ -12239,15 +12365,21 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_dim_arange.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tan_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_floor_ops.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_union.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/SVD/BDCSVD.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_dimV_ops.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/size.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__system_error/errc.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_dimV_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_dimI_native.h:
 
@@ -12256,8 +12388,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_dimI.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cummax_helper_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_lerp_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_masked_scale_native.h:
 
@@ -12293,23 +12423,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_compressed_tensor_unsafe_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/split_with_sizes_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cufft_clear_plan_cache_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/conv_transpose2d_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cufft_clear_plan_cache.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/unwrap_iter.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/max_pool2d_with_indices_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/atomic:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_implicitly_default_constructible.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_is_zerotensor_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:
 
@@ -12321,9 +12437,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cudnn_rnn_backward.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_softmax_backward_data_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/empty_strided_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_softmax_backward_data_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cudnn_init_dropout_state_ops.h:
 
@@ -12339,14 +12455,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_ctc_loss_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/functional/conv.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/data_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_is_all_true_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_ctc_loss.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month_day.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cslt_sparse_mm_native.h:
@@ -12358,14 +12466,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_shifted_chebyshev_polynomial_u_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cslt_compress_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/random.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_vecdot.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_matrix_power.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool3d_ops.h:
 
@@ -12419,18 +12519,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_copy_from.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_entr_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fill_diagonal.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool2d_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/var_mean_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/is_sorted_until.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convolution_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fbgemm_pack_quantized_matrix_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_object.h:
@@ -12443,23 +12531,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_convolution_double_backward.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/transpose_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/i0_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_timeval.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/concepts.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_const.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_csr_to_coo.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_csr_to_coo_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/options/fold.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/in_place.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_coo_to_csr_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_weight_to_int4pack_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/round_ops.h:
 
@@ -12474,18 +12550,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/logaddexp.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_coo_to_csr_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_max_pool3d_backward_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool3d_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/row_indices_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/replication_pad2d_backward_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sum_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_coo_to_csr.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/erfc_native.h:
 
@@ -12511,23 +12575,17 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_conj_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/log_softmax.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/partition_point.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/deg2rad_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_conj_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/row_indices_copy.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_conj_copy_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_optional_floatlist_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_compute_linear_combination_ops.h:
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_int_mm_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/bit_ceil.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_compute_linear_combination.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/numpy_T_native.h:
 
@@ -12537,13 +12595,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_coalesced_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/frexp.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_coalesced_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adamw.h:
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_coalesce_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ArrayBase.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool2d_native.h:
 
@@ -12580,12 +12636,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cdist_backward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_atan_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_vecdot_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adam.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_acos_ops.h:
 
@@ -12629,23 +12679,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_unsafe_view.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ios:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_scaled_mm_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Half_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/for_each.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Float_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_trunc_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Double_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_addcdiv_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Double_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Double.h:
 
@@ -12659,43 +12695,27 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Char.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_max_pool2d_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_storage_offsets.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fbgemm_linear_fp16_weight_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/cmp.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Byte_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_bicubic2d_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_batch_norm_impl_index_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/outer.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_rowwise_prune.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/literals.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sample_dirichlet_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log1p_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_batch_norm_impl_index_backward_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_ctype.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/atan2_ops.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ReturnByValue.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/swap.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Visitor.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_batch_norm_impl_index_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/qr.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/stable_sort.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/not_fn.h:
 
@@ -12735,6 +12755,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_autocast_to_full_precision_ops.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linspace_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish_backward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_hfftn_native.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint16_t.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/empty_permuted_native.h:
@@ -12761,13 +12787,19 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_assert_tensor_metadata.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/minimum_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_copy_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_copy_constructible.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_assert_async_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/transpose_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_timeval.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_const.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_csr_to_coo.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_copy_assignable.h:
 
@@ -12813,27 +12845,35 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/exponential_ops.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/swappable.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_amp_foreach_non_finite_check_and_unscale.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_aminmax_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/cos_meta.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/SavedTensorHooks.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adam_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_slogdet.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/sinh_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/trunc_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_aminmax.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_stack_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/reflection_pad1d_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_batch_norm_impl_index_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/boxing/BoxedKernel.h:
 
@@ -12853,6 +12893,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/poisson_nll_loss.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Transpose.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_adaptive_avg_pool3d_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_adaptive_avg_pool3d.h:
@@ -12865,15 +12907,21 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/detail/IPUHooksInterface.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/detail/HIPHooksInterface.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/exp_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/type_ptr.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_fftshift_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_signed_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/type_factory.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ifft2_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/bitwise_left_shift_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/PythonTorchFunctionTLS.h:
 
@@ -12883,23 +12931,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/symbol.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_mul_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/expand_as_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/for_each.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/core/qualified_name.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/native_norm.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_fft2_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/operator_name.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/conv1d.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/ivalue_to.h:
 
@@ -12923,16 +12959,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/enum_type.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_airy_ai_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/smooth_l1_loss_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_adaptive_avg_pool2d_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdlib:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gru_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_matrix_power_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cosine_embedding_loss.h:
@@ -12953,8 +12979,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/dispatch/OperatorEntry.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fmin.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stddef.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/prod.h:
@@ -12964,6 +12988,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/nonzero_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/boxing/impl/make_boxed_from_unboxed_functor.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/NumTraits.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/arange_native.h:
 
@@ -12975,31 +13001,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_view_from_buffer_ops.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Translation.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/core/boxing/OperatorKernel.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/permute_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish_backward_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range_for_size_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/core/boxing/KernelFunction.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/Parallel-inl.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/corrcoef.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_stable_sort.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_dropout.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/core/alias_info.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cudnn_rnn_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_empty_affine_quantized_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_forward_only.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h:
 
@@ -13010,6 +13020,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/atleast_1d.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_bsc_tensor_unsafe_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_indices.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_compatible_shallow_copy_type_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/quantize_per_tensor_dynamic_ops.h:
 
@@ -13027,23 +13041,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/MT19937RNGEngine.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_mul.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/arange_ops.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/negation.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/stack.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstring:
-
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/profiler/orchestration/observer.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/quantize_per_tensor_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/core/Formatting.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/frexp_native.h:
 
@@ -13065,12 +13065,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/Dict_inl.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/quantile_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__verbose_abort:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_pow.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/miopen_batch_norm_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_find_if.h:
@@ -13078,12 +13072,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/boxing/BoxedKernel_impl.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/exponential.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/core/DeprecatedTypePropertiesRegistry.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_gather_sparse_backward_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/complex:
 
@@ -13093,6 +13081,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/arm/_types.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/WrapDimUtilsMulti.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/miopen_convolution_relu.h:
@@ -13100,6 +13090,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/empty_like_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/TracerMode.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/histogramdd_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/underlying_type.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_member_object_pointer.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/TensorUtils.h:
 
@@ -13110,8 +13106,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/Version.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/binary_cross_entropy_with_logits_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/heaviside_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_native_batch_norm_legit_no_training.h:
 
@@ -13141,13 +13135,13 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/NamedTensorUtils.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_maximum_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/LinalgBackend.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_3d_backward_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ExpandUtils.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/core/qualified_name.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/for_each.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/sparse_resize_native.h:
 
@@ -13169,15 +13163,639 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact3d_backward_native.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/SVD/SVDBase.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/MathFunctions.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_householder_product.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/HouseholderQR.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_max_pool3d_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool3d_backward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/row_indices_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/replication_pad2d_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sum_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_coo_to_csr.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/conv2d_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/conv1d.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdint.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/blsr.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_laguerre_polynomial_l_meta.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/StableNorm.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/detail/CUDAHooksInterface.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/FullPivLU.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Householder/Householder.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/exponential_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/copy_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Umeyama.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/diagonal_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback_backward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/std_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/lt_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/Tensor.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_choose_qparams_per_tensor.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/arange_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__exception/exception_ptr.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_neon.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Transform.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_copy.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_csr_prod_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/conj_physical_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_addcdiv_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/Memory.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Double_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/to_sparse_csr_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_clock_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tuple/pair_like.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/sum.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_integral.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/misc/Kernel.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_svd_meta.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/iter_move.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Dot.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/permute_copy_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_coo_tensor_unsafe_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ios:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_scaled_mm_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Half_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_from_mask_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/select.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/new_full_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/XprHelper.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/sym_numel.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ScalarOps.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss2d_backward_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/ir/constants.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/isneginf_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/cosine_embedding_loss_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_bsc_tensor_unsafe.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/Meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_coo_to_csr_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_assignable.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_empty_per_channel_affine_quantized.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fake_quantize_learnable_per_tensor_affine_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/optim/sgd.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/Macros.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Fuzzy.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/as_strided_scatter_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/Constants.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/iota.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_compressed_tensor_args_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_select_backward_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/triu_indices_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Byte_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_add.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+
+/opt/homebrew/Cellar/libtorch/include/c10/util/Float8_e5m2.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/all_of.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/result_of.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/combinations.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_saturate_weight_to_fp16.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_warn_in_autograd_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/bucketize_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/shift_right.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_svd_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_erf.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_endian.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/index_copy_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/embedding_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sparse_matmul_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/masked_select_backward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/lu_unpack_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/reflection_pad3d_backward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool1d.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_solve_ex_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_none_of.h:
+
+/opt/homebrew/Cellar/libtorch/include/c10/util/OptionalArrayRef.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Scaling.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter_integral.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_entr_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fill_diagonal.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool2d_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/var_mean_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/is_sorted_until.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convolution_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_bsr_tensor_unsafe.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_ldl_solve_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_move.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/subrange.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/atan_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_trilinear.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sobol_engine_draw_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/mergeable.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/common_type.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_move_constructible.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cudnn_rnn_backward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_empty_affine_quantized_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_forward_only.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_jvp_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sparse_matmul.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/softplus.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/find_end.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/next_permutation.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/flatten_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/arctanh.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_optional_filled_intlist_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/detail/HIPHooksInterface.h:
+
+/opt/homebrew/Cellar/libtorch/include/c10/util/ThreadLocalDebugInfo.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_det_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_max_pool2d_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_storage_offsets.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fbgemm_linear_fp16_weight_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/cmp.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Byte_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/VectorwiseOp.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_linear_backward_input.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_reference_wrapper.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_cos_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/slow_conv_dilated3d_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/eq_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_native_batch_norm_legit.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/alignment_of.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Stride.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_slow_conv2d_forward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_scaled_dot_product_efficient_attention_backward.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/SolverBase.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_backward_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_chebyshev_polynomial_u_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/repeat_interleave_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/coalesce.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_ceil.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Reverse.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/zeros_like_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/search_n.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Reshaped.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_csr_to_coo_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/options/fold.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/in_place.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_coo_to_csr_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/includes.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Product.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Cholesky/LDLT.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy_if.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/PartialPivLU.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_mps_convolution_transpose_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_lgamma_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/NestByValue.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/MatrixBase.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/frexp.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_coalesced_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/is_sorted.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/piecewise_construct.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Matrix.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool3d_backward_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__mutex/lock_guard.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Swap.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/reflection_pad1d.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/disjunction.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/sym_constrain_range_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Map.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/nansum_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Inverse.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstring:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/profiler/orchestration/observer.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/quantize_per_tensor_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/core/Formatting.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/col2im_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/EigenBase.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Cholesky/LLT.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/strip_signature.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/is_nonzero.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DenseStorage.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DenseBase.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/core/boxing/KernelFunction.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/tan.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/log2_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/feature_alpha_dropout.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_modified_bessel_i0_meta.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/sstream.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_random_bit_generator.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ThreadLocalState.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/version:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/miopen_convolution_add_relu_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_avg_pool2d_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/regex:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_mask_projection.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hypot_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/BandMatrix.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/lift_fresh_copy.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log10_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/c10/util/TypeIndex.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/max_pool2d_with_indices_backward_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iosfwd:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Assign.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/outer.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_rowwise_prune.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/literals.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_for_each.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Array.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/min_element.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/acosh_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_from_mask_left_aligned_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/unreachable.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/id.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/for_each.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Float_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/detach_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/select_copy_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/opt/homebrew/Cellar/libtorch/include/c10/core/impl/PyObjectSlot.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish_backward_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/split_with_sizes_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cufft_clear_plan_cache_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/locale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/empty.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/LU:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/constant_pad_nd.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Householder:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Geometry:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/mps_convolution_transpose_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/divide_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/lstm_cell_native.h:
+
+/Users/nicholaslyu/Code/algebra/include/Elements.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_efficientzerotensor_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact1d_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/sub_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_replace.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/conv_tbc_backward_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Dense:
+
 /Users/nicholaslyu/Code/algebra/include/FinitePowerAlgebras.h:
 
 /Users/nicholaslyu/Code/algebra/include/BaseAlgebraRelations.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_efficient_attention_backward_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_scaled_dot_product_efficient_attention_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_frac.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uintptr_t.h:
 
@@ -13205,11 +13823,19 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_backward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_slogdet_meta.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/numeric:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_softmax_backward_data.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_wctype.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_bf16.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_fft_native.h:
 
@@ -13221,6 +13847,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_conj.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_differentiable_lstm_cell_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/isin_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Replicate.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_inttypes.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_ctype.h:
@@ -13231,15 +13863,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/time.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/amax_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_same_storage_numel_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/types.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_fused_lstm_cell_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cdist_backward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sqrt_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_debug_has_internal_overlap_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_cross_meta.h:
 
@@ -13259,9 +13891,25 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/stdio.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/all_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fake_quantize_per_channel_affine_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward_jvp_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_backward.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/rrelu_with_noise_backward_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/errno.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/MapBase.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_modified_bessel_k0_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_types/_uintmax_t.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fake_quantize_per_channel_affine_cachemask_native.h:
 
@@ -13301,6 +13949,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/auto_cast.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hamming_window.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int8_t.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/add_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/ones_native.h:
@@ -13314,8 +13966,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/slice.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_stdlib.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int.h:
 
@@ -13331,15 +13981,13 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_exp_native.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/deque:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range_for_size_ops.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/comp.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_values_copy_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_multi_dot_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tan_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_csr_tensor_unsafe.h:
 
@@ -13355,19 +14003,13 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mode_t.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/igamma_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fake_quantize_learnable_per_channel_affine.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/rsqrt_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool3d_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/frexp_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/broadcast_tensors_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_bicubic2d_aa_backward_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/StlIterators.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/ne.h:
 
@@ -13375,15 +14017,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_key_t.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hypot.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/construct_at.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_wchar.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/empty_strided.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_linear1d_meta.h:
 
@@ -13415,7 +14053,23 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_in_addr_t.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_zero_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/type_as.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_from_bin_cts_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_id_t.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_sparse_backward_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/as_strided.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/is_eq.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_add_batch_dim_ops.h:
 
@@ -13426,10 +14080,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_move_assignable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_gid_t.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/rand_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cholesky_native.h:
 
@@ -13473,12 +14123,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/bitwise_not_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/to_sparse_csr_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_clock_t.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_nearest2d.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
@@ -13517,8 +14161,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_assert_async_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm_backward_reduce.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
@@ -13527,19 +14169,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_endian.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/diagonal_scatter_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/sort.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/strings.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_reorder_conv2d_weight_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cast_Half.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hinge_embedding_loss.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_assert_async_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/string.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/includes.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/prelu_ops.h:
 
@@ -13550,6 +14188,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/stdio.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_coo_tensor_with_dims_and_tensors.h:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/autograd/forward_grad.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/pthread/sched.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_backward_ops.h:
 
@@ -13584,6 +14228,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/machine/endian.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/erfinv_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cufft_clear_plan_cache_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/logit_backward_native.h:
 
@@ -13621,13 +14269,19 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/wctype.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/bitwise_xor_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/stride_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/size.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_backward_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/NoAlias.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/flipud.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/wchar.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_linear_backward_weights.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_sdp_choice_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/embedding_sparse_backward.h:
 
@@ -13637,31 +14291,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/jit_type.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/threshold_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/core/grad_mode.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/libkern/arm/OSByteOrder.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ThreadLocalState.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/version:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_mkldnn_transpose_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/utility:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_convolution_add_relu_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_to_sparse_csr_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/arm/_mcontext.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/masked_scatter_backward_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_same_storage_numel_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_make_dep_token.h:
 
@@ -13705,17 +14343,7 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/set:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_chebyshev_polynomial_u_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/repeat_interleave_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/coalesce.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/expand_copy.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/rotate_copy.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_backward_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_copy_constructible.h:
 
@@ -13755,17 +14383,35 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/wctype.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Transpositions.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/arcsin_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/to_sparse.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_segment_reduce_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_check_errors.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/IntegralConstant.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/sqrt_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_differentiable_gru_cell_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_svd_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_eigh_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/duration.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_softmax_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hsplit_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/execution:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_find.h:
 
@@ -13780,6 +14426,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/scatter_reduce_meta.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/exception:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_backward_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/rotate_copy.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_base_of.h:
 
@@ -13815,7 +14467,13 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_function.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_int_mm.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/broadcast_tensors_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tanh_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/take.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cwchar:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/isnan_native.h:
 
@@ -13834,8 +14492,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_same_storage_numel.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/this_thread.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/locale.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/clocale:
 
@@ -13869,14 +14525,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/charconv:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_affine_grid_generator_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/format_context.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_autograd_multiple_dispatch_view_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_bin_edges.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cdist_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/bilinear_native.h:
@@ -13899,23 +14547,27 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cassert:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_compatible_shallow_copy_type_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/c10/core/impl/InlineDeviceGuard.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_inference_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/iter_swap.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/reshape_as.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/max_pool2d_with_indices_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_ops.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_implicitly_default_constructible.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/atomic:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/acosh.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_rotate_copy.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_pow.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/quantile_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__verbose_abort:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/corrcoef_ops.h:
 
@@ -13926,14 +14578,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_neg_view_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/argmin_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_weight_to_int4pack_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/unreachable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/rel_ops.h:
 
@@ -13954,10 +14598,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cumsum_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cctype:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_ldl_solve_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_log_softmax_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/qscheme.h:
 
@@ -13995,13 +14635,17 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/permutable.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/strip_signature.h:
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_abs_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_chebyshev_polynomial_w_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_forward_only_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_mm_reduce_impl_backward_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Jacobi:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_grid_sampler.h:
 
@@ -14010,6 +14654,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_airy_ai_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_extent.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/NEON/TypeCasting.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/copysign_meta.h:
 
@@ -14051,11 +14697,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_ctermid.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/rand.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/full_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/q_per_channel_axis.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_dropout_native.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bit:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/erf_meta.h:
 
@@ -14117,13 +14761,17 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/functional.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/is_sorted.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/batch_norm_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/piecewise_construct.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tuple/tuple_like.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_linear_backward_input_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Eigenvalues:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_multi_dot.h:
 
@@ -14147,8 +14795,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_volatile.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/id.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/priority_tag.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/sparse_bsr_tensor.h:
@@ -14162,12 +14808,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/__wctype.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_avg_pool3d_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/smooth_l1_loss_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/in_out_result.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/move.h:
 
@@ -14189,8 +14829,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__charconv/from_chars_result.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sqrt.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory_resource/memory_resource.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_csr_to_coo_native.h:
@@ -14199,17 +14837,7 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/diagonal_copy_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/result_of.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_copyable.h:
-
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/runtime/operator.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ihfftn_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_solve_ex_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/pimpl-inl.h:
 
@@ -14222,6 +14850,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_masked_softmax_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_dropout.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_stable_sort.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h:
 
@@ -14253,8 +14885,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_minimum_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_svd.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/DimVector.h:
@@ -14271,16 +14901,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/algorithm:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/constant_pad_nd.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/softplus.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/find_end.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/next_permutation.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_convertible.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_seek_set.h:
@@ -14295,17 +14915,17 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/unique_consecutive_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gather_backward_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_csr_to_coo_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/addbmm_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_mm_reduce_impl_backward_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/common_type.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_is_zerotensor_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_move_constructible.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/unwrap_iter.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/any_of.h:
 
@@ -14343,10 +14963,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/operation_traits.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/stack.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/binomial_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_sort_heap.h:
@@ -14354,8 +14970,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/expand_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/boolean_testable.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/igammac_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linspace.h:
 
@@ -14395,6 +15009,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tree:
 
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/optim.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gt_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/has_virtual_destructor.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_distributed.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_member_function_pointer.h:
@@ -14411,7 +15031,35 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/conditional.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_svd_meta.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/empty_like_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid_backward_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sqrt_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/integral_constant.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool1d_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_expit_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/class_or_enum.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Redux.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/miopen_depthwise_convolution_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/dstack_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/miopen_convolution_add_relu_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/ceil_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_pinv_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/transform.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Cholesky:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/concatenate_native.h:
 
@@ -14428,6 +15076,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/quantized_max_pool2d_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_volatile.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h:
 
@@ -14469,6 +15119,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/diag_embed_native.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/ormqr_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__exception/operations.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_const.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/erase_if_container.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_coo_tensor_with_dims_and_tensors_ops.h:
@@ -14487,21 +15143,7 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_add_relu_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tuple/pair_like.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/slow_conv_dilated3d_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/eq_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_native_batch_norm_legit.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/alignment_of.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_coalesce.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_atan_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/index_put.h:
 
@@ -14523,6 +15165,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter_bool.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/arm/_mcontext.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_to_sparse_csr_native.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__mbstate_t.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_trilinear3d_backward_meta.h:
@@ -14535,14 +15181,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fill_mem_eff_dropout_mask_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/atan_meta.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/subrange.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/mem_fn.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_sum.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/unique_consecutive.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool1d.h:
@@ -14552,12 +15190,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_neg_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/allocator_destructor.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/dstack_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_pack_padded_sequence_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_assert_async.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/partition_copy.h:
 
@@ -14589,8 +15221,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/access.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_mps_convolution_transpose_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/mach/machine/_structs.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_addcmul_ops.h:
@@ -14600,6 +15230,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/merge.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/exception_guard.h:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/frontend/function_schema_parser.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_count_if.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/weak_result_type.h:
 
@@ -14613,9 +15249,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/raw_storage_iterator.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_log_softmax_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact2d.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_csc_tensor_unsafe_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_autocast_to_reduced_precision_ops.h:
 
@@ -14626,12 +15268,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/to_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/diff_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/sym_numel.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ScalarOps.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_backward_jvp_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_expm1_ops.h:
 
@@ -14659,14 +15295,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backend.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_nearest3d_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/transpose_copy_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_next_permutation.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_grid_sampler_2d_cpu_fallback.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/partial_sum.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_svdvals_ops.h:
@@ -14682,6 +15310,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_mm_reduce_impl.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__mutex/mutex.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_eigh.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h:
 
@@ -14741,21 +15371,17 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/arithmetic.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/InverseImpl.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/concat.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/i0.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Select.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/condition_variable:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/bincount_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/tril_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_zero.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/erfinv_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_cufft_clear_plan_cache_ops.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/assume_aligned.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/relu6_native.h:
 
@@ -14791,15 +15417,13 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/SolveTriangular.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/in_out_out_result.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/declval.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/iter_swap.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fused_moving_avg_obs_fake_quant_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/conj_native.h:
 
@@ -14812,8 +15436,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_tensorsolve_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_rune_t.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/bartlett_window_ops.h:
 
@@ -14853,27 +15475,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/move_sentinel.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_i1e_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/argsort_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_moving_avg_obs_fq_helper_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/flatten_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_conj_physical.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_trilinear.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sobol_engine_draw_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/mergeable.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/lift_fresh.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool2d_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_frac_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/c10/util/Registry.h:
 
@@ -14911,8 +15515,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_clamp_max.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/iter_move.h:
-
 /opt/homebrew/Cellar/libtorch/include/c10/core/QScheme.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/indirectly_comparable.h:
@@ -14921,15 +15523,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/front_insert_iterator.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/min.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_bin_edges_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/erf_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/cpp17_iterator_concepts.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/empty.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_modified_bessel_k1_meta.h:
 
@@ -14969,11 +15565,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_sample.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_backward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_log_softmax_backward_data_ops.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/invoke.h:
-
-/opt/homebrew/Cellar/libtorch/include/c10/util/OptionalArrayRef.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter_integral.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__hash_table:
 
@@ -15003,10 +15599,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_string_default.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/reflection_pad1d.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/disjunction.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/erf.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/arcsinh_ops.h:
@@ -15019,12 +15611,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_assignable.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_empty_per_channel_affine_quantized.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fake_quantize_learnable_per_tensor_affine_backward_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/init.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/row_indices_native.h:
@@ -15033,8 +15619,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_weight_norm_interface_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/and_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/not_equal.h:
@@ -15042,10 +15626,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_coalesce_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_adaptive_avg_pool2d_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/slow_conv_transpose3d_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/ger_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/reference_wrapper.h:
 
@@ -15068,8 +15648,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_efficient_attention_backward.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/max_element.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_backward.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/list:
 
@@ -15097,13 +15675,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/aligned_union.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_norm.h:
-
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/ir/graph_node_list.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/options/linear.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gt_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint32_t.h:
 
@@ -15115,6 +15695,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/bind_back.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardshrink_meta.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/bind.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_transform.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/remove.h:
@@ -15124,6 +15708,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/assignable.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fliplr_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/c10/core/WrapDimMinimal.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Block.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/binary_function.h:
 
@@ -15141,23 +15731,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_is_heap.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/bitwise_and_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/ge_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fmax.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_mismatch.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_zero_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/chain_matmul_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_bessel_y1_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_dense_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/max_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/backend.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/deg2rad_ops.h:
 
@@ -15167,15 +15749,7 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/cosh_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/conv_depthwise3d_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_solve_ex_ops.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/temp_value.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/histc_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/addr_ops.h:
 
@@ -15203,6 +15777,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_values_copy_ops.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_assert_async.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_pack_padded_sequence_backward.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/core/Reduction.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/to_underlying.h:
@@ -15213,19 +15791,17 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/predicate.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string_view:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/histogram_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_locale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_push_heap.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_indices_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/RotationBase.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_copy_backward.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_allocator.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_lu_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sign_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/expm1.h:
 
@@ -15239,9 +15815,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_mkldnn_reshape_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_expit_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/mv_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/class_or_enum.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_indices_copy_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/default_searcher.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_transform_bias_rescale_qkv_ops.h:
 
@@ -15259,13 +15837,13 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/strong_order.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/conv_tbc_backward_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adaptive_max_pool3d_backward_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_ceil_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/compare_three_way.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/VectorBlock.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_ndtri_ops.h:
 
@@ -15277,11 +15855,13 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/variant:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hinge_embedding_loss_native.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/ne_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/compare_strong_order_fallback.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Solve.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CommaInitializer.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_pinned_ops.h:
 
@@ -15303,6 +15883,14 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sobol_engine_draw_ops.h:
 
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nested.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/for_each_segment.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/lift_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/Determinant.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/common_comparison_category.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/smooth_l1_loss_backward_native.h:
@@ -15316,6 +15904,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/optional:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cartesian_prod_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_efficient_attention_backward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_rfft_native.h:
 
@@ -15389,6 +15979,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/write_escaped.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/crow_indices.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_fill.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/div_native.h:
@@ -15411,19 +16003,23 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__availability:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_grid_sampler_backward_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_suseconds_t.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Core:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/to_sparse_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__atomic/is_always_lock_free.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/reciprocal_meta.h:
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/serialize/archive.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_storage_offsets_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_nearest1d_backward_meta.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sign.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/argmax_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/igammac_native.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__charconv/chars_format.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/less_equal_ops.h:
 
@@ -15440,6 +16036,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__atomic/atomic_base.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_scaled_dot_product_flash_attention_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gradient_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/alloca.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/unicode.h:
 
@@ -15465,23 +16065,23 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/format_parse_context.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_sobol_engine_scramble.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/invocable.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/lift_fresh_copy.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log10_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/c10/util/TypeIndex.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/max_pool2d_with_indices_backward_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iosfwd:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nnpack_available_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_lower_bound.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_expm1_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sigmoid_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/requires_grad.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/unique_copy.h:
 
@@ -15509,9 +16109,23 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_set_symmetric_difference.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/rsqrt_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/frexp_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/avg_pool3d_meta.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_nearest1d_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_coo_tensor_args.h:
+
+/opt/homebrew/Cellar/libtorch/include/c10/util/Float8_e4m3fn-inl.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/q_scale_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_reverse.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/stable_partition.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/pthread.h:
 
@@ -15519,19 +16133,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/binder1st.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__exception/exception_ptr.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range_for_size.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_min_element.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_reverse_copy.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/reciprocal.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_lu_with_info_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/glu_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/zeros_like_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/search_n.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_useconds_t.h:
 
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/autograd/anomaly_mode.h:
 
@@ -15553,8 +16163,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/ios.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/igamma.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_types/_wctype_t.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/im2col_ops.h:
@@ -15566,10 +16174,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_starts_with.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_embedding_bag_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_validate_sparse_bsr_tensor_args_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_maximum_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/q_per_channel_axis_ops.h:
 
@@ -15589,7 +16193,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/search.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/full_like.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_histogramdd_from_bin_tensors.h:
+
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/modules/utils.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/logit_backward_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/tuple.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/countl.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/replication_pad3d.h:
 
@@ -15601,21 +16213,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/dispatch/CppSignature.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_suseconds_t.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/lift_fresh_copy_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_swap_ranges.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_triton_scaled_dot_attention.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/not_equal_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/igammac_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_fftshift.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/outer_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_floor_native.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h:
 
@@ -15627,8 +16233,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/equal.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ctype.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/arctan.h:
@@ -15637,61 +16241,57 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sub.h:
+/opt/homebrew/Cellar/libtorch/include/c10/util/Half-inl.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/smooth_l1_loss.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hspmm_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/popcount.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_remove_copy.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardsigmoid_backward_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_atan_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_array.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact2d_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/ArrayWrapper.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/polygamma.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_frac_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/sum.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/smooth_l1_loss.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_integral.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/popcount.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardswish_backward_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/ge_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_array.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/bitwise_and_meta.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__mutex/lock_guard.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fmax.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy_if.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_zero_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact2d_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_functional_sym_constrain_range_native.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_mismatch.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/day.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/SequenceNumber.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/tan.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/log2_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/feature_alpha_dropout.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_modified_bessel_i0_meta.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/sstream.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_random_bit_generator.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact1d_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/sub_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_replace.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_test_ambiguous_defaults_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cslt_compress_native.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_bessel_j1_meta.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_set_union.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/reverse_access.h:
 
@@ -15721,6 +16321,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_adjacent_find.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_lgamma_ops.h:
+
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/modules/padding.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_i0e_ops.h:
@@ -15728,10 +16330,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/count_nonzero.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/queue:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/vsplit.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_log_softmax_backward_data_meta.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h:
 
@@ -15743,11 +16341,15 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/none_of.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/leaky_relu_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gradient_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_compute_linear_combination_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/move_backward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_convert_indices_from_coo_to_csr_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_nearest2d_backward.h:
 
@@ -15761,10 +16363,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/copysign_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/functional/pixelshuffle.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fused_moving_avg_obs_fake_quant.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/lerp_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/embedding_backward_ops.h:
@@ -15773,11 +16371,17 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fake_quantize_learnable_per_channel_affine_backward_native.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_compatible_shallow_copy_type_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_use_cudnn_ctc_loss_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivial.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_slow_conv2d_backward_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/QR:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/log1p_meta.h:
 
@@ -15807,19 +16411,19 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/Availability.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_sparse_bsr_tensor_unsafe.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_def.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_ldl_solve_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/to_sparse_bsr_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_move.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_eigvalsh_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_batch_norm_backward.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/view_as_complex.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_minmax_element.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/heaviside_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_def.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_minmax_element.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_va_list.h:
 
@@ -15855,15 +16459,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_native_multi_head_attention_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_backward_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_equal_range.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_laguerre_polynomial_l.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cwctype:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_fftshift_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_log_softmax_native.h:
 
@@ -15874,8 +16474,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_find_end.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/histc.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_inference.h:
 
@@ -15897,6 +16495,12 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/dstack_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/gcd_meta.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backend.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_pad_enum_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/matrix_H_native.h:
@@ -15909,19 +16513,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/from_blob.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_sort.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_unpack_dual.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/col_indices_copy.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_choose_qparams_per_tensor_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/frontend/function_schema_parser.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_count_if.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ihfft2.h:
 
@@ -15935,11 +16531,23 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_copy.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_psi_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/as_strided_scatter_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/misc/Image.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/streambuf.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/sparse_bsc_tensor.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/geometric_ops.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/Diagonal.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_any_of.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_eigh_meta.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int32_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_all_of.h:
 
@@ -15951,15 +16559,25 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/ranges_uninitialized_algorithms.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_void.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hardtanh_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityVersions.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/any_of.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_void.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fmod.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_stable_sort.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/concepts:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_tan.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log1p.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/xlogy_ops.h:
 
@@ -15972,8 +16590,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/miopen_rnn_backward_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_find_if_not.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_for_each.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_find.h:
 
@@ -15997,6 +16613,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/argsort_native.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/histogram_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string_view:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_fill.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_convolution_relu_native.h:
@@ -16009,21 +16629,19 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/get.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/frobenius_norm_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/merge.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_stdio.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_default_constructible.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_lgamma.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/core/custom_class.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_nearest_exact2d_backward_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/huber_loss_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_types/_intmax_t.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/values_copy_native.h:
 
@@ -16051,13 +16669,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter_char.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/min_element.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/replace_if.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/acosh_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_from_mask_left_aligned_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h:
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/ctc_loss_ops.h:
 
@@ -16091,14 +16705,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_flash_attention_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_linear1d_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_log2_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/nll_loss2d_forward.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_compatible_shallow_copy_type.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cauchy.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/can_cast_ops.h:
@@ -16131,15 +16737,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/PadNd.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/replace_if.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_masked_scale.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/inplace_merge.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_modified_bessel_k0_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/_types/_uintmax_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/lower_bound.h:
 
@@ -16155,10 +16755,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/arm/_limits.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_psi_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/as_strided_scatter_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_fake_quantize_learnable_per_tensor_affine_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/trapezoid_ops.h:
@@ -16173,6 +16769,18 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h:
 
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/ge.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_sinh_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_airy_ai_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/smooth_l1_loss_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/mkldnn_adaptive_avg_pool2d_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdlib:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_upsample_bilinear2d_aa_backward_native.h:
@@ -16180,14 +16788,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/permute.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/is_heap.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/addmm_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_bessel_y0_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/rand_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adam_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/channel_shuffle.h:
 
@@ -16203,29 +16803,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/transform_reduce.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/q_zero_point_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_pad_enum_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_round_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_diagonal_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/arccosh_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/math.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_bicubic2d_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/grid_sampler_2d_backward_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/c10/util/Float8_e5m2.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/all_of.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int32_t.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_unsafe_index_put_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_nested_tensor_from_tensor_list.h:
 
@@ -16251,21 +16833,13 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/half_positive.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal_ops.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/array.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adamw_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fbgemm_pack_gemm_matrix_fp16_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/where.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__system_error/error_category.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_trunc_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fw_primal.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityVersions.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_prelu_kernel_backward_native.h:
 
@@ -16279,11 +16853,11 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cudnn_convolution_transpose.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/from_file_ops.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_merge.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/view_interface.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/SVD:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_add_batch_dim.h:
 
@@ -16298,16 +16872,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/semiregular.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/adjoint.h:
-
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/serialize/archive.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/upsample_nearest1d_backward_meta.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/argmax_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__charconv/chars_format.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_zero_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/channel_shuffle_native.h:
 
@@ -16327,10 +16891,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/replace_copy_if.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_logcumsumexp.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/detail/CUDAHooksInterface.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/special_erfc_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_thnn_differentiable_lstm_cell_backward_ops.h:
@@ -16339,35 +16899,29 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/core/dispatch/RegistrationHandleRAII.h:
 
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nested.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/for_each_segment.h:
-
 /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/parameterdict.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__split_buffer:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/copysign_ops.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/hstack_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_neg_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_reshape_copy_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/util/MKL_support.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/unordered_map:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/miopen_depthwise_convolution_native.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/masked_scatter_backward_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/dstack_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/miopen_convolution_add_relu_ops.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/ceil_native.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/linalg_pinv_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/transform.h:
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_same_storage_numel_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_rsize_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_lgamma.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
 
 /opt/homebrew/Cellar/libtorch/include/c10/util/TypeList.h:
 
@@ -16379,6 +16933,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_shuffle.h:
 
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/mul_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/three_way_comparable.h:
@@ -16389,14 +16945,24 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_copy_from_and_resize.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/erf_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/triangular_solve_meta.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/matrix_exp.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/bit_floor.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/gelu_meta.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_efficient_attention_forward.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/addmm_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/special_bessel_y0_meta.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/rand_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_fused_adam_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/retain_grad_native.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
+
+/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:

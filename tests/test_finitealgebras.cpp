@@ -30,3 +30,24 @@ int main() {
     pow_tests();
     anticomm_tests();
 }
+
+
+
+// int main() {
+//     // Create a 2x2 complex tensor
+//     auto real = torch::tensor({{1., 2.}, 
+//                                 {3., 4.}});
+//     auto imag = torch::tensor({{5., 6.}, 
+//                                 {7., 8.}});
+//     // real.set_requires_grad(true);
+//     // imag.set_requires_grad(true);
+//     auto omega = torch::cat({real.unsqueeze(-1), imag.unsqueeze(-1)}, -1);
+//     omega = torch::view_as_complex(omega);
+//     omega.set_requires_grad(true);
+//     cout << omega.sizes() << " " << omega.scalar_type() << endl;
+//     auto beta = FieldType(omega[0][0]);
+
+//     beta.tensor().abs().backward();
+//     cout << omega.grad() << endl;
+//     return 0;
+// }
