@@ -83,5 +83,5 @@
         "format": "cpp",
         "stop_token": "cpp"
     },
-    "cmake.sourceDirectory": "/Users/nicholaslyu/Code/algebra/src"
+    "cmake.sourceDirectory": "/Users/nicholaslyu/Code/algebra"
 }

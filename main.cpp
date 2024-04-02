@@ -40,6 +40,7 @@ int main(){
     // Gaussian hamiltonian 
     auto rho = gamma.density(coeffs);
     auto U = gamma.unitary(coeffs);
+    cout << "New   " << endl;
     cout << gamma.moments(rho) << endl;
     // cout << rho << endl;
     // cout << gamma_sq.kron(rho, rho) << endl;
@@ -50,6 +51,7 @@ int main(){
     //     {{}, Complex(3.)},
     //     {{0, 1}, Complex(1.)}, 
     //     {{1, 2}, Complex(2.)},
+    
     //     {{2, 3}, Complex(3.)}
     // };
     // MajoranaAlgebra<n> gamma; 
