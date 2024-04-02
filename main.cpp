@@ -73,5 +73,5 @@ using namespace std;
 
 // Test algebraic relations 
 int main() {
-    
+    cout << "Hello from main." << endl;
 }
