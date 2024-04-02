@@ -31,7 +31,6 @@ public:
             }
         }
         auto result = Element(coeffs);
-        cout << result << endl;
         assert (result.isreal()); 
         return result;
     }

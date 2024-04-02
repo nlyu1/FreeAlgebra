@@ -1,4 +1,5 @@
 #include "FinitePowerAlgebras.h"
+#include "Automorphism.h"
 #include "Fermions.h"
 #include <torch/torch.h>
 #include<iostream>
@@ -40,8 +41,8 @@ int main(){
     // Gaussian hamiltonian 
     auto rho = gamma.density(coeffs);
     auto U = gamma.unitary(coeffs);
-    cout << "New   " << endl;
-    cout << gamma.moments(rho) << endl;
+    // cout << "New   " << endl;
+    // cout << gamma.moments(rho) << endl;
     // cout << rho << endl;
     // cout << gamma_sq.kron(rho, rho) << endl;
     // cout << gamma_sq.kron(rho, rho).tr() << endl;
@@ -56,4 +57,8 @@ int main(){
     // };
     // MajoranaAlgebra<n> gamma; 
     // cout << gamma(0).conj() << endl;
+
+    DiracMajoranaBijection<6> R;
+    CARAlgebra<6> a;
+    ImageRelation<CanonicalAnticommRelation<6>, DiracMajoranaBijection<6>> r;
 }

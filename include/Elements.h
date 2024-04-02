@@ -13,6 +13,13 @@ public:
     inline static constexpr double EQ_TOLERANCE = 1e-7;
     inline static constexpr uint SERIES_MAXITERS = 200;
 
+    // So that we only ever need to instantiate the relation once 
+    //    for automorphism relations instantiation is nontrivial 
+    static AlgebraRelation& Rel() {
+        static AlgebraRelation Rel_{};
+        return Rel_;
+    }
+
     CoeffMap coeffs;
     // Constructor taking an rvalue reference (move constructor)
     AlgebraElement(CoeffMap&& map) : 
@@ -211,7 +218,7 @@ public:
                 if (i > 0) {
                     stream << ", "; 
                 }
-                stream << AlgebraRelation().to_string(I[i]);
+                stream << Rel().to_string(I[i]);
             }
             stream << "): " << prettyPrint(pair.second) << " \n";
         }
@@ -234,7 +241,7 @@ public:
     Complex tr() const {
         Complex result = Complex(0., 0.);
         for (const auto& pair: coeffs) { 
-            result += pair.second * AlgebraRelation().monomial_tr(pair.first);
+            result += pair.second * Rel().monomial_tr(pair.first);
         }
         return result;
     }
@@ -303,7 +310,7 @@ private:
             auto J = gen_to_power_repr(I, n);
             // cout << "Original: " << prettyPrint(J) << endl;
             for (size_t i=0; i<J.size(); i++) {
-                auto t = AlgebraRelation().homogeneous_exponent(i, J[i]);
+                auto t = Rel().homogeneous_exponent(i, J[i]);
                 scale_accum *= std::get<1>(t);
                 J[i] = std::get<0>(t); 
                 // Shortcut: no change if the scale is already 0 
@@ -320,7 +327,7 @@ private:
         // AlgebraRelation R;
         // Use commutation relation on the first pair of 
         //  non-canonical product, then recursively call 
-        auto L = AlgebraRelation().commute(I[idx], I[idx + 1]);
+        auto L = Rel().commute(I[idx], I[idx + 1]);
         for (const auto& pair: L) {
             auto newI = KeyType(I.begin(), I.begin()+idx);
             newI.insert(newI.end(), pair.first.begin(), pair.first.end());

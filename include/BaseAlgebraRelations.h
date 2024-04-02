@@ -19,6 +19,7 @@ struct BaseRelation {
     virtual tuple<uint, Complex> homogeneous_exponent(uint gidx, uint pow) const {
         static_cast<void>(gidx); static_cast<void>(pow);
         throw std::invalid_argument("Noncanonical commutation relation needs to be defined");
+
     }
     // Specifies conjugation relation on a generator 
     virtual uint conj(uint i) const {
@@ -155,25 +156,33 @@ constexpr ComplexParameter<-10000000, 0> PROD_ANTICOMMUTE;
 
 // Takes the generators of two constituent relations commute with each other 
 //    up to a complex phase specified by CommutePhase
-template<typename RelA, typename RelB, typename CommutePhase>
+template<typename LRel, typename RRel, typename CommutePhase>
 struct ProductRelation: 
-    public BaseRelation<RelA::num_generators() + RelB::num_generators()> { 
+    public BaseRelation<LRel::num_generators() + RRel::num_generators()> { 
+    static LRel& Lrel() {
+        static LRel Lrel_{};
+        return Lrel_;
+    }
+    static RRel& Rrel() {
+        static RRel Rrel_{};
+        return Rrel_;
+    }
 
     // The return-type should be power representation 
     CoeffMap commute_noncanonical(uint i, uint j) const override {
-        auto pivot = RelA::num_generators();
+        auto pivot = LRel::num_generators();
         CoeffMap result; 
         if (j < pivot && i >= pivot) { // j < pivot <= i
             /// Replace this Complex(-1., 0.) with the third template argument
             result[{j, i}] = CommutePhase::value; 
         } else if (i < pivot) { 
             // then j < i < pivot
-            //  Compute CR using RelB then extend to the whole algebra
-            result = RelA().commute_noncanonical(i, j);
+            //  Compute CR using RRel then extend to the whole algebra
+            result = Lrel().commute_noncanonical(i, j);
         } else if (j >= pivot) { 
             // pivot <= j < i 
-            //   Compute CR using RelA then extend to the whole algebra
-            auto result_ = RelB().commute_noncanonical(i-pivot, j-pivot); 
+            //   Compute CR using LRel then extend to the whole algebra
+            auto result_ = Rrel().commute_noncanonical(i-pivot, j-pivot); 
             // For each entry in the original cr result
             for (auto& pair : result_) {
                 KeyType key_(pair.first);
@@ -189,22 +198,22 @@ struct ProductRelation:
     }
 
     uint conj(uint i) const override {
-        auto pivot = RelA::num_generators();
-        return (i<pivot) ? RelA().conj(i) : RelB().conj(i - pivot) + pivot;
+        auto pivot = LRel::num_generators();
+        return (i<pivot) ? Lrel().conj(i) : Rrel().conj(i - pivot) + pivot;
     }
 
     tuple<uint, Complex> homogeneous_exponent(uint gidx, uint pow) const override {
-        auto pivot = RelA::num_generators();
+        auto pivot = LRel::num_generators();
         if (gidx < pivot) {
-            return RelA().homogeneous_exponent(gidx, pow);
+            return Lrel().homogeneous_exponent(gidx, pow);
         } else {
-            return RelB().homogeneous_exponent(gidx - pivot, pow);
+            return Rrel().homogeneous_exponent(gidx - pivot, pow);
         }
     }
 
     Complex tr(uint gidx, uint pow) const override {
-        return gidx < RelA::num_generators()? 
-            RelA().tr(gidx, pow) : RelB().tr(gidx - RelA::num_generators(), pow);
+        return gidx < LRel::num_generators()? 
+            Lrel().tr(gidx, pow) : Rrel().tr(gidx - LRel::num_generators(), pow);
     }
 };
 
@@ -217,6 +226,7 @@ class ProductAlgebra:
 public:
     using LRel = typename LAlg::Relation; 
     using RRel = typename RAlg::Relation;
+
     using LElm = typename LAlg::Element; 
     using RElm = typename RAlg::Element; 
     using Relation = ProductRelation<typename LAlg::Relation, 
@@ -292,7 +302,7 @@ public:
             auto pivot = pair.first.begin()+LRel::num_generators();
             auto keyL = KeyType(pair.first.begin(), pivot);
             auto keyR = KeyType(pivot, pair.first.end());
-            coeffs[keyL] = pair.second * RRel().monomial_tr(keyR);
+            coeffs[keyL] = pair.second * Relation::Rrel().monomial_tr(keyR);
         }
         return LElm(coeffs);
     }
@@ -303,7 +313,7 @@ public:
             auto pivot = pair.first.begin()+LRel::num_generators();
             auto keyL = KeyType(pair.first.begin(), pivot);
             auto keyR = KeyType(pivot, pair.first.end());
-            coeffs[keyR] = pair.second * LRel().monomial_tr(keyL);
+            coeffs[keyR] = pair.second * Relation::Lrel().monomial_tr(keyL);
         }
         return RElm(coeffs);
     }

@@ -10,6 +10,7 @@
 #include <cassert>
 #include <vector>
 #include <tuple>
+#include <torch/torch.h>
 #include <unordered_map>
 
 typedef std::complex<double> Complex;

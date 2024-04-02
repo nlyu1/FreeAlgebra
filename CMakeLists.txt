@@ -14,6 +14,13 @@ if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   add_link_options(-fsanitize=address)
 endif()
 
+set(CMAKE_BUILD_TYPE Debug)
+find_program(CCACHE_PROGRAM ccache)
+if(CCACHE_PROGRAM)
+    set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CCACHE_PROGRAM}")
+endif()
+
+
 # Set the path to the extracted LibTorch or use find_package if installed globally
 list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/Cellar/libtorch")
 include_directories("/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3")
