@@ -1,5 +1,6 @@
 #include "FinitePowerAlgebras.h"
 #include "Fermions.h"
+#include <torch/torch.h>
 #include<iostream>
 
 using namespace std;

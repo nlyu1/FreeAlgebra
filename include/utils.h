@@ -7,9 +7,10 @@
 #include <sstream>
 #include <iomanip>
 #include <cmath>
+#include <cassert>
 #include <vector>
-#include <unordered_map>
 #include <tuple>
+#include <unordered_map>
 
 typedef std::complex<double> Complex;
 typedef uint PowType;
