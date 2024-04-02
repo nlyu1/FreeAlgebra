@@ -888,6 +888,7 @@ CMakeFiles/test_algebra.dir/test.cpp.o: /Users/nicholaslyu/Code/algebra/src/test
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/share/asan_ignorelist.txt \
   /Users/nicholaslyu/Code/algebra/src/BaseAlgebraRelations.h \
   /Users/nicholaslyu/Code/algebra/src/Elements.h \
+  /Users/nicholaslyu/Code/algebra/src/Fermions.h \
   /Users/nicholaslyu/Code/algebra/src/FinitePowerAlgebras.h \
   /Users/nicholaslyu/Code/algebra/src/utils.h \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Cholesky \
@@ -2129,6 +2130,8 @@ CMakeFiles/test_algebra.dir/test.cpp.o: /Users/nicholaslyu/Code/algebra/src/test
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/counted_iterator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/concepts.h:
+
+/Users/nicholaslyu/Code/algebra/src/Fermions.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:
 

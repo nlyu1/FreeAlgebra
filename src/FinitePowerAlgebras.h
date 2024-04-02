@@ -13,8 +13,8 @@ using namespace std;
 // Basic commutation relation for exterior algebra: 
 //    All generators anti-commute, and >1 powers annihilate
 //    Accepts variable conjugation relation
-template<typename ConjRelation>
-struct ExteriorCommRelation: public ConjRelation {
+template<uint n> 
+struct ExteriorCommRelation: virtual public BaseRelation<n> {
     CoeffMap commute_noncanonical(uint i, uint j) const override {
         CoeffMap result;
         result[{j, i}] = Complex(-1., 0.);
@@ -30,52 +30,27 @@ struct ExteriorCommRelation: public ConjRelation {
 };
 
 
-// Basic operations for exterior algebra:
-    // Logarithms and exponentials defined via power series
-template<typename AlgRelation>
-class ExteriorAlgebra : public BaseAlgebra<AlgRelation> {
-public:
-    using Element = AlgebraElement<AlgRelation>;
-    // Grassmann exponentiation: approximation
-    Element exp(const Element& a) {
-        auto power = a.one(), result=a.one(); // Start with the multiplicative identity;
-        uint niters = 20;
-        for (uint j=1; j<=niters; j++) {
-            power = power * a;
-            result.add_(power * Complex(1./static_cast<double>(factorial(j)), 0));
-        }
-        return result;
-    }
-
-    // Taylor expansion definition of the logarithm. 
-    Element log(const Element& a) {
-        auto b = a - Complex(1., 0.);
-        if (b.coeffs.contains(KeyType(AlgRelation::num_generators(), 0u))) {
-            throw(std::invalid_argument(
-                "Exterior logarithm of " + b.to_string() 
-                + " not guaranteed to converge"));
-        }
-        auto power = a.one(), result = a.zero();
-        uint niters = min(static_cast<uint>(b.coeffs.size()), AlgRelation::num_generators());
-        for (uint j=1; j<=niters; j++) {
-            power = power * b;
-            result.add_(power * Complex(pow(-1, j+1) / j, 0.));
-        }
-        return result;
-    }
-};
-
 
 template<uint n>
-using ExtFreeConjAlgebra = ExteriorAlgebra<ExteriorCommRelation<FreeConjRelation<n>>>;
+struct ExtFreeConjRelation: 
+    public ExteriorCommRelation<n>, public FreeConjRelation<n>, public ScalarTraceRelation<n, 2>
+    {};
 template<uint n>
-using ExtSelfConjAlgebra = ExteriorAlgebra<ExteriorCommRelation<SelfConjRelation<n>>>;
+struct ExtSelfConjRelation: 
+    public ExteriorCommRelation<n>, public SelfConjRelation<n>, public ScalarTraceRelation<n, 2>
+    {};
+
+// Uses exterior commutation relation and free conjugation relation 
+template<uint n>
+using ExtFreeConjAlgebra = BaseAlgebra<ExtFreeConjRelation<n>>;
+template<uint n>
+using ExtSelfConjAlgebra = BaseAlgebra<ExtSelfConjRelation<n>>;
 
 
 // Clifford algebra: anticommute with each other and square to one
 //  conjugates to self
-template<typename ConjRelation>
-struct CliffordCommRelation: public ConjRelation {
+template<uint n>
+struct CliffordCommRelation: virtual public BaseRelation<n> {
     CoeffMap commute_noncanonical(uint i, uint j) const override {
         CoeffMap result;
         result[{j, i}] = Complex(-1., 0.);
@@ -88,7 +63,10 @@ struct CliffordCommRelation: public ConjRelation {
 };
 
 template<uint n>
-using CliffordRelation = CliffordCommRelation<SelfConjRelation<n>>;
+struct CliffordRelation:
+    public CliffordCommRelation<n>, public SelfConjRelation<n>, public ScalarTraceRelation<n, 2>
+    {};
+
 template<uint n>
 using CliffordAlgebra = BaseAlgebra<CliffordRelation<n>>;
 

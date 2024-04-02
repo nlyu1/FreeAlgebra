@@ -26,6 +26,7 @@ struct VectorHash {
 };
 
 typedef std::unordered_map<KeyType, ValueType, VectorHash> CoeffMap; 
+typedef std::unordered_map<KeyType, double, VectorHash> RealCoeffMap;
 
 
 // Pretty printing of a double value
@@ -81,29 +82,29 @@ std::string prettyPrint(const KeyType& x) {
 }
 
 
-std::string prettyPrint(const CoeffMap& map){
-    std::stringstream stream;
-    stream << "{";
-    for (const auto& pair: map) {
-        stream 
-        << "(" << prettyPrint(pair.first)
-        << ", " << prettyPrint(pair.second) << "), ";
+template<typename T>
+std::string prettyPrint(const std::unordered_map<KeyType, T, VectorHash>& coeffs) {
+        std::stringstream stream;
+        stream << "[\n";
+        for (const auto& pair: coeffs) {
+            stream << "    ";
+            auto I = pair.first;
+            stream << "(";
+            for (size_t i = 0; i < I.size(); ++i) {
+                if (i > 0) {
+                    stream << ", "; 
+                }
+                stream << I[i];
+            }
+            stream << "): " << prettyPrint(pair.second) << " \n";
+        }
+        auto result = stream.str();
+        if (coeffs.size() != 0) {
+            result.erase(result.length() - 2);
+        }
+        return result + "\n]";
     }
-    auto result = stream.str();
-    if (map.size() != 0) {
-        result.erase(result.length() - 2);
-    }
-    return result + "}";
-}
 
-CoeffMap value_map(const CoeffMap& map, 
-    std::function<ValueType(const ValueType&)> func) {
-    CoeffMap newMap; 
-    for (const auto& pair:map) {
-        newMap[pair.first] = func(pair.second);
-    }
-    return newMap; 
-}
 
 CoeffMap clone_map(const CoeffMap& map) {
     CoeffMap newMap; 
@@ -131,6 +132,9 @@ void assert_well_ordered(const KeyType& K) {
 // to the power representation
 KeyType gen_to_power_repr(const KeyType& K, uint n) {
     KeyType ans(n, 0);
+    if (K.size() == 0) {
+        return ans; 
+    }
     assert_well_ordered(K);
     for (const auto& k: K) {
         assert(k >= 0 && k < n);
@@ -172,5 +176,20 @@ unsigned long long factorial(unsigned int n) {
         result *= i;
     }
     return result;
+}
+
+std::ostream& operator<<(std::ostream& os, const CoeffMap& coeffs) {
+    os << prettyPrint(coeffs);
+    return os;
+}
+
+template <typename T>
+bool allzero(std::vector<T> v) {
+    for (auto const& x:v) {
+        if (x != 0) {
+            return false; 
+        }
+    }
+    return true; 
 }
 #endif

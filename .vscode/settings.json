@@ -66,7 +66,22 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "codecvt": "cpp",
+        "condition_variable": "cpp",
+        "semaphore": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+        "chrono": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "format": "cpp",
+        "stop_token": "cpp"
     },
     "cmake.sourceDirectory": "/Users/nicholaslyu/Code/algebra/src"
 }

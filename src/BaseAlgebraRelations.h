@@ -25,6 +25,13 @@ struct BaseRelation {
         static_cast<void>(i);
         throw std::invalid_argument("Conjugation not implemented");
     }
+    // Specifies the trace of generators. 
+    //    Traces are expected to extend multiplicatively across different generators
+    virtual Complex tr(uint gidx, uint pow) const {
+        static_cast<void>(gidx);
+        static_cast<void>(pow);
+        throw std::invalid_argument("Conjugation not implemented");
+    }
 
     /// Default implementations 
     CoeffMap commute(uint i, uint j) const {
@@ -41,6 +48,18 @@ struct BaseRelation {
     static constexpr uint num_generators() {
         return n;
     }
+    // Given the algebra-specific generator trace relation, 
+    //    computes the trace of a monomial
+    virtual Complex monomial_tr(const KeyType& monomial) {
+        Complex result = Complex(0.);
+        for (uint j=0; j<monomial.size(); j++) {
+            if (result == Complex(0., 0.)) {
+                return result; 
+            }
+            result *= tr(j, monomial[j]); 
+        }
+        return result; 
+    }
     virtual ~BaseRelation() = default; // A warning technicality
 };
 
@@ -49,7 +68,7 @@ struct BaseRelation {
 // Canonical ordering (a1, a1*, a2, a2*, ..., a(n/2), a(n/2)*)
 // n must be even 
 template<uint n>
-struct FreeConjRelation: public BaseRelation<n> {
+struct FreeConjRelation: virtual public BaseRelation<n> {
     static_assert(n % 2 == 0, 
         "Algebra with formal conjugate generators contain need an even number of generators");
     // Specifies which element to conjugate to
@@ -61,10 +80,22 @@ struct FreeConjRelation: public BaseRelation<n> {
     }
 };
 
+
+// Assumes that 1 is represented as id on d-dimensional 
+//    space and all other operators are traceless. 
+template<uint n, uint d>
+struct ScalarTraceRelation: virtual public BaseRelation<n> {
+    // Specifies the trace of generators  
+    Complex tr(uint gidx, uint pow) const override {
+        static_cast<void>(gidx);
+        return pow == 0 ? Complex(static_cast<double>(d)) : Complex(0., 0.);
+    }
+};
+
 // Basic self-conjugate relation: each generator conjugates to itself
 // Canonical ordering (a1, a2, ...)
 template<uint n>
-struct SelfConjRelation: public BaseRelation<n> {
+struct SelfConjRelation: virtual public BaseRelation<n> {
     // Specifies which element to conjugate to
     uint conj(uint i) const override {
         return i;
@@ -111,15 +142,15 @@ public:
 
 
 // Complex template parameter
-// Right now double-types are not supported, so we use int divided by 1e5
+// Right now double-types are not supported, so we use int divided by 1e7
 template<int real, int imag>
 struct ComplexParameter {
-    static constexpr Complex value{real/100000, imag/100000};
+    static constexpr Complex value{real/10000000, imag/10000000};
 };
 // Pass these into the third template argument of ProdAlgebra 
 //    to obtain commuting (resp. anticommuting) tensor product algebras
-constexpr ComplexParameter<100000, 0> PROD_COMMUTE;
-constexpr ComplexParameter<-100000, 0> PROD_ANTICOMMUTE;
+constexpr ComplexParameter<10000000, 0> PROD_COMMUTE;
+constexpr ComplexParameter<-10000000, 0> PROD_ANTICOMMUTE;
 
 
 // Takes the generators of two constituent relations commute with each other 
@@ -170,6 +201,11 @@ struct ProductRelation:
             return RelB().homogeneous_exponent(gidx - pivot, pow);
         }
     }
+
+    Complex tr(uint gidx, uint pow) const override {
+        return gidx < RelA::num_generators()? 
+            RelA().tr(gidx, pow) : RelB().tr(gidx - RelA::num_generators(), pow);
+    }
 };
 
 
@@ -186,6 +222,18 @@ public:
     using Relation = ProductRelation<typename LAlg::Relation, 
                     typename RAlg::Relation, CommutePhase>; 
     using Element = typename BaseAlgebra<Relation>::Element; 
+
+    // Takes the tensor product of x and y
+    Element kron(const LElm& x, const LElm& y) {
+        CoeffMap coeffs; 
+        for (auto const& pair1:x.coeffs) {
+            for (auto const& pair2:y.coeffs) {
+                coeffs[mergeVectors(
+                    pair1.first, pair2.first)] = pair1.second * pair2.second; 
+            }
+        }
+        return Element(coeffs);
+    }
 
     // Extend an element of the left algebra to the right 
     Element extR(const LElm& x) {
@@ -216,20 +264,11 @@ public:
     LElm projL(const Element& x) {
         CoeffMap coeffs;
         for (auto const& pair:x.coeffs) {
-            if (std::abs(pair.second) == 0.) continue; 
-            bool inspan = true;
-            // Detect whether this component is uniquely supported 
-            //    on the left generators 
-            for (uint i=LRel::num_generators(); i<pair.first.size(); i++) {
-                if (pair.first[i] != 0) {
-                    inspan = false; 
-                    break;
-                }
-            }
-            if (!inspan) continue; // Ignore not-in-span components
-            KeyType key(pair.first.begin(), 
-                pair.first.begin()+LRel::num_generators());
-            coeffs[key] = pair.second; 
+            // The new key is the left "half" of the monomial
+            auto pivot = pair.first.begin()+LRel::num_generators();
+            auto keyL = KeyType(pair.first.begin(), pivot);
+            auto keyR = KeyType(pivot, pair.first.end());
+            coeffs[keyL] = pair.second * static_cast<double>(allzero(keyR));
         }
         return LElm(coeffs);
     }
@@ -237,18 +276,34 @@ public:
     RElm projR(const Element& x) {
         CoeffMap coeffs;
         for (auto const& pair:x.coeffs) {
-            if (std::abs(pair.second) == 0.) continue; 
-            bool inspan = true;
-            for (uint i=0; i<LRel::num_generators(); i++) {
-                if (pair.first[i] != 0) {
-                    inspan = false; 
-                    break;
-                }
-            }
-            if (!inspan) continue;
-            KeyType key(pair.first.begin()+LRel::num_generators(), 
-                pair.first.end());
-            coeffs[key] = pair.second; 
+            auto pivot = pair.first.begin()+LRel::num_generators();
+            auto keyL = KeyType(pair.first.begin(), pivot);
+            auto keyR = KeyType(pivot, pair.first.end());
+            coeffs[keyR] = pair.second * allzero(keyL);
+        }
+        return RElm(coeffs);
+    }
+
+    // Partial trace over the right algebra
+    LElm trR(const Element& x) {
+        CoeffMap coeffs;
+        for (auto const& pair:x.coeffs) {
+            // The new key is the left "half" of the monomial
+            auto pivot = pair.first.begin()+LRel::num_generators();
+            auto keyL = KeyType(pair.first.begin(), pivot);
+            auto keyR = KeyType(pivot, pair.first.end());
+            coeffs[keyL] = pair.second * RRel().monomial_tr(keyR);
+        }
+        return LElm(coeffs);
+    }
+
+    RElm trL(const Element& x) {
+        CoeffMap coeffs;
+        for (auto const& pair:x.coeffs) {
+            auto pivot = pair.first.begin()+LRel::num_generators();
+            auto keyL = KeyType(pair.first.begin(), pivot);
+            auto keyR = KeyType(pivot, pair.first.end());
+            coeffs[keyR] = pair.second * LRel().monomial_tr(keyL);
         }
         return RElm(coeffs);
     }

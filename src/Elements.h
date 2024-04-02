@@ -9,6 +9,10 @@ using namespace std;
 template<typename AlgebraRelation>
 class AlgebraElement {
 public:
+    inline static constexpr double SERIES_TOLERANCE = 1e-10;
+    inline static constexpr double EQ_TOLERANCE = 1e-7;
+    inline static constexpr uint SERIES_MAXITERS = 200;
+
     CoeffMap coeffs;
     // Constructor taking an rvalue reference (move constructor)
     AlgebraElement(CoeffMap&& map) : 
@@ -71,7 +75,7 @@ public:
 
     // Assumes both well-filtered
     bool operator==(const AlgebraElement& other) const {
-        return coeffs == other.coeffs;
+        return operator-(other).norm() < EQ_TOLERANCE;
     }
 
     // An element is real if it is its own complex conjugate 
@@ -99,6 +103,22 @@ public:
 
     AlgebraElement operator/(const Complex& scalar) const {
         return operator*(Complex(1, 0) / scalar);
+    }
+
+    AlgebraElement operator+(double scalar) const {
+        return operator+(Complex(scalar, 0.0));
+    }
+
+    AlgebraElement operator-(double scalar) const {
+        return operator-(Complex(scalar, 0.0));
+    }
+
+    AlgebraElement operator*(double scalar) const {
+        return operator*(Complex(scalar, 0.0));
+    }
+
+    AlgebraElement operator/(double scalar) const {
+        return operator/(Complex(scalar, 0.0));
     }
 
     // Pointwise linear addition 
@@ -156,7 +176,7 @@ public:
             auto K = power_to_gen_repr(pair.first); 
             if (K.size() == 0) {
                 result.add_(std::conj(pair.second));
-                return result; 
+                continue; 
             }
             for (int j=K.size()-1; j>=0; j--){
                 I.push_back(R.conj(K[j]));
@@ -203,12 +223,50 @@ public:
     }
 
     // Treating as a vector, collect the absolute norm squared
-    double norm() {
+    double norm() const {
         double result = 0;
         for (const auto& pair: coeffs) {
             result += std::pow(std::abs(pair.second), 2);
         }
         return std::pow(result, 0.5);
+    }
+
+    Complex tr() const {
+        Complex result = Complex(0., 0.);
+        for (const auto& pair: coeffs) { 
+            result += pair.second * AlgebraRelation().monomial_tr(pair.first);
+        }
+        return result;
+    }
+
+    AlgebraElement exp() const {
+        auto delta = one(), result=one();
+        for (uint j=1; j<SERIES_MAXITERS; j++) {
+            delta = operator*(delta) / j; 
+            result.add_(delta);
+            if (j>3 && delta.norm() / result.norm() < SERIES_TOLERANCE) break;
+        }
+        return result; 
+    }
+
+    AlgebraElement log() const {
+        auto b = operator-(1.); // b = self - 1
+        auto power = one(), result=zero();
+        auto this_norm = norm();
+        for (uint j=1; j<SERIES_MAXITERS; j++) {
+            power = power * b;
+            result.add_(power*(std::pow(-1, j+1)/j));
+            auto result_norm = result.norm();
+            if (j>3 && power.norm()/j / result_norm < SERIES_TOLERANCE) break;
+            if (j>3 && result_norm > this_norm * 1e5) {
+                throw(std::invalid_argument(
+                    std::string("Logarithm does not converge. ") 
+                    + std::string("This power series logarithm is not ")
+                    + std::string("generally the inverse of exp(). ")
+                ));
+            }
+        }
+        return result; 
     }
 
 private:

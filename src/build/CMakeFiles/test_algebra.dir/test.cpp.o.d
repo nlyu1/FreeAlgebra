@@ -1077,4 +1077,5 @@ CMakeFiles/test_algebra.dir/test.cpp.o: \
   /opt/homebrew/Cellar/fmt/10.2.1_1/include/fmt/core.h \
   /Users/nicholaslyu/Code/algebra/src/utils.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip \
+  /Users/nicholaslyu/Code/algebra/src/Fermions.h
