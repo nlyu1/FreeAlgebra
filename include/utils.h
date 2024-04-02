@@ -10,8 +10,10 @@
 #include <cassert>
 #include <vector>
 #include <tuple>
+#include <fmt/core.h> 
 #include <torch/torch.h>
 #include <unordered_map>
+using namespace std; 
 
 typedef std::complex<double> Complex;
 typedef uint PowType;
@@ -62,7 +64,7 @@ std::string prettyPrint(Complex z) {
         result += prettyPrint(im) + "i";
     }
     if (result.empty()) {
-        return 0;
+        return result+"0";
     } else if (re == 0. || im == 0.) {
         return result; 
     } else {
@@ -74,7 +76,7 @@ std::string prettyPrint(const KeyType& x) {
     std::stringstream stream;
     stream << "[";
     for (const auto& v: x) {
-        stream << v << ","; 
+        stream << prettyPrint(v) << ","; 
     }
     auto result = stream.str();
     if (x.size() > 0) {
@@ -104,8 +106,20 @@ std::string prettyPrint(const std::unordered_map<KeyType, T, VectorHash>& coeffs
         if (coeffs.size() != 0) {
             result.erase(result.length() - 2);
         }
-        return result + "\n]";
+        return result + "\n]\n";
     }
+
+// template<typename T>
+// std::string prettyPrint(const std::vector<std::vector<T>>& matrix) {
+//     std::stringstream os; 
+//     for (const auto& row : matrix) {
+//         for (const auto& element : row) {
+//             os << prettyPrint(element) << ' ';
+//         }
+//         os << fmt::format("[{}]\n", row.size()); // End each row with a new line
+//     }
+//     return os.str(); // Return the ostream object to chain the operator calls
+// }
 
 
 CoeffMap clone_map(const CoeffMap& map) {
@@ -178,6 +192,11 @@ unsigned long long factorial(unsigned int n) {
         result *= i;
     }
     return result;
+}
+
+std::ostream& operator<<(std::ostream& os, const Complex& z) {
+    os << prettyPrint(z);
+    return os;
 }
 
 std::ostream& operator<<(std::ostream& os, const CoeffMap& coeffs) {

@@ -9,4 +9,5 @@ if [ -f "$HOME/.zshrc" ]; then
     source "$HOME/.zshrc"
 fi
 
-ctest -V
+./main
+# ctest -V

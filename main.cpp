@@ -68,10 +68,12 @@
 #include "utils.h"
 #include "BaseAlgebraRelations.h"
 #include "FinitePowerAlgebras.h"
+#include "Automorphism.h"
 #include<iostream>
 using namespace std; 
 
 // Test algebraic relations 
 int main() {
-    cout << "Hello from main." << endl;
+    ImageRelation<CanonicalAnticommRelation<4>, DiracMajoranaBijection<4>> a;
+    cout << "Hello from main" << endl;
 }

@@ -856,6 +856,7 @@ CMakeFiles/main.dir/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/array \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__split_buffer \
+  /opt/homebrew/Cellar/fmt/10.2.1_1/include/fmt/core.h \
   /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/torch.h \
   /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/all.h \
   /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/autograd.h \
@@ -5461,5 +5462,5 @@ CMakeFiles/main.dir/main.cpp.o: \
   /opt/homebrew/Cellar/libtorch/include/torch/csrc/api/include/torch/version.h \
   /Users/nicholaslyu/Code/algebra/include/BaseAlgebraRelations.h \
   /Users/nicholaslyu/Code/algebra/include/Elements.h \
-  /opt/homebrew/Cellar/fmt/10.2.1_1/include/fmt/core.h \
-  /Users/nicholaslyu/Code/algebra/include/FinitePowerAlgebras.h
+  /Users/nicholaslyu/Code/algebra/include/FinitePowerAlgebras.h \
+  /Users/nicholaslyu/Code/algebra/include/Automorphism.h

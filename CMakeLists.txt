@@ -49,10 +49,8 @@ target_link_libraries(FreeAlgebraLib INTERFACE ${TORCH_LIBRARIES} fmt::fmt)
 add_executable(main main.cpp)
 target_link_libraries(main PRIVATE FreeAlgebraLib)
 
-# set_target_properties(main PROPERTIES
-#     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
-# )
 
-add_executable(test_elements ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_elements.cpp)
-target_link_libraries(test_elements PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
-add_test(NAME test_elements COMMAND test_elements)
+
+# add_executable(test_finitealgebras ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_finitealgebras.cpp)
+# target_link_libraries(test_finitealgebras PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
+# add_test(NAME test_finitealgebras COMMAND test_finitealgebras)

@@ -139,19 +139,6 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-#=============================================================================
-# Target rules for targets named test_elements
-
-# Build rule for target.
-test_elements: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_elements
-.PHONY : test_elements
-
-# fast build rule for target.
-test_elements/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_elements.dir/build.make CMakeFiles/test_elements.dir/build
-.PHONY : test_elements/fast
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -176,30 +163,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tests/test_elements.o: tests/test_elements.cpp.o
-.PHONY : tests/test_elements.o
-
-# target to build an object file
-tests/test_elements.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_elements.dir/build.make CMakeFiles/test_elements.dir/tests/test_elements.cpp.o
-.PHONY : tests/test_elements.cpp.o
-
-tests/test_elements.i: tests/test_elements.cpp.i
-.PHONY : tests/test_elements.i
-
-# target to preprocess a source file
-tests/test_elements.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_elements.dir/build.make CMakeFiles/test_elements.dir/tests/test_elements.cpp.i
-.PHONY : tests/test_elements.cpp.i
-
-tests/test_elements.s: tests/test_elements.cpp.s
-.PHONY : tests/test_elements.s
-
-# target to generate assembly for a file
-tests/test_elements.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_elements.dir/build.make CMakeFiles/test_elements.dir/tests/test_elements.cpp.s
-.PHONY : tests/test_elements.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,13 +173,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... main"
-	@echo "... test_elements"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tests/test_elements.o"
-	@echo "... tests/test_elements.i"
-	@echo "... tests/test_elements.s"
 .PHONY : help
 
 

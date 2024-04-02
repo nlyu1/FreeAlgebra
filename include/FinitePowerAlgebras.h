@@ -17,15 +17,12 @@ template<uint n>
 struct ExteriorCommRelation: virtual public BaseRelation<n> {
     CoeffMap commute_noncanonical(uint i, uint j) const override {
         CoeffMap result;
+        // Squares annihilate
+        if (i == j) {
+            return result; 
+        }
         result[{j, i}] = Complex(-1., 0.);
         return result; 
-    }
-    
-    tuple<uint, Complex> homogeneous_exponent(uint gidx, uint pow) const override {
-        static_cast<void>(gidx);
-        // Annihilates powers > 1
-        auto scale = pow > 1 ? Complex(0., 0.) : Complex(1., 0.);
-        return tuple<uint, Complex>(pow, scale);
     }
 };
 
@@ -53,12 +50,12 @@ template<uint n>
 struct CliffordCommRelation: virtual public BaseRelation<n> {
     CoeffMap commute_noncanonical(uint i, uint j) const override {
         CoeffMap result;
-        result[{j, i}] = Complex(-1., 0.);
+        if (i == j) {
+            result[{}] = Complex(1.);
+            return result;
+        }
+        result[{j, i}] = Complex(-1.);
         return result; 
-    }
-    tuple<uint, Complex> homogeneous_exponent(uint gidx, uint pow) const override {
-        static_cast<void>(gidx);
-        return tuple<uint, Complex>(pow % 2, Complex(1., 0.));
     }
 };
 
@@ -78,17 +75,14 @@ template<uint n>
 struct CanonicalAnticommRelation: public FreeConjRelation<n> {
     CoeffMap commute_noncanonical(uint i, uint j) const override {
         CoeffMap result;
+        if (i == j) {
+            return result; 
+        }
         if (i%2==1 && j==i-1) {
             result[{}] = Complex(1., 0.);
         }
         result[{j, i}] = Complex(-1., 0.);
         return result; 
-    }
-    tuple<uint, Complex> homogeneous_exponent(uint gidx, uint pow) const override {
-        static_cast<void>(gidx);
-        // Annihilates powers > 1
-        auto scale = pow > 1 ? Complex(0., 0.) : Complex(1., 0.);
-        return tuple<uint, Complex>(pow, scale);
     }
 };
 
