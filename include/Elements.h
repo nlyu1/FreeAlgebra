@@ -291,6 +291,42 @@ private:
         }
     }
 
+    // Figure out the homogeneous exponent relationship from the multiplication relation
+    //    (gidx)^pow = ValueType * (gidx)^uint
+    tuple<uint, ValueType> homogeneous_exponent(uint gidx, uint pow) const {
+        // Handle base cases directly
+        if (pow < 2) {
+            return {pow, Complex(1.)}; // Using list initialization for clarity
+        }
+
+        // Analyze commutation for homogeneous behavior
+        auto t = Rel().commute(gidx, gidx);
+        // Square annihilates to 0
+        if (t.size() == 0) {
+            return {pow, Complex(0.)}; 
+        }
+        auto [key, scale] = *(t.begin());
+        if (t.size() > 1 || key.size() > 2) {
+            throw std::invalid_argument(fmt::format(
+                "Expected ({})^2 to be homogeneous in {} but got {}.\n",
+                gidx, gidx, prettyPrint(t)));
+        }
+        ValueType pow_scale = std::pow(scale, pow - 1);
+        uint sq_pow = key.size(), power = 0;
+
+        // Simplify the power based on specific cases
+        switch (sq_pow) {
+            case 0: power = 0; break; // Generator self-annihilates
+            case 1: power = pow % 2; break; // Square of generator annihilates
+            case 2: power = pow; break; // No simplification
+            default: 
+                throw std::invalid_argument(fmt::format(
+                    "({})^2 cannot be ({})^{}.\n",
+                    gidx, gidx, sq_pow));
+        }
+        return {power, pow_scale};
+    }
+
     // Given an accumulator and multi-indices in generator multiplication 
     //   representation (and an existing scale), adds to accum the 
     //   corresponding multiplication argument 
@@ -310,7 +346,8 @@ private:
             auto J = gen_to_power_repr(I, n);
             // cout << "Original: " << prettyPrint(J) << endl;
             for (size_t i=0; i<J.size(); i++) {
-                auto t = Rel().homogeneous_exponent(i, J[i]);
+                // Compute the exponent of the J[i]-th power of generator i
+                auto t = homogeneous_exponent(i, J[i]);
                 scale_accum *= std::get<1>(t);
                 J[i] = std::get<0>(t); 
                 // Shortcut: no change if the scale is already 0 

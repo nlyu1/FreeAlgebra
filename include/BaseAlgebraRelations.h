@@ -38,7 +38,7 @@ struct BaseRelation {
     CoeffMap commute(uint i, uint j) const {
         assert (i>=0 && i<n);
         assert (j>=0 && j<n);
-        if (i <= j) {
+        if (i < j) {
             throw std::invalid_argument("Expects non-canonical ordering");
         }
         return commute_noncanonical(i, j);

@@ -14,6 +14,8 @@ if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   add_link_options(-fsanitize=address)
 endif()
 
+# Debug and testing scripts
+enable_testing()
 set(CMAKE_BUILD_TYPE Debug)
 find_program(CCACHE_PROGRAM ccache)
 if(CCACHE_PROGRAM)
@@ -50,3 +52,7 @@ target_link_libraries(main PRIVATE FreeAlgebraLib)
 # set_target_properties(main PROPERTIES
 #     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
 # )
+
+add_executable(test_elements ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_elements.cpp)
+target_link_libraries(test_elements PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
+add_test(NAME test_elements COMMAND test_elements)
