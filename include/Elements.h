@@ -53,11 +53,11 @@ public:
     }
 
     AlgebraElement one() const {
-        return AlgebraElement(CoeffMap({{KeyType(n, 0u), Complex(1., 0.)}}));
+        return AlgebraElement(CoeffMap({{KeyType(n, 0u), FieldType(1., 0.)}}));
     }
     
     // Scalar operations 
-    void add_(const Complex& scalar) {
+    void add_(const FieldType& scalar) {
         KeyType zero(n, 0u); 
         if (coeffs.contains(zero)) {
             coeffs.at(zero) += scalar; 
@@ -67,7 +67,7 @@ public:
         filter_coeffs_();
     }
 
-    void mul_(const Complex& scalar) {
+    void mul_(const FieldType& scalar) {
         for (const auto& pair:coeffs) {
             coeffs.at(pair.first) = pair.second * scalar;
         }
@@ -76,7 +76,7 @@ public:
 
     // Comparison with scalar is considered comparison 
     //      with scalar * multiplicative identity 
-    bool operator==(const Complex& scalar) const {
+    bool operator==(const FieldType& scalar) const {
         return operator==(one() * scalar);
     }
 
@@ -90,42 +90,42 @@ public:
         return operator==(conj());
     }
 
-    AlgebraElement operator+(const Complex& scalar) const {
+    AlgebraElement operator+(const FieldType& scalar) const {
         auto a = clone();
         a.add_(scalar);
         return a; 
     }
 
-    AlgebraElement operator-(const Complex& scalar) const {
+    AlgebraElement operator-(const FieldType& scalar) const {
         auto a = clone();
         a.add_(-scalar);
         return a; 
     }
 
-    AlgebraElement operator*(const Complex& scalar) const {
+    AlgebraElement operator*(const FieldType& scalar) const {
         auto a = clone();
         a.mul_(scalar);
         return a; 
     }
 
-    AlgebraElement operator/(const Complex& scalar) const {
-        return operator*(Complex(1, 0) / scalar);
+    AlgebraElement operator/(const FieldType& scalar) const {
+        return operator*(FieldType(1, 0) / scalar);
     }
 
     AlgebraElement operator+(double scalar) const {
-        return operator+(Complex(scalar, 0.0));
+        return operator+(FieldType(scalar, 0.0));
     }
 
     AlgebraElement operator-(double scalar) const {
-        return operator-(Complex(scalar, 0.0));
+        return operator-(FieldType(scalar, 0.0));
     }
 
     AlgebraElement operator*(double scalar) const {
-        return operator*(Complex(scalar, 0.0));
+        return operator*(FieldType(scalar, 0.0));
     }
 
     AlgebraElement operator/(double scalar) const {
-        return operator/(Complex(scalar, 0.0));
+        return operator/(FieldType(scalar, 0.0));
     }
 
     // Pointwise linear addition 
@@ -148,7 +148,7 @@ public:
     }
 
     AlgebraElement operator-(const AlgebraElement& other) const {
-        return operator+(other * Complex(-1, 0));
+        return operator+(other * FieldType(-1, 0));
     }
 
     AlgebraElement operator*(const AlgebraElement& other) const {
@@ -199,7 +199,7 @@ public:
     // Filters null coefficients
     void filter_coeffs_() {
         for (auto it = coeffs.begin(); it != coeffs.end(); ) {
-            if (it->second == Complex(0.0, 0.0)) { // Check if the value is 0
+            if (it->second == FieldType(0.0, 0.0)) { // Check if the value is 0
                 it = coeffs.erase(it); // Remove the entry and update the iterator
             } else {
                 ++it; // Move to the next entry
@@ -238,8 +238,8 @@ public:
         return std::pow(result, 0.5);
     }
 
-    Complex tr() const {
-        Complex result = Complex(0., 0.);
+    FieldType tr() const {
+        FieldType result = FieldType(0., 0.);
         for (const auto& pair: coeffs) { 
             result += pair.second * Rel().monomial_tr(pair.first);
         }
@@ -292,18 +292,18 @@ private:
     }
 
     // Figure out the homogeneous exponent relationship from the multiplication relation
-    //    (gidx)^pow = ValueType * (gidx)^uint
-    tuple<uint, ValueType> homogeneous_exponent(uint gidx, uint pow) const {
+    //    (gidx)^pow = FieldType * (gidx)^uint
+    tuple<uint, FieldType> homogeneous_exponent(uint gidx, uint pow) const {
         // Handle base cases directly
         if (pow < 2) {
-            return {pow, Complex(1.)}; // Using list initialization for clarity
+            return {pow, FieldType(1.)}; // Using list initialization for clarity
         }
 
         // Analyze commutation for homogeneous behavior
         auto t = Rel().commute(gidx, gidx);
         // Square annihilates to 0
         if (t.size() == 0) {
-            return {pow, Complex(0.)}; 
+            return {pow, FieldType(0.)}; 
         }
         auto [key, scale] = *(t.begin());
         if (t.size() > 1 || key.size() > 2) {
@@ -311,7 +311,7 @@ private:
                 "Expected ({})^2 to be homogeneous in {} but got {}.\n",
                 gidx, gidx, prettyPrint(t)));
         }
-        ValueType pow_scale = std::pow(scale, pow - 1);
+        FieldType pow_scale = std::pow(scale, pow - 1);
         uint sq_pow = key.size(), power = 0;
 
         // Simplify the power based on specific cases
@@ -330,7 +330,7 @@ private:
     // Given an accumulator and multi-indices in generator multiplication 
     //   representation (and an existing scale), adds to accum the 
     //   corresponding multiplication argument 
-    void reorder(const KeyType& I, Complex scale, 
+    void reorder(const KeyType& I, FieldType scale, 
         AlgebraElement& accum) const {
         if (I.size() == 0) {
             accum.add_(scale);
@@ -342,16 +342,16 @@ private:
         auto idx = order_violate_idx(I);
         // If in canonical order, arrange homogeneous power then accumulate 
         if (idx == I.size()) {
-            Complex scale_accum = scale; 
+            FieldType scale_accum = scale; 
             auto J = gen_to_power_repr(I, n);
             // cout << "Original: " << prettyPrint(J) << endl;
             for (size_t i=0; i<J.size(); i++) {
                 // Compute the exponent of the J[i]-th power of generator i
                 auto t = homogeneous_exponent(i, J[i]);
-                scale_accum *= std::get<1>(t);
+                scale_accum = scale_accum * std::get<1>(t);
                 J[i] = std::get<0>(t); 
                 // Shortcut: no change if the scale is already 0 
-                if (std::abs(scale_accum) == 0.) {
+                if ((scale_accum).abs() == 0.) {
                     return;
                 }
             }

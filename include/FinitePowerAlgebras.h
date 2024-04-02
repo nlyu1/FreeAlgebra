@@ -21,7 +21,7 @@ struct ExteriorCommRelation: virtual public BaseRelation<n> {
         if (i == j) {
             return result; 
         }
-        result[{j, i}] = Complex(-1., 0.);
+        result[{j, i}] = FieldType(-1., 0.);
         return result; 
     }
 };
@@ -51,10 +51,10 @@ struct CliffordCommRelation: virtual public BaseRelation<n> {
     CoeffMap commute_noncanonical(uint i, uint j) const override {
         CoeffMap result;
         if (i == j) {
-            result[{}] = Complex(1.);
+            result[{}] = FieldType(1.);
             return result;
         }
-        result[{j, i}] = Complex(-1.);
+        result[{j, i}] = FieldType(-1.);
         return result; 
     }
 };
@@ -79,9 +79,9 @@ struct CanonicalAnticommRelation: public FreeConjRelation<n> {
             return result; 
         }
         if (i%2==1 && j==i-1) {
-            result[{}] = Complex(1., 0.);
+            result[{}] = FieldType(1., 0.);
         }
-        result[{j, i}] = Complex(-1., 0.);
+        result[{j, i}] = FieldType(-1., 0.);
         return result; 
     }
 };

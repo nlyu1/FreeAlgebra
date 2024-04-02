@@ -15,8 +15,11 @@ std::string prettyPrint(double value) {
     return str;
 }
 
+// Complex
 class ComplexScalar {
 public:
+    ComplexScalar() : ComplexScalar(0.0, 0.0) {}
+    
     // Constructor from real and imaginary parts
     ComplexScalar(double real, double imag) {
         value = torch::complex(
@@ -91,6 +94,21 @@ public:
         }
     }
 
+    ComplexScalar operator-() const {
+        return ComplexScalar(-real(), -imag());
+    }
+
+    bool operator==(const ComplexScalar& other) const {
+        return torch::allclose(this->value, other.value);
+    }
+
+    bool operator==(const torch::Tensor& tensor) const {
+        if (tensor.scalar_type() == torch::kComplexDouble && tensor.numel() == 1) {
+            return torch::allclose(this->value, tensor);
+        }
+        return false;
+    }
+
     // Division with a PyTorch tensor
     ComplexScalar operator/(const torch::Tensor& tensor) const {
         if (tensor.scalar_type() == torch::kComplexDouble) {
@@ -136,6 +154,10 @@ public:
 
     double absq() const {
         return imag()*imag() + real()*real();
+    }
+
+    double abs() const {
+        return std::pow(absq(), .5);
     }
 private:
     torch::Tensor value;

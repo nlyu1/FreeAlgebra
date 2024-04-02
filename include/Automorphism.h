@@ -76,15 +76,15 @@ struct ImageRelation : BaseRelation<SrcRelation::num_generators()> {
         FlexibleIdx cspan; 
         std::vector<KeyType> cspan_inv; 
 
-        std::vector<std::vector<ValueType>> nMat; 
-        std::vector<std::vector<ValueType>> cMat; 
+        std::vector<std::vector<FieldType>> nMat; 
+        std::vector<std::vector<FieldType>> cMat; 
         for (uint i=0; i<n; i++) {
             for (uint j=0; j<=i; j++) {
                 // Register the new noncanonical tuple
                 uint idx = nspan_inv.size();
                 nspan[{i, j}] = idx;
                 nspan_inv.push_back({i, j});
-                nMat.push_back(std::vector<ValueType>(aspan_inv.size(), Complex(0., 0.)));
+                nMat.push_back(std::vector<FieldType>(aspan_inv.size(), FieldType(0., 0.)));
 
                 // Compute the product of b(i) * b(j) in terms of their results in a
 
@@ -98,7 +98,7 @@ struct ImageRelation : BaseRelation<SrcRelation::num_generators()> {
                         aspan[key] = aspan.size();
                         aspan_inv.push_back(key);
                         for (auto& pair_: nMat) {
-                            pair_.push_back(Complex(0., 0.));
+                            pair_.push_back(FieldType(0., 0.));
                         }
                     }
                     // Update the corresponding index 
@@ -141,7 +141,7 @@ private:
             auto c = J()[idx][j];
             // double real_part = c.real().item<double>();
             // double imag_part = c.imag().item<double>();
-            // ans.add_(a(j) * Complex(c.real().item<double>, c.imag().item<double>));
+            // ans.add_(a(j) * FieldType(c.real().item<double>, c.imag().item<double>));
         }
         return ans; 
     }

@@ -65,27 +65,44 @@
 
 
 
-// #include "utils.h"
-// #include "BaseAlgebraRelations.h"
-// #include "FinitePowerAlgebras.h"
-// #include "Automorphism.h"
-// #include<iostream>
-// using namespace std; 
+#include "utils.h"
+#include "BaseAlgebraRelations.h"
+#include "FinitePowerAlgebras.h"
+#include "Automorphism.h"
+#include<iostream>
+using namespace std; 
 
 // // Test algebraic relations 
 // int main() {
 //     ImageRelation<CanonicalAnticommRelation<4>, DiracMajoranaBijection<4>> a;
-//     cout << "Hello from main" << endl;
+
+
+
 // }
 
-
-#include <torch/torch.h>
-#include "complex.h"
-#include <iostream>
-using namespace std; 
-
 int main() {
-    cout << FieldType(1, 2.).conj() << endl;
+    // Create a 2x2 complex tensor
+    auto real = torch::tensor({{1., 2.}, 
+                                {3., 4.}});
+    auto imag = torch::tensor({{5., 6.}, 
+                                {7., 8.}});
+    auto omega = torch::cat({real.unsqueeze(-1), imag.unsqueeze(-1)}, -1);
+    omega = torch::view_as_complex(omega);
+    omega.set_requires_grad(true);
+
+    omega.sum().backward();
+    cout << omega.grad() << endl;
+
+    // // Perform operations
+    // auto element1 = tensor.index({0, 0}); // Extracting first element
+    // auto element2 = tensor.index({1, 1}); // Extracting second element
+    // auto product = element1 * element2;   // Multiplying the elements
+
+    // // Perform differentiation with respect to the product
+    // product.backward();
+
+    // // Inspect the gradient of the original tensor
+    // std::cout << "Gradient of the tensor: " << tensor.grad() << std::endl;
 
     return 0;
 }

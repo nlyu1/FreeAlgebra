@@ -15,8 +15,8 @@ struct BaseRelation {
         static_cast<void>(i); static_cast<void>(j);
         throw std::invalid_argument("Noncanonical commutation relation needs to be defined");
     }
-    // Specifies (gidx)**pow = (Complex) * (gidx)**(uint)
-    virtual tuple<uint, Complex> homogeneous_exponent(uint gidx, uint pow) const {
+    // Specifies (gidx)**pow = (FieldType) * (gidx)**(uint)
+    virtual tuple<uint, FieldType> homogeneous_exponent(uint gidx, uint pow) const {
         static_cast<void>(gidx); static_cast<void>(pow);
         throw std::invalid_argument("Noncanonical commutation relation needs to be defined");
 
@@ -28,7 +28,7 @@ struct BaseRelation {
     }
     // Specifies the trace of generators. 
     //    Traces are expected to extend multiplicatively across different generators
-    virtual Complex tr(uint gidx, uint pow) const {
+    virtual FieldType tr(uint gidx, uint pow) const {
         static_cast<void>(gidx);
         static_cast<void>(pow);
         throw std::invalid_argument("Conjugation not implemented");
@@ -51,13 +51,13 @@ struct BaseRelation {
     }
     // Given the algebra-specific generator trace relation, 
     //    computes the trace of a monomial
-    virtual Complex monomial_tr(const KeyType& monomial) {
-        Complex result = Complex(0.);
+    virtual FieldType monomial_tr(const KeyType& monomial) {
+        FieldType result = FieldType(0.);
         for (uint j=0; j<monomial.size(); j++) {
-            if (result == Complex(0., 0.)) {
+            if (result == FieldType(0., 0.)) {
                 return result; 
             }
-            result *= tr(j, monomial[j]); 
+            result = result * tr(j, monomial[j]); 
         }
         return result; 
     }
@@ -87,9 +87,9 @@ struct FreeConjRelation: virtual public BaseRelation<n> {
 template<uint n, uint d>
 struct ScalarTraceRelation: virtual public BaseRelation<n> {
     // Specifies the trace of generators  
-    Complex tr(uint gidx, uint pow) const override {
+    FieldType tr(uint gidx, uint pow) const override {
         static_cast<void>(gidx);
-        return pow == 0 ? Complex(static_cast<double>(d)) : Complex(0., 0.);
+        return pow == 0 ? FieldType(static_cast<double>(d)) : FieldType(0., 0.);
     }
 };
 
@@ -126,7 +126,7 @@ public:
 
     Element one() const {
         return Element(
-            CoeffMap({{KeyType(Relation::num_generators(), 0u), Complex(1., 0.)}})
+            CoeffMap({{KeyType(Relation::num_generators(), 0u), FieldType(1., 0.)}})
         );
     }
 
@@ -142,11 +142,11 @@ public:
 
 
 
-// Complex template parameter
+// FieldType template parameter
 // Right now double-types are not supported, so we use int divided by 1e7
 template<int real, int imag>
 struct ComplexParameter {
-    static constexpr Complex value{real/10000000, imag/10000000};
+    static constexpr std::complex<double> value{real/10000000., imag/10000000.};
 };
 // Pass these into the third template argument of ProdAlgebra 
 //    to obtain commuting (resp. anticommuting) tensor product algebras
@@ -173,8 +173,8 @@ struct ProductRelation:
         auto pivot = LRel::num_generators();
         CoeffMap result; 
         if (j < pivot && i >= pivot) { // j < pivot <= i
-            /// Replace this Complex(-1., 0.) with the third template argument
-            result[{j, i}] = CommutePhase::value; 
+            /// Replace this FieldType(-1., 0.) with the third template argument
+            result[{j, i}] = FieldType(CommutePhase::value.real(), CommutePhase::value.imag()); 
         } else if (i < pivot) { 
             // then j < i < pivot
             //  Compute CR using RRel then extend to the whole algebra
@@ -202,7 +202,7 @@ struct ProductRelation:
         return (i<pivot) ? Lrel().conj(i) : Rrel().conj(i - pivot) + pivot;
     }
 
-    tuple<uint, Complex> homogeneous_exponent(uint gidx, uint pow) const override {
+    tuple<uint, FieldType> homogeneous_exponent(uint gidx, uint pow) const override {
         auto pivot = LRel::num_generators();
         if (gidx < pivot) {
             return Lrel().homogeneous_exponent(gidx, pow);
@@ -211,7 +211,7 @@ struct ProductRelation:
         }
     }
 
-    Complex tr(uint gidx, uint pow) const override {
+    FieldType tr(uint gidx, uint pow) const override {
         return gidx < LRel::num_generators()? 
             Lrel().tr(gidx, pow) : Rrel().tr(gidx - LRel::num_generators(), pow);
     }

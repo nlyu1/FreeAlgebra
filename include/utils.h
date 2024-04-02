@@ -13,12 +13,11 @@
 #include <fmt/core.h> 
 #include <torch/torch.h>
 #include <unordered_map>
+#include "complex.h"
 using namespace std; 
 
-typedef std::complex<double> Complex;
 typedef uint PowType;
 typedef std::vector<PowType> KeyType;
-typedef Complex ValueType;
 struct VectorHash {
     std::size_t operator()(const KeyType& v) const {
         std::size_t hash = 0;
@@ -29,25 +28,12 @@ struct VectorHash {
     }
 };
 
-typedef std::unordered_map<KeyType, ValueType, VectorHash> CoeffMap; 
+typedef std::unordered_map<KeyType, FieldType, VectorHash> CoeffMap; 
 typedef std::unordered_map<KeyType, double, VectorHash> RealCoeffMap;
 
 
-// Pretty printing of a double value
-std::string prettyPrint(double value) {
-    std::stringstream stream;
-    stream << std::fixed << std::setprecision(6) << value; // Set a max precision
-    std::string str = stream.str();
-    str.erase(str.find_last_not_of('0') + 1, std::string::npos);
-    // If the decimal point is now the last character, remove it as well
-    if (str.back() == '.') {
-        str.erase(str.length() - 1);
-    }
-    return str;
-}
-
 // String formatting of complex number
-std::string prettyPrint(Complex z) {
+std::string prettyPrint(FieldType z) {
     std::string result;
     double re = z.real();
     double im = z.imag();
@@ -184,19 +170,6 @@ std::vector<T> mergeVectors(const std::vector<T>& I, const std::vector<T>& J) {
         merged.insert(merged.end(), J.begin(), J.end());
         return merged;
     }
-}
-
-unsigned long long factorial(unsigned int n) {
-    unsigned long long result = 1;
-    for (unsigned int i = 1; i <= n; ++i) {
-        result *= i;
-    }
-    return result;
-}
-
-std::ostream& operator<<(std::ostream& os, const Complex& z) {
-    os << prettyPrint(z);
-    return os;
 }
 
 std::ostream& operator<<(std::ostream& os, const CoeffMap& coeffs) {

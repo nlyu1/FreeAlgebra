@@ -13,7 +13,7 @@ public:
 
     // All except the identity is traceless. 
     // Identity has trace 2**(n/2)
-    Complex tr(const Element& X) const {
+    FieldType tr(const Element& X) const {
         KeyType zero(2*n, 0u);
         return X.coeffs.contains(zero) ? X.coeffs.at(zero) * std::pow(2., n) : 0.;
     }
@@ -27,7 +27,7 @@ public:
             if (degree * (degree - 1) / 2 % 2 == 0){ 
                 coeffs[gen_to_power_repr(pair.first, 2*n)] = pair.second;
             } else {
-                coeffs[gen_to_power_repr(pair.first, 2*n)] = pair.second * Complex(0, 1.);
+                coeffs[gen_to_power_repr(pair.first, 2*n)] = pair.second * FieldType(0, 1.);
             }
         }
         auto result = Element(coeffs);
@@ -37,7 +37,7 @@ public:
 
     // Assembles a unitary from the coefficient of its exponents 
     Element unitary(const RealCoeffMap& coeffs) const {
-        return (hamiltonian(coeffs) * Complex(0., 1.)).exp();
+        return (hamiltonian(coeffs) * FieldType(0., 1.)).exp();
     }
 
     // Assembles a thermal state from its Hamiltonian 
