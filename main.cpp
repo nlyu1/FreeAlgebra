@@ -65,15 +65,27 @@
 
 
 
-#include "utils.h"
-#include "BaseAlgebraRelations.h"
-#include "FinitePowerAlgebras.h"
-#include "Automorphism.h"
-#include<iostream>
+// #include "utils.h"
+// #include "BaseAlgebraRelations.h"
+// #include "FinitePowerAlgebras.h"
+// #include "Automorphism.h"
+// #include<iostream>
+// using namespace std; 
+
+// // Test algebraic relations 
+// int main() {
+//     ImageRelation<CanonicalAnticommRelation<4>, DiracMajoranaBijection<4>> a;
+//     cout << "Hello from main" << endl;
+// }
+
+
+#include <torch/torch.h>
+#include "complex.h"
+#include <iostream>
 using namespace std; 
 
-// Test algebraic relations 
 int main() {
-    ImageRelation<CanonicalAnticommRelation<4>, DiracMajoranaBijection<4>> a;
-    cout << "Hello from main" << endl;
+    cout << FieldType(1, 2.).conj() << endl;
+
+    return 0;
 }
