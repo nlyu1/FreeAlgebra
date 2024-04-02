@@ -10,3 +10,7 @@ if [ -f "$HOME/.zshrc" ]; then
 fi
 
 ./main
+
+# Extras: 
+    # source environment from zshrc (to run correctly)
+    # Use cwd to set directory

@@ -4,7 +4,7 @@ project(FreeAlgebraProject)
 # Specify C++ Standard
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-message(STATUS "C++ compiler: ${CMAKE_CXX_COMPILER}")
+# message(STATUS "C++ compiler: ${CMAKE_CXX_COMPILER}")
 
 if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   # Compiler options
@@ -16,6 +16,7 @@ endif()
 
 # Set the path to the extracted LibTorch or use find_package if installed globally
 list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/Cellar/libtorch")
+include_directories("/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3")
 include_directories("/opt/homebrew/Cellar/fmt/10.2.1_1/include")
 
 # Required libraries 
