@@ -155,9 +155,18 @@ public:
             auto pivot = pair.first.begin()+LRel::num_generators();
             auto keyL = KeyType(pair.first.begin(), pivot);
             auto keyR = KeyType(pivot, pair.first.end());
-            coeffs[keyL] = pair.second * Relation::Rrel().monomial_tr(keyR);
+            auto scalar = pair.second * Relation::Rrel().monomial_tr(keyR);
+            if (scalar == FieldType(0.)) {
+                continue; 
+            }
+            // cout << prettyPrint(keyL) << " " << prettyPrint(keyR) << ": " 
+            // << pair.second << ", " << Relation::Rrel().monomial_tr(keyR)
+            // << endl;
+            coeffs[keyL] = scalar;
         }
-        return LElm(coeffs);
+        auto result = LElm(coeffs);
+        cout << result << endl;
+        return result;
     }
 
     RElm trL(const Element& x) {

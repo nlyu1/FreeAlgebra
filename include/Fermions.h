@@ -1,6 +1,7 @@
 #ifndef FERMIONS_H
 #define FERMIONS_H
 #include <cmath>
+#include <algorithm>
 #include "BaseAlgebraRelations.h"
 #include "FinitePowerAlgebras.h"
 #include "utils.h"
@@ -13,6 +14,8 @@ class MajoranaAlgebra: public CliffordAlgebra<2*n> {
 public:
     using CurAlg = CliffordAlgebra<2*n>;
     using Element = CurAlg::Element; 
+    using CARAlg = CARAlgebra<2*n>;
+    using CARElement = CARAlg::Element; 
     using SqAlg = ProductAlgebra<CurAlg, CurAlg, decltype(PROD_ANTICOMMUTE)>;
     using SqElement = SqAlg::Element; 
 
@@ -26,16 +29,31 @@ public:
         return sqAlg_;
     }
 
+    static CARAlg& carAlg() {
+        static CARAlg carAlg_{};
+        return carAlg_;
+    }
+
     // Given real coefficients for generators, ensures that 
     //    the result is Hermitian 
     Element hamiltonian(const RealCoeffMap& coeffs_) const {
         CoeffMap coeffs;
         for (const auto& pair: coeffs_) {
             auto degree = pair.first.size();
+            auto key = gen_to_power_repr(pair.first, 2*n);
+            // Check that we don't have the wrong representation
+            for (auto const k: key) {
+                if (k>1) {
+                    throw(std::invalid_argument(fmt::format(
+                        "Expected mult-representation but obtained power representation {}", 
+                        prettyPrint(pair.first)
+                    )));
+                }
+            }
             if (degree * (degree - 1) / 2 % 2 == 0){ 
-                coeffs[gen_to_power_repr(pair.first, 2*n)] = pair.second;
+                coeffs[key] = pair.second;
             } else {
-                coeffs[gen_to_power_repr(pair.first, 2*n)] = FieldType(0, 1.) * pair.second;
+                coeffs[key] = FieldType(0, 1.) * pair.second;
             }
         }
         auto result = Element(coeffs);
@@ -54,17 +72,44 @@ public:
         return expH / expH.tr(); 
     }
 
-    Element ground(const RealCoeffMap& coeffs) const {
-        auto k = FieldType(30.);
-        auto expH = (hamiltonian(coeffs)*k).exp();
-        return expH / expH.tr(); 
+    // Uses coeffs to compute a unitary acting on the zero state
+    Element pure_gaussian(const RealCoeffMap& coeffs) const {
+        for (const auto& pair: coeffs) {
+            if (pair.first.size() != 2) {
+                throw(std::invalid_argument(fmt::format(
+                    "Expected quadratic coefficients but got {}\n", 
+                    prettyPrint(coeffs)
+                )));
+            }
+        }
+        auto U = unitary(coeffs); 
+        return U * zero_state() * U.conj();
+    }
+
+    // Returns the zero computational (pure) state
+    Element zero_state() const {
+        auto rho = curAlg().zero();
+        auto scale = FieldType(2.).pow(-static_cast<double>(n));
+        for (const auto& v: binstr(n)) {
+            FieldType term_scale(1.);
+            auto term = curAlg().one();
+            for (uint i=0; i<n; i++) {
+                if (v[i] == 1) {
+                    // Each XY=-iZ
+                    term_scale = term_scale * FieldType(0., -1);
+                    term = term * curAlg()(2*i) * curAlg()(2*i+1);
+                }
+            }
+            rho = rho + term * term_scale * scale; 
+        }
+        return rho; 
     }
 
     double degree_weight(const Element& rho, uint k) const {
         double result = 0; 
         for (const auto& pair: rho.coeffs) {
             if (power_to_gen_repr(pair.first).size() == k) {
-                result = result + std::pow(std::abs(pair.second)*pow(2., n), 2);
+                result = result + pair.second.absq();
             }
         }
         return result; 
@@ -89,28 +134,15 @@ public:
         return H.exp();
     }
 
-    // Element conv(const Element& rho, const Element& sigma) const {
-
-    // }
-
-    // Returns the zero computational (pure) state
-    Element zero_state() const {
-        auto rho = curAlg().zero();
-        auto scale = FieldType(2.).pow(-static_cast<double>(n));
-        for (const auto& v: binstr(n)) {
-            FieldType term_scale(1.);
-            auto term = curAlg().one();
-            for (uint i=0; i<n; i++) {
-                if (v[i] == 1) {
-                    // Each XY=-iZ
-                    term_scale = term_scale * FieldType(0., -1);
-                    term = term * curAlg()(2*i) * curAlg()(2*i+1);
-                }
-            }
-            rho = rho + term * term_scale * scale; 
-        }
-        return rho; 
+    Element conv(const Element& rho, const Element& sigma) const {
+        auto s = sqAlg();
+        auto U = rotation_unitary();
+        auto tau = U * s.kron(rho, sigma) * U.conj();
+        // cout << "Trace output " << tau << endl;
+        return s.trR(tau); 
     }
+
+    // CARElement 
 };
 
 #endif

@@ -446,3 +446,48 @@ events:
       LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
       TAPI support using: TAPI version 11.0.0 (tapi-1100.0.11)
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/homebrew/lib/cmake/absl/abslConfig.cmake:4 (find_dependency)"
+      - "/opt/homebrew/lib/cmake/protobuf/protobuf-config.cmake:9 (find_package)"
+      - "/opt/homebrew/share/cmake/Caffe2/public/protobuf.cmake:4 (find_package)"
+      - "/opt/homebrew/share/cmake/Caffe2/Caffe2Config.cmake:48 (include)"
+      - "/opt/homebrew/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/nicholaslyu/Code/algebra/build/CMakeFiles/CMakeScratch/TryCompile-rY2iff"
+      binary: "/Users/nicholaslyu/Code/algebra/build/CMakeFiles/CMakeScratch/TryCompile-rY2iff"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.2"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/nicholaslyu/Code/algebra/build/CMakeFiles/CMakeScratch/TryCompile-rY2iff'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_985c9/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_985c9.dir/build.make CMakeFiles/cmTC_985c9.dir/build
+        Building C object CMakeFiles/cmTC_985c9.dir/src.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -MD -MT CMakeFiles/cmTC_985c9.dir/src.c.o -MF CMakeFiles/cmTC_985c9.dir/src.c.o.d -o CMakeFiles/cmTC_985c9.dir/src.c.o -c /Users/nicholaslyu/Code/algebra/build/CMakeFiles/CMakeScratch/TryCompile-rY2iff/src.c
+        Linking C executable cmTC_985c9
+        /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_985c9.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_985c9.dir/src.c.o -o cmTC_985c9
+        
+      exitCode: 0
+...

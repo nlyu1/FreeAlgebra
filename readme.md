@@ -1,13 +1,14 @@
 # FreeAlgebra
-## Flexible, high-performance algebraic computations
+## An autodifferentiable libary for symbolic algebra
 
-`FreeAlgebra` is a library designed for symbolic manipulation of 
-custom-defined algebraic objects. Originally designed for Grassmann 
+`FreeAlgebra` is originally designed for Grassmann 
 integration and Clifford algebra. 
 
 It allows one to define finite freely generated algebras by specifying 
 the commutation relations between generators and conjugation relations. 
 
+Supports non-representable algebras. 
 
 Tips
 `cd build && make clean`
+`CPUPROFILE=main.prof ./main`
