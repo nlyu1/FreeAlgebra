@@ -198,13 +198,13 @@ public:
     // Miscellaneous helpers:
     // Filters null coefficients
     void filter_coeffs_() {
-        for (auto it = coeffs.begin(); it != coeffs.end(); ) {
-            if (it->second == FieldType(0.0, 0.0)) { // Check if the value is 0
-                it = coeffs.erase(it); // Remove the entry and update the iterator
-            } else {
-                ++it; // Move to the next entry
-            }
-        }
+        // for (auto it = coeffs.begin(); it != coeffs.end(); ) {
+        //     if (it->second == FieldType(0.0, 0.0)) { // Check if the value is 0
+        //         it = coeffs.erase(it); // Remove the entry and update the iterator
+        //     } else {
+        //         ++it; // Move to the next entry
+        //     }
+        // }
     }
 
     std::string to_string() const {

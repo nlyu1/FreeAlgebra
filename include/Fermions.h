@@ -127,7 +127,7 @@ public:
 
     SqElement rotation_unitary(double theta=M_PI/4.) const {
         auto gamma = sqAlg();
-        auto H = gamma.zero();
+        auto H = gamma.zero(); 
         for (uint j=0; j<2*n; j++) {
             H = H + gamma(j) * gamma(2*n + j) * (theta * .5);
         }
@@ -142,7 +142,13 @@ public:
         return s.trR(tau); 
     }
 
-    // CARElement 
+    CARElement toCAR(const Element& rho) const {
+        CARAlg d = carAlg();
+        auto result = d.zero();
+        for (auto const& p: rho) {
+            ;
+        }
+    }
 };
 
 #endif

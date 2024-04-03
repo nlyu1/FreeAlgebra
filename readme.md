@@ -11,4 +11,4 @@ Supports non-representable algebras.
 
 Tips
 `cd build && make clean`
-`CPUPROFILE=main.prof ./main`
+`CPUPROFILE=main.prof ./main`, `pprof ./main ./main.prof`, then `web`

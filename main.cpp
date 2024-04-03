@@ -76,15 +76,27 @@ using namespace std;
 
 // Test algebraic relations 
 int main() {
-    MajoranaAlgebra<2> c;
-    auto rho_coeffs = RealCoeffMap({
-        {{0, 1}, .5},
-        {{0, 2}, .3},
-    });
-    // auto rho_coeffs = RealCoeffMap({});
-    auto rho = c.pure_gaussian(rho_coeffs);
-    // cout << rho << endl;
-    auto sigma = c.conv(rho, rho);
-    cout << sigma << endl;
+    // MajoranaAlgebra<2> c;
+    // auto rho_coeffs = RealCoeffMap({
+    //     {{0, 1}, .5},
+    //     {{0, 2}, .3},
+    // });
+    // // auto rho_coeffs = RealCoeffMap({});
+    // auto rho = c.pure_gaussian(rho_coeffs);
+    // // cout << rho << endl;
+    // auto sigma = c.conv(rho, rho);
+    // cout << sigma << endl;
+
+    const uint n = 24;
+    CARAlgebra<2*n> c;
+    auto a = c.one(), b=c.one();
+    for (uint i=0; i<n; i++) {
+        a = a * c(2*i+1);
+    }
+    for (uint i=0; i<n; i++) {
+        b = b * c(2*i);
+    }
+    cout << a << b << endl;
+    cout << a*b << endl;
     return 0;
 }
