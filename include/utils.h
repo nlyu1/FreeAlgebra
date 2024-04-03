@@ -191,6 +191,7 @@ bool allzero(std::vector<T> v) {
 
 // Returns a vector of vectors which returns all n-tuples of sum deg
 std::vector<KeyType> enumerate_degree_eq(uint n, uint deg) {
+    assert (n>0);
     if (n == 1) {
         return {{deg}}; 
     } else {
@@ -213,6 +214,22 @@ std::vector<KeyType> enumerate_degree_leq(uint n, uint deg) {
         result.insert(result.end(), rec.begin(), rec.end());
     }
     return result;
+}
+
+std::vector<KeyType> binstr(uint n) {
+    assert (n>0);
+    if (n == 1) {
+        return {{0,}, {1,}};
+    }
+    std::vector<KeyType> result; 
+    for (auto const& v: binstr(n - 1)) { 
+        auto t0 = KeyType(v),  t1 = KeyType(v);
+        t0.push_back(0);
+        t1.push_back(1);
+        result.push_back(t0);
+        result.push_back(t1);
+    }
+    return result; 
 }
 
 

@@ -961,7 +961,9 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
   /Users/nicholaslyu/Code/algebra/include/Automorphism.h \
   /Users/nicholaslyu/Code/algebra/include/BaseAlgebraRelations.h \
   /Users/nicholaslyu/Code/algebra/include/Elements.h \
+  /Users/nicholaslyu/Code/algebra/include/Fermions.h \
   /Users/nicholaslyu/Code/algebra/include/FinitePowerAlgebras.h \
+  /Users/nicholaslyu/Code/algebra/include/ProductPowerAlgebra.h \
   /Users/nicholaslyu/Code/algebra/include/complex.h \
   /Users/nicholaslyu/Code/algebra/include/utils.h \
   /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/Cholesky \
@@ -8693,6 +8695,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d_backward.h:
 
+/opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/runtime/operator.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d.h:
+
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool2d_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/reflection_pad1d_backward.h:
@@ -11667,10 +11673,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_solve_ex_native.h:
 
-/opt/homebrew/Cellar/libtorch/include/torch/csrc/jit/runtime/operator.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool3d.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fft_ihfftn_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_linalg_solve_ex_meta.h:
@@ -12106,6 +12108,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/outer_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_floor_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/inner_product.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_expm1_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/scaled_dot_product_attention_ops.h:
 
@@ -12732,6 +12738,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cudnn_init_dropout_state.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/view_native.h:
+
+/Users/nicholaslyu/Code/algebra/include/ProductPowerAlgebra.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_autocast_to_reduced_precision_native.h:
 
@@ -14085,10 +14093,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/ordering.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_floor.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_cholesky_solve_helper_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_setsize.h:
@@ -14485,13 +14489,21 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/complex.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_transformer_encoder_layer_fwd_ops.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/fractional_max_pool2d_ops.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_transformer_encoder_layer_fwd_ops.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_has_same_storage_numel.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/this_thread.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/eq_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/front_insert_iterator.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/common_comparison_category.h:
+
+/Users/nicholaslyu/Code/algebra/include/Fermions.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/clocale:
 
@@ -15269,10 +15281,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/diff_ops.h:
 
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_expm1_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/inner_product.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/sin.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/embedding_backward_native.h:
@@ -15518,10 +15526,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /opt/homebrew/Cellar/libtorch/include/c10/core/QScheme.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/indirectly_comparable.h:
-
-/opt/homebrew/Cellar/libtorch/include/ATen/ops/eq_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/front_insert_iterator.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/erf_native.h:
 
@@ -15891,8 +15895,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 
 /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/Eigen/src/LU/Determinant.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/common_comparison_category.h:
-
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/smooth_l1_loss_backward_native.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/is_conj_ops.h:
@@ -15904,6 +15906,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/nicholaslyu/Code/algebra/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/optional:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/cartesian_prod_native.h:
+
+/opt/homebrew/Cellar/libtorch/include/ATen/ops/_foreach_floor.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/ordering.h:
 
 /opt/homebrew/Cellar/libtorch/include/ATen/ops/_efficient_attention_backward_native.h:
 

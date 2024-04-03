@@ -115,7 +115,7 @@ struct ImageRelation : BaseRelation<SrcRelation::num_generators()> {
         //    to their canonical A-components. Since the transformation law 
         //    preserves degree, we only need to look for <=maxdeg
         cspan_inv = enumerate_degree_leq(n, maxdeg);
-        cout << "nMat initialized. Initializing " << cspan_inv.size() << " candidates." << endl;
+        // cout << "nMat initialized. Initializing " << cspan_inv.size() << " candidates." << endl;
         for (uint i=0; i<cspan_inv.size(); i++) {
             // Update the index for the index
             cspan[cspan_inv[i]] = i;
@@ -141,9 +141,9 @@ struct ImageRelation : BaseRelation<SrcRelation::num_generators()> {
                 cMat[i][aspan.at(key)] = value; 
             }
         }
-        cout << "cMat initialized" << endl;
+        // cout << "cMat initialized" << endl;
         auto nMat_ = toEigenMatrixXcd(nMat), cMat_overcomplete = toEigenMatrixXcd(cMat);
-        cout << "transferred to EigenMatrix" << endl;
+        // cout << "transferred to EigenMatrix" << endl;
         cMat_overcomplete.transposeInPlace();
         nMat_.transposeInPlace();
         // cout << "cMat shape: " << cMat_overcomplete.rows() << ", " << cMat_overcomplete.cols() << endl;
@@ -224,7 +224,6 @@ struct ImageRelation : BaseRelation<SrcRelation::num_generators()> {
     CoeffMap commute_noncanonical(uint i, uint j) const override {
         return noncanonical_commutation[i][j]; 
     }
-
 private:
     ElmA a(uint i) const {
         assert(i >= 0 && i< SrcRelation::num_generators()); 

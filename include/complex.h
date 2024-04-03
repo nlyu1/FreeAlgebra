@@ -170,7 +170,7 @@ public:
         return std::pow(absq(), .5);
     }
 
-    ComplexScalar pow(int exponent) const {
+    ComplexScalar pow(double exponent) const {
         return ComplexScalar(torch::pow(value, exponent));
     }
 private:

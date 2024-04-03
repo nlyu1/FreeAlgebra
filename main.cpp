@@ -69,14 +69,38 @@
 #include "BaseAlgebraRelations.h"
 #include "FinitePowerAlgebras.h"
 #include "Automorphism.h"
+#include "ProductPowerAlgebra.h"
+#include "Fermions.h"
 #include<iostream>
 using namespace std; 
 
 // Test algebraic relations 
 int main() {
-    ImageRelation<CanonicalAnticommRelation<14>, DiracMajoranaBijection<14>> a;
+    MajoranaAlgebra<4> c;
+    // auto rho_coeffs = CoeffMap({
+    //     {{0, 0}, FieldType(.5)},
+    //     {{1, 1}, FieldType(0., -.5)}
+    // });
+    // auto rho = MajoranaAlgebra<1>::Element(rho_coeffs);
+    // cout << rho << endl;
+    // cout << rho.pow(2) << endl;
+    // auto rho_zero = c.zero_state();
+    // cout << rho_zero << endl;
+    // cout << rho_zero.pow(2) << endl;
+    cout << FieldType(2.) << endl;
+    auto rho_zero = c.zero_state();
+    cout << rho_zero << endl;
+    cout << (rho_zero.pow(2) - rho_zero).norm() << endl;
 
-    // for (const auto& v : enumerate_degree_leq(3, 3)) {
-    //     cout << prettyPrint(v) << endl;
-    // }
+    // auto sigma_coeffs = RealCoeffMap({
+    //     {{0, 3}, -1.},
+    //     {{1, 2}, 2.},
+    //     {{2, 3}, 1.}
+    // });
+    // auto sigma = c.ground(sigma_coeffs);
+    // cout << rho << endl;
+    // cout << rho.norm() << endl;
+    // cout << rho.tr() << " " << (rho.pow(2)).tr() << endl;
+
+    // cout << c.conv(rho, sigma) << endl;
 }

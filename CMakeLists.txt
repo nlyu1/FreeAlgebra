@@ -51,6 +51,10 @@ target_link_libraries(main PRIVATE FreeAlgebraLib)
 
 
 
-# add_executable(test_finitealgebras ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_finitealgebras.cpp)
-# target_link_libraries(test_finitealgebras PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
-# add_test(NAME test_finitealgebras COMMAND test_finitealgebras)
+add_executable(test_finitealgebras ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_finitealgebras.cpp)
+target_link_libraries(test_finitealgebras PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
+add_test(NAME test_finitealgebras COMMAND test_finitealgebras)
+
+add_executable(test_fermions ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_fermions.cpp)
+target_link_libraries(test_fermions PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
+add_test(NAME test_fermions COMMAND test_fermions)

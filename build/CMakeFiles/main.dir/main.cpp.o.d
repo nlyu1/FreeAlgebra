@@ -5656,4 +5656,6 @@ CMakeFiles/main.dir/main.cpp.o: \
   /Users/nicholaslyu/Code/algebra/include/BaseAlgebraRelations.h \
   /Users/nicholaslyu/Code/algebra/include/Elements.h \
   /Users/nicholaslyu/Code/algebra/include/FinitePowerAlgebras.h \
-  /Users/nicholaslyu/Code/algebra/include/Automorphism.h
+  /Users/nicholaslyu/Code/algebra/include/Automorphism.h \
+  /Users/nicholaslyu/Code/algebra/include/ProductPowerAlgebra.h \
+  /Users/nicholaslyu/Code/algebra/include/Fermions.h

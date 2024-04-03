@@ -82,7 +82,8 @@
         "utility": "cpp",
         "format": "cpp",
         "stop_token": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "random": "cpp"
     },
     "cmake.sourceDirectory": "/Users/nicholaslyu/Code/algebra"
 }

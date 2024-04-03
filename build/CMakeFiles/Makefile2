@@ -64,6 +64,8 @@ CMAKE_BINARY_DIR = /Users/nicholaslyu/Code/algebra/build
 
 # The main recursive "all" target.
 all: CMakeFiles/main.dir/all
+all: CMakeFiles/test_finitealgebras.dir/all
+all: CMakeFiles/test_fermions.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +74,8 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/test_finitealgebras.dir/clean
+clean: CMakeFiles/test_fermions.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -99,6 +103,58 @@ main: CMakeFiles/main.dir/rule
 CMakeFiles/main.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
 .PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_finitealgebras.dir
+
+# All Build rule for target.
+CMakeFiles/test_finitealgebras.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_finitealgebras.dir/build.make CMakeFiles/test_finitealgebras.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_finitealgebras.dir/build.make CMakeFiles/test_finitealgebras.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nicholaslyu/Code/algebra/build/CMakeFiles --progress-num=5,6 "Built target test_finitealgebras"
+.PHONY : CMakeFiles/test_finitealgebras.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_finitealgebras.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nicholaslyu/Code/algebra/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_finitealgebras.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nicholaslyu/Code/algebra/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_finitealgebras.dir/rule
+
+# Convenience name for target.
+test_finitealgebras: CMakeFiles/test_finitealgebras.dir/rule
+.PHONY : test_finitealgebras
+
+# clean rule for target.
+CMakeFiles/test_finitealgebras.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_finitealgebras.dir/build.make CMakeFiles/test_finitealgebras.dir/clean
+.PHONY : CMakeFiles/test_finitealgebras.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_fermions.dir
+
+# All Build rule for target.
+CMakeFiles/test_fermions.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fermions.dir/build.make CMakeFiles/test_fermions.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fermions.dir/build.make CMakeFiles/test_fermions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nicholaslyu/Code/algebra/build/CMakeFiles --progress-num=3,4 "Built target test_fermions"
+.PHONY : CMakeFiles/test_fermions.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_fermions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nicholaslyu/Code/algebra/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_fermions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nicholaslyu/Code/algebra/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_fermions.dir/rule
+
+# Convenience name for target.
+test_fermions: CMakeFiles/test_fermions.dir/rule
+.PHONY : test_fermions
+
+# clean rule for target.
+CMakeFiles/test_fermions.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fermions.dir/build.make CMakeFiles/test_fermions.dir/clean
+.PHONY : CMakeFiles/test_fermions.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

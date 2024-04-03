@@ -182,14 +182,14 @@ public:
             KeyType I; 
             auto K = power_to_gen_repr(pair.first); 
             if (K.size() == 0) {
-                result.add_(std::conj(pair.second));
+                result.add_(pair.second.conj());
                 continue; 
             }
             for (int j=K.size()-1; j>=0; j--){
                 I.push_back(R.conj(K[j]));
             }
             // cout << "Reordering: " << prettyPrint(I) << endl;
-            reorder(I, std::conj(pair.second), result);
+            reorder(I, pair.second.conj(), result);
         }
         result.filter_coeffs_();
         return result; 
@@ -241,7 +241,7 @@ public:
     FieldType tr() const {
         FieldType result = FieldType(0., 0.);
         for (const auto& pair: coeffs) { 
-            result += pair.second * Rel().monomial_tr(pair.first);
+            result = result + pair.second * Rel().monomial_tr(pair.first);
         }
         return result;
     }
@@ -251,6 +251,7 @@ public:
         for (uint j=1; j<SERIES_MAXITERS; j++) {
             delta = operator*(delta) / j; 
             result.add_(delta);
+            // cout << j << " " << result.norm() << endl;
             if (j>3 && delta.norm() / result.norm() < SERIES_TOLERANCE) break;
         }
         return result; 
