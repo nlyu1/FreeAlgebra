@@ -15,6 +15,23 @@ void majorana_tests() {
     assert (rho_zero.tr() == 1.);
 }
 
+void fourier_tests() {
+    // Assert the behavior of fourier transform: preserves coefficients
+    const uint n = 3;
+    MajoranaAlgebra<n> c;
+    auto rho_coeffs = RealCoeffMap({
+        {{0, 1}, 1},
+        {{2, 3}, 1},
+        {{4, 5}, 1},
+    });
+    auto rho = c.pure_gaussian(rho_coeffs);
+    auto xi = c.F(rho);
+    for (auto p: xi.coeffs) {
+        assert(p.second == rho.coeffs.at(p.first));
+    }
+    // Assert the behavior of 
+}
+
 int main() {
     majorana_tests();
 }

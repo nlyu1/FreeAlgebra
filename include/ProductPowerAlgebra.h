@@ -82,6 +82,8 @@ public:
 
     using LElm = typename LAlg::Element; 
     using RElm = typename RAlg::Element; 
+    using LAlgebra = LAlg; 
+    using RAlgebra = RAlg; 
     using Relation = ProductRelation<typename LAlg::Relation, 
                     typename RAlg::Relation, CommutePhase>; 
     using Element = typename BaseAlgebra<Relation>::Element; 
@@ -175,6 +177,13 @@ public:
             auto pivot = pair.first.begin()+LRel::num_generators();
             auto keyL = KeyType(pair.first.begin(), pivot);
             auto keyR = KeyType(pivot, pair.first.end());
+            auto scalar = pair.second * Relation::Lrel().monomial_tr(keyL);
+            if (scalar == FieldType(0.)) {
+                continue; 
+            }
+            // cout << prettyPrint(keyL) << " " << prettyPrint(keyR) << ": " 
+            // << pair.second << ", " << Relation::Lrel().monomial_tr(keyL)
+            // << endl;
             coeffs[keyR] = pair.second * Relation::Lrel().monomial_tr(keyL);
         }
         return RElm(coeffs);
@@ -182,23 +191,4 @@ public:
 };
 
 
-
-// // Recursive power algebra
-// template<uint n, typename Algebra, typename CommutePhase>
-// class PowerAlgebra;
-
-// // Base case specialization for n = 1, just return the Algebra itself
-// template<typename Algebra, typename CommutePhase>
-// class PowerAlgebra<1, Algebra, CommutePhase> {
-// public:
-//     using Type = Algebra;
-// };
-
-// // Recursive case
-// template<uint n, typename Algebra, typename CommutePhase>
-// class PowerAlgebra {
-//     using PreviousPower = typename PowerAlgebra<n-1, Algebra, CommutePhase>::Type;
-// public:
-//     using Type = ProductAlgebra<PreviousPower, Algebra, CommutePhase>;
-// };
 #endif

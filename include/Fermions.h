@@ -3,21 +3,40 @@
 #include <cmath>
 #include <algorithm>
 #include "BaseAlgebraRelations.h"
-#include "FinitePowerAlgebras.h"
+#include "ProductPowerAlgebra.h"
+// #include "FinitePowerAlgebras.h"
 #include "utils.h"
 using namespace std; 
+
+template<uint n>
+struct QPRelation:
+    public CliffordCommRelation<n>, public SelfConjRelation<n>, 
+    // public ScalarTraceRelation<n, static_cast<uint>(TRACE_SCALE)>
+    public ScalarTraceRelation<n, sqrt_two>
+    {};
+
+template<uint n>
+using QPAlgebra = BaseAlgebra<QPRelation<n>>;
 
 
 // Majorana algebra on n modes
 template<uint n>
-class MajoranaAlgebra: public CliffordAlgebra<2*n> {
+class MajoranaAlgebra: public QPAlgebra<2*n> {
 public:
-    using CurAlg = CliffordAlgebra<2*n>;
+    using CurAlg = QPAlgebra<2*n>;
     using Element = CurAlg::Element; 
     using CARAlg = CARAlgebra<2*n>;
     using CARElement = CARAlg::Element; 
     using SqAlg = ProductAlgebra<CurAlg, CurAlg, decltype(PROD_ANTICOMMUTE)>;
     using SqElement = SqAlg::Element; 
+    // The product algebra is the alternating product of the majorana 
+    //    algebra with the self-conjugate exterior algebra
+    using FourierProdAlg = ProductAlgebra<
+        MajoranaAlgebra<n>, ExtSelfConjAlgebra<2*n>, decltype(PROD_ANTICOMMUTE)>;
+    using FourierProdAlgElement = FourierProdAlg::Element;
+    using FourierAlg = FourierProdAlg::RAlgebra;
+    using FourierElement = FourierProdAlg::RElm;
+
 
     static CurAlg& curAlg() {
         static CurAlg curAlg_{};
@@ -32,6 +51,27 @@ public:
     static CARAlg& carAlg() {
         static CARAlg carAlg_{};
         return carAlg_;
+    }
+
+    static FourierProdAlg& fourierProdAlg() {
+        static FourierProdAlg fourierProdAlg_{};
+        return fourierProdAlg_;
+    }
+
+    static FourierProdAlgElement fourier_kernel() {
+        static bool initialized = false;
+        static FourierProdAlgElement kernel = fourierProdAlg().zero();
+
+        if (!initialized) {
+            auto& p = fourierProdAlg();
+            for (uint j = 0; j < 2*n; ++j) {
+                kernel = kernel + p(j) * p(2*n + j);
+            }
+            kernel = kernel.exp();
+            initialized = true;
+        }
+
+        return kernel;
     }
 
     // Given real coefficients for generators, ensures that 
@@ -73,6 +113,12 @@ public:
     }
 
     // Uses coeffs to compute a unitary acting on the zero state
+    Element pure(const RealCoeffMap& coeffs) const {
+        auto U = unitary(coeffs); 
+        return U * zero_state() * U.conj();
+    }
+
+    // Uses coeffs to compute a unitary acting on the zero state
     Element pure_gaussian(const RealCoeffMap& coeffs) const {
         for (const auto& pair: coeffs) {
             if (pair.first.size() != 2) {
@@ -82,8 +128,7 @@ public:
                 )));
             }
         }
-        auto U = unitary(coeffs); 
-        return U * zero_state() * U.conj();
+        return pure(coeffs); 
     }
 
     // Returns the zero computational (pure) state
@@ -145,9 +190,38 @@ public:
     CARElement toCAR(const Element& rho) const {
         CARAlg d = carAlg();
         auto result = d.zero();
-        for (auto const& p: rho) {
-            ;
+        for (auto const& p: rho.coeffs) {
+            auto accum = d.one();
+            for (uint j=0; j<2*n; j++) {
+                if (p.first[j] == 1) {
+                    if (j%2 == 0) {
+                        accum = accum * (d(j/2) + d(j/2 + 1));
+                    } else {
+                        accum = accum * (d(j/2) - d(j/2 + 1)) / FieldType(0., 1.);
+                    }
+                }
+            }
+            result.add_(accum * p.second);
         }
+        return result; 
+    }
+
+    FourierElement F(const Element& rho) const {
+        auto p = fourierProdAlg();
+        return p.trL(fourier_kernel() * p.extR(rho));
+    }
+
+    Element iF(const FourierElement& xi) const {
+        auto p = fourierProdAlg();
+        cout << "Extended " << p.extL(xi) << endl;
+        cout << "inverse kernel " << fourier_kernel().conj() << endl;
+        cout << "times " << fourier_kernel().conj() * p.extL(xi) << endl;
+        return p.trR(fourier_kernel().conj() * p.extL(xi));
+    }
+
+    FourierElement cumulants(const Element& rho) const {
+        auto xi = F(rho);
+        return xi.log();
     }
 };
 

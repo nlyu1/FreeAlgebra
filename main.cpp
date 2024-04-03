@@ -1,70 +1,3 @@
-// #include "FinitePowerAlgebras.h"
-// #include "Automorphism.h"
-// #include "Fermions.h"
-// #include <torch/torch.h>
-// #include<iostream>
-
-// using namespace std;
-
-// template<typename GammaType>
-// auto z(const GammaType& gamma) {
-//     return gamma(0).conj() * gamma(1) + gamma(3);
-// }
-
-// typedef CliffordAlgebra<3> LAlg;
-// typedef CARAlgebra<4> RAlg; 
-
-// int main(){
-//     // LAlg alpha;
-//     // RAlg beta;
-//     // ProductAlgebra<LAlg, RAlg, decltype(PROD_ANTICOMMUTE)> gamma; 
-//     // cout << alpha(0) << endl;
-//     // cout << beta(0) << endl;
-//     // cout << gamma.extR(alpha(0)) << gamma.extL(beta(0)) << endl;
-//     // cout << gamma.anticommutator(gamma.extR(alpha(0)), gamma.extL(beta(0))) << endl; 
-//     // cout << (gamma.projL(gamma.extR(alpha(0)) + gamma.extL(beta(0)))) << endl;
-//     // cout << gamma.extL(beta(0)) << endl;
-//     // cout << (gamma.projL(gamma.extL(beta(0)))) << endl;
-//     // cout << (gamma.projR(gamma.extR(alpha(0))) == beta.zero()) << endl;
-
-//     const uint n=3;
-//     MajoranaAlgebra<n> gamma;
-//     // ProductAlgebra<MajoranaAlgebra<n>, MajoranaAlgebra<n>, decltype(PROD_ANTICOMMUTE)> gamma_sq; 
-
-//     RealCoeffMap coeffs = {
-//         {{}, 3.},
-//         {{0, 1}, 1.}, 
-//         {{1, 2}, 2.},
-//         {{2, 3}, 3.}
-//     };
-
-//     // Gaussian hamiltonian 
-//     auto rho = gamma.density(coeffs);
-//     auto U = gamma.unitary(coeffs);
-//     // cout << "New   " << endl;
-//     // cout << gamma.moments(rho) << endl;
-//     // cout << rho << endl;
-//     // cout << gamma_sq.kron(rho, rho) << endl;
-//     // cout << gamma_sq.kron(rho, rho).tr() << endl;
-
-//     // const uint n=3; 
-//     // CoeffMap coeffs = {
-//     //     {{}, Complex(3.)},
-//     //     {{0, 1}, Complex(1.)}, 
-//     //     {{1, 2}, Complex(2.)},
-    
-//     //     {{2, 3}, Complex(3.)}
-//     // };
-//     // MajoranaAlgebra<n> gamma; 
-//     // cout << gamma(0).conj() << endl;
-
-//     DiracMajoranaBijection<6> R;
-//     CARAlgebra<6> a;
-//     ImageRelation<CanonicalAnticommRelation<6>, DiracMajoranaBijection<6>> r;
-// }
-
-
-
 #include "utils.h"
 #include "BaseAlgebraRelations.h"
 #include "FinitePowerAlgebras.h"
@@ -72,31 +5,59 @@
 #include "ProductPowerAlgebra.h"
 #include "Fermions.h"
 #include<iostream>
+#include <cassert>
 using namespace std; 
 
-// Test algebraic relations 
 int main() {
-    // MajoranaAlgebra<2> c;
+    const uint n = 2;
+    MajoranaAlgebra<n> c;
     // auto rho_coeffs = RealCoeffMap({
-    //     {{0, 1}, .5},
-    //     {{0, 2}, .3},
+    //     {{0, 2, 4, 6}, 1},
+    //     {{0, 1, 2, 3}, 1},
+    //     {{4, 5, 6, 7}, 1},
     // });
-    // // auto rho_coeffs = RealCoeffMap({});
-    // auto rho = c.pure_gaussian(rho_coeffs);
-    // // cout << rho << endl;
-    // auto sigma = c.conv(rho, rho);
-    // cout << sigma << endl;
+    auto rho_coeffs = RealCoeffMap({
+        // {{0, 3}, 1},
+        // {{1, 2}, 1},
+        // {{2, 3}, 1},
+    });
+    auto rho = c.pure(rho_coeffs);
+    auto xi = c.F(rho); 
+    cout << xi << endl;
+    auto sigma = c.iF(xi);
+    cout << sigma << endl;
 
-    const uint n = 24;
-    CARAlgebra<2*n> c;
-    auto a = c.one(), b=c.one();
-    for (uint i=0; i<n; i++) {
-        a = a * c(2*i+1);
-    }
-    for (uint i=0; i<n; i++) {
-        b = b * c(2*i);
-    }
-    cout << a << b << endl;
-    cout << a*b << endl;
-    return 0;
+    // auto xi = c.F(rho);
+    // auto xi_ = c.F_(rho);
+    // cout << "Rho " << rho << endl;
+    // cout << "xi " << xi << endl;
+    // cout << xi_ << endl;
+    // cout << xi - xi_ << endl;
 }
+
+// Test algebraic relations 
+// int main() {
+//     const uint n = 2;
+//     MajoranaAlgebra<n> c;
+//     // auto rho_coeffs = RealCoeffMap({
+//     //     {{0, 2, 4, 6}, 1},
+//     //     {{0, 1, 2, 3}, 1},
+//     //     {{4, 5, 6, 7}, 1},
+//     // });
+//     auto rho_coeffs = RealCoeffMap({
+//         {{0, 3}, 1},
+//         {{1, 2}, 1},
+//         {{2, 3}, 1},
+//     });
+//     auto rho = c.pure(rho_coeffs);
+//     auto xi = c.F(rho);
+//     cout << xi << endl;
+
+//     auto zeta = xi.log();
+//     cout << "Exponential consistency " << (zeta.exp() - xi).norm() << endl;
+//     cout << zeta << zeta.isreal() << endl;
+// }
+
+
+// If commute: then moment (additional minus sign)
+// If non-commute, then no additional minus sign: only scaling

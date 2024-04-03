@@ -76,6 +76,7 @@ struct FreeConjRelation: virtual public BaseRelation<n> {
 };
 
 #define TRACE_SCALE 1000000000.
+
 // Assumes that 1 is represented as id on d-dimensional 
 //    space and all other operators are traceless. 
 template<uint n, uint d>

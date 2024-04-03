@@ -3,7 +3,8 @@
 #include "BaseAlgebraRelations.h"
 using namespace std; 
 
-const uint sqrt_two = static_cast<uint>(TRACE_SCALE * 1.4142135623730951);
+static const uint sqrt_two = static_cast<uint>(TRACE_SCALE * 1.4142135623730951);
+static const uint two = static_cast<uint>(TRACE_SCALE * 2);
 
 // Exterior and Clifford Algebras
 
@@ -32,12 +33,12 @@ struct ExteriorCommRelation: virtual public BaseRelation<n> {
 template<uint n>
 struct ExtFreeConjRelation: 
     public ExteriorCommRelation<n>, public FreeConjRelation<n>, 
-    public ScalarTraceRelation<n, sqrt_two>
+    public ScalarTraceRelation<n, two>
     {};
 template<uint n>
 struct ExtSelfConjRelation: 
     public ExteriorCommRelation<n>, public SelfConjRelation<n>, 
-    public ScalarTraceRelation<n, sqrt_two>
+    public ScalarTraceRelation<n, two>
     {};
 
 // Uses exterior commutation relation and free conjugation relation 

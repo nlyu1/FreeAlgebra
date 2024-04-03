@@ -5,7 +5,7 @@ using namespace std;
 
 std::string prettyPrint(double value) {
     std::stringstream stream;
-    stream << std::fixed << std::setprecision(6) << value; // Set a max precision
+    stream << std::fixed << std::setprecision(5) << value; // Set a max precision
     std::string str = stream.str();
     str.erase(str.find_last_not_of('0') + 1, std::string::npos);
     // If the decimal point is now the last character, remove it as well
@@ -137,10 +137,10 @@ public:
         std::string result;
         double re = real();
         double im = imag();
-        if (re != 0.0) {
+        if (re > 1e-5) {
             result += prettyPrint(re);
         }
-        if (im != 0.0) {
+        if (im > 1e-5) {
             if (!result.empty() && im > 0) {
                 result += "+";
             } else if (im < 0) {
