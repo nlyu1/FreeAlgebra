@@ -10,3 +10,7 @@ CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/C
 
 CXX_FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -Wall -Wextra -pedantic -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wmisleading-indentation -Wnull-dereference -Wdouble-promotion -Wformat=2 -fsanitize=address
 
+# PCH options: CMakeFiles/main.dir/cmake_pch_arm64.hxx.pch_OPTIONS = -Winvalid-pch;-Xclang;-emit-pch;-Xclang;-include;-Xclang;/Users/nicholaslyu/Code/algebra/build/CMakeFiles/main.dir/cmake_pch_arm64.hxx;-x;c++-header
+
+# PCH options: CMakeFiles/main.dir/main.cpp.o_OPTIONS = -Winvalid-pch;;-Xarch_arm64;-include/Users/nicholaslyu/Code/algebra/build/CMakeFiles/main.dir/cmake_pch_arm64.hxx
+

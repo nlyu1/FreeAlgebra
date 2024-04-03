@@ -97,7 +97,6 @@ public:
     Element zero_state() const {
         auto rho = curAlg().zero();
         auto scale = FieldType(2.).pow(-static_cast<double>(n));
-        cout << -n << ", " << scale << endl;
         for (const auto& v: binstr(n)) {
             FieldType term_scale(1.);
             auto term = curAlg().one();

@@ -77,20 +77,10 @@ using namespace std;
 // Test algebraic relations 
 int main() {
     MajoranaAlgebra<4> c;
-    // auto rho_coeffs = CoeffMap({
-    //     {{0, 0}, FieldType(.5)},
-    //     {{1, 1}, FieldType(0., -.5)}
-    // });
-    // auto rho = MajoranaAlgebra<1>::Element(rho_coeffs);
-    // cout << rho << endl;
-    // cout << rho.pow(2) << endl;
-    // auto rho_zero = c.zero_state();
-    // cout << rho_zero << endl;
-    // cout << rho_zero.pow(2) << endl;
-    cout << FieldType(2.) << endl;
-    auto rho_zero = c.zero_state();
-    cout << rho_zero << endl;
-    cout << (rho_zero.pow(2) - rho_zero).norm() << endl;
+    auto rho_coeffs = CoeffMap({
+        {{0, 0}, FieldType(.5)},
+        {{1, 1}, FieldType(0., -.5)}
+    });
 
     // auto sigma_coeffs = RealCoeffMap({
     //     {{0, 3}, -1.},

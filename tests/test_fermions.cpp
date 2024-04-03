@@ -12,6 +12,7 @@ void majorana_tests() {
     MajoranaAlgebra<4> c;
     auto rho_zero = c.zero_state();
     assert ((rho_zero.pow(2) - rho_zero).norm() == 0);
+    assert (rho_zero.tr() == 1.);
 }
 
 int main() {

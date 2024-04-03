@@ -4,7 +4,7 @@
         {
             "label": "CMake: build with clean",
             "type": "shell",
-            "command": "clear && make && ./run.sh",
+            "command": "clear && make -j$(sysctl -n hw.ncpu) && ./run.sh",
             "options": {
                 "cwd": "${workspaceFolder}/build"
             },

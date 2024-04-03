@@ -1,6 +1,4 @@
 /Users/nicholaslyu/Code/algebra/build/CMakeFiles/main.dir
-/Users/nicholaslyu/Code/algebra/build/CMakeFiles/test_finitealgebras.dir
-/Users/nicholaslyu/Code/algebra/build/CMakeFiles/test_fermions.dir
 /Users/nicholaslyu/Code/algebra/build/CMakeFiles/test.dir
 /Users/nicholaslyu/Code/algebra/build/CMakeFiles/edit_cache.dir
 /Users/nicholaslyu/Code/algebra/build/CMakeFiles/rebuild_cache.dir

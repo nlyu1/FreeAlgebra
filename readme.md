@@ -7,3 +7,7 @@ integration and Clifford algebra.
 
 It allows one to define finite freely generated algebras by specifying 
 the commutation relations between generators and conjugation relations. 
+
+
+Tips
+`cd build && make clean`

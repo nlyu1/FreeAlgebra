@@ -139,31 +139,20 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-#=============================================================================
-# Target rules for targets named test_finitealgebras
+# target to build an object file
+cmake_pch_arm64.hxx.pch:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cmake_pch_arm64.hxx.pch
+.PHONY : cmake_pch_arm64.hxx.pch
 
-# Build rule for target.
-test_finitealgebras: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_finitealgebras
-.PHONY : test_finitealgebras
+# target to preprocess a source file
+cmake_pch_arm64.hxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cmake_pch_arm64.hxx.i
+.PHONY : cmake_pch_arm64.hxx.i
 
-# fast build rule for target.
-test_finitealgebras/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_finitealgebras.dir/build.make CMakeFiles/test_finitealgebras.dir/build
-.PHONY : test_finitealgebras/fast
-
-#=============================================================================
-# Target rules for targets named test_fermions
-
-# Build rule for target.
-test_fermions: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_fermions
-.PHONY : test_fermions
-
-# fast build rule for target.
-test_fermions/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fermions.dir/build.make CMakeFiles/test_fermions.dir/build
-.PHONY : test_fermions/fast
+# target to generate assembly for a file
+cmake_pch_arm64.hxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cmake_pch_arm64.hxx.s
+.PHONY : cmake_pch_arm64.hxx.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -189,54 +178,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tests/test_fermions.o: tests/test_fermions.cpp.o
-.PHONY : tests/test_fermions.o
-
-# target to build an object file
-tests/test_fermions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fermions.dir/build.make CMakeFiles/test_fermions.dir/tests/test_fermions.cpp.o
-.PHONY : tests/test_fermions.cpp.o
-
-tests/test_fermions.i: tests/test_fermions.cpp.i
-.PHONY : tests/test_fermions.i
-
-# target to preprocess a source file
-tests/test_fermions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fermions.dir/build.make CMakeFiles/test_fermions.dir/tests/test_fermions.cpp.i
-.PHONY : tests/test_fermions.cpp.i
-
-tests/test_fermions.s: tests/test_fermions.cpp.s
-.PHONY : tests/test_fermions.s
-
-# target to generate assembly for a file
-tests/test_fermions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fermions.dir/build.make CMakeFiles/test_fermions.dir/tests/test_fermions.cpp.s
-.PHONY : tests/test_fermions.cpp.s
-
-tests/test_finitealgebras.o: tests/test_finitealgebras.cpp.o
-.PHONY : tests/test_finitealgebras.o
-
-# target to build an object file
-tests/test_finitealgebras.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_finitealgebras.dir/build.make CMakeFiles/test_finitealgebras.dir/tests/test_finitealgebras.cpp.o
-.PHONY : tests/test_finitealgebras.cpp.o
-
-tests/test_finitealgebras.i: tests/test_finitealgebras.cpp.i
-.PHONY : tests/test_finitealgebras.i
-
-# target to preprocess a source file
-tests/test_finitealgebras.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_finitealgebras.dir/build.make CMakeFiles/test_finitealgebras.dir/tests/test_finitealgebras.cpp.i
-.PHONY : tests/test_finitealgebras.cpp.i
-
-tests/test_finitealgebras.s: tests/test_finitealgebras.cpp.s
-.PHONY : tests/test_finitealgebras.s
-
-# target to generate assembly for a file
-tests/test_finitealgebras.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_finitealgebras.dir/build.make CMakeFiles/test_finitealgebras.dir/tests/test_finitealgebras.cpp.s
-.PHONY : tests/test_finitealgebras.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -247,17 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... main"
-	@echo "... test_fermions"
-	@echo "... test_finitealgebras"
+	@echo "... cmake_pch_arm64.hxx.pch"
+	@echo "... cmake_pch_arm64.hxx.i"
+	@echo "... cmake_pch_arm64.hxx.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tests/test_fermions.o"
-	@echo "... tests/test_fermions.i"
-	@echo "... tests/test_fermions.s"
-	@echo "... tests/test_finitealgebras.o"
-	@echo "... tests/test_finitealgebras.i"
-	@echo "... tests/test_finitealgebras.s"
 .PHONY : help
 
 

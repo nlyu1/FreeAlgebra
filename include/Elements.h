@@ -241,6 +241,11 @@ public:
     FieldType tr() const {
         FieldType result = FieldType(0., 0.);
         for (const auto& pair: coeffs) { 
+            // cout << "Scale "
+            //     << pair.second 
+            //     << " monomial " 
+            //     << prettyPrint(pair.first) 
+            //     << " monomial trace " << Rel().monomial_tr(pair.first) << endl;
             result = result + pair.second * Rel().monomial_tr(pair.first);
         }
         return result;

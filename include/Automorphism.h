@@ -20,7 +20,7 @@ public:
         auto imag = torch::tensor({{0., 0.}, 
                                    {-1., 1.}});
         // Use torch::cat to concatenate real and imag parts along a new dimension
-        auto omega = torch::cat({real.unsqueeze(-1), imag.unsqueeze(-1)}, -1);
+        auto omega = torch::cat({real.unsqueeze(-1 ), imag.unsqueeze(-1)}, -1);
         omega = torch::view_as_complex(omega) * std::pow(2, -.5);
 
         J = torch::block_diag(std::vector<torch::Tensor>(n / 2, omega));

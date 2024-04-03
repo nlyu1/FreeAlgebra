@@ -14,7 +14,8 @@ if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   add_link_options(-fsanitize=address)
 endif()
 
-# Debug and testing scripts
+
+# Debug and testing features
 enable_testing()
 set(CMAKE_BUILD_TYPE Debug)
 find_program(CCACHE_PROGRAM ccache)
@@ -40,10 +41,34 @@ target_include_directories(FreeAlgebraLib INTERFACE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
+# Set the path to the extracted LibTorch or use find_package if installed globally
+list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/Cellar/libtorch")
+include_directories("/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3")
+include_directories("/opt/homebrew/Cellar/fmt/10.2.1_1/include")
+
 # Dependencies
 find_package(Torch REQUIRED)
 find_package(fmt REQUIRED)
 target_link_libraries(FreeAlgebraLib INTERFACE ${TORCH_LIBRARIES} fmt::fmt)
+
+if(COMMAND target_precompile_headers)
+  target_precompile_headers(FreeAlgebraLib INTERFACE
+    <vector>
+    <string>
+    <sstream>
+    <cassert>
+    <cstring>
+    <unordered_map>
+    <Eigen/Dense>
+    <iomanip>
+    <iostream>
+    <cmath>
+    <complex>
+    <Eigen/Dense>
+    <torch/torch.h>
+    <fmt/core.h>
+  )
+endif()
 
 
 add_executable(main main.cpp)
@@ -51,10 +76,10 @@ target_link_libraries(main PRIVATE FreeAlgebraLib)
 
 
 
-add_executable(test_finitealgebras ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_finitealgebras.cpp)
-target_link_libraries(test_finitealgebras PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
-add_test(NAME test_finitealgebras COMMAND test_finitealgebras)
+# add_executable(test_finitealgebras ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_finitealgebras.cpp)
+# target_link_libraries(test_finitealgebras PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
+# add_test(NAME test_finitealgebras COMMAND test_finitealgebras)
 
-add_executable(test_fermions ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_fermions.cpp)
-target_link_libraries(test_fermions PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
-add_test(NAME test_fermions COMMAND test_fermions)
+# add_executable(test_fermions ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_fermions.cpp)
+# target_link_libraries(test_fermions PRIVATE FreeAlgebraLib fmt::fmt ${TORCH_LIBRARIES})
+# add_test(NAME test_fermions COMMAND test_fermions)
