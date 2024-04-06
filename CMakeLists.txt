@@ -11,8 +11,8 @@ if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -pedantic)
   add_compile_options(-Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wmisleading-indentation -Wnull-dereference -Wdouble-promotion -Wformat=2)
   add_compile_options(-O3)
-  # add_compile_options(-fsanitize=address)
-  # add_link_options(-fsanitize=address)
+  add_compile_options(-fsanitize=address)
+  add_link_options(-fsanitize=address)
 endif()
 
 

@@ -68,14 +68,23 @@ struct ProductRelation:
         return gidx < LRel::num_generators()? 
             Lrel().tr(gidx, pow) : Rrel().tr(gidx - LRel::num_generators(), pow);
     }
+
+    std::string to_string(uint v) const override {
+        if (v < LRel::num_generators()) {
+            return Lrel().to_string(v) + std::string("L"); 
+        } else {
+            return Lrel().to_string(v - LRel::num_generators())
+                + std::string("R"); 
+        }
+    }
 };
 
 
 template<typename LAlg, typename RAlg, typename CommutePhase>
 class ProductAlgebra: 
     public BaseAlgebra<ProductRelation<
-        typename LAlg::Relation, typename RAlg::Relation, CommutePhase
-    >> {
+        typename LAlg::Relation, typename RAlg::Relation, CommutePhase>
+    > {
 public:
     using LRel = typename LAlg::Relation; 
     using RRel = typename RAlg::Relation;
@@ -89,7 +98,7 @@ public:
     using Element = typename BaseAlgebra<Relation>::Element; 
 
     // Takes the tensor product of x and y
-    Element kron(const LElm& x, const LElm& y) {
+    Element kron(const LElm& x, const RElm& y) {
         CoeffMap coeffs; 
         for (auto const& pair1:x.coeffs) {
             for (auto const& pair2:y.coeffs) {

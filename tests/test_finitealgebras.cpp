@@ -26,9 +26,17 @@ void anticomm_tests() {
     assert (gamma.anticommutator(gamma(0), gamma(1)) == 0.);
 }
 
+void exterior_tests() {
+    const uint n = 4;
+    ExtFreeConjAlgebra<n> b; 
+    auto y = b(0) * b(0).conj() * b(2) * b(2).conj(); 
+    assert (b.td(y) == 1);
+}
+
 int main() {
     pow_tests();
     anticomm_tests();
+    exterior_tests();
 }
 
 

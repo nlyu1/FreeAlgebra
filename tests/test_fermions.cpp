@@ -29,11 +29,32 @@ void fourier_tests() {
     for (auto p: xi.coeffs) {
         assert(p.second == rho.coeffs.at(p.first));
     }
-    // Assert the behavior of 
+}
+
+void derivative_tests() {
+    return; 
+}
+
+void relation_tests() {
+    const uint n = 2;
+    DiracAlgebra<n> a; 
+    auto l = a.lAlg(); 
+    auto r = a.rAlg();
+    ComplexDispType d1({
+        FieldType(1., 2.), FieldType(5., 6.)
+    }), d2({
+        FieldType(3., 4.), FieldType(7., 8.)
+    }); 
+    auto D1 = a.disp(d1), D2=a.disp(d2);
+    assert (D1.conj() * a(0) * D1 == a.a(0) + a.disp_vec(d1)[0]); 
+    assert (a.disp(add_vec(d1, d2)) == D1 * D2 * a.disp_add(d1, d2)); 
+    assert (a.disp(d1).conj() == a.disp(neg_vec(d1))); 
 }
 
 int main() {
     majorana_tests();
+    fourier_tests();
+    derivative_tests();
 }
 
 

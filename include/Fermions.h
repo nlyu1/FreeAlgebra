@@ -19,7 +19,7 @@ template<uint n>
 using QPAlgebra = BaseAlgebra<QPRelation<n>>;
 
 
-// Majorana algebra on n modes
+// Majorana algebra on n modes: non-normalized 
 template<uint n>
 class MajoranaAlgebra: public QPAlgebra<2*n> {
 public:
@@ -206,6 +206,27 @@ public:
         return result; 
     }
 
+    // Element fromCAR(const CARELement& eta) const {
+    //     auto d = carAlg();
+    //     auto c = curAlg();
+    //     auto result = c.zero();
+
+    //     for (auto const& p: eta.coeffs) {
+    //         auto accum = d.one();
+    //         for (uint j=0; j<2*n; j++) {
+    //             if (p.first[j] == 1) {
+    //                 if (j%2 == 0) {
+    //                     accum = accum * (d(j/2) + d(j/2 + 1));
+    //                 } else {
+    //                     accum = accum * (d(j/2) - d(j/2 + 1)) / FieldType(0., 1.);
+    //                 }
+    //             }
+    //         }
+    //         result.add_(accum * p.second);
+    //     }
+    //     return result; 
+    // }
+
     FourierElement F(const Element& rho) const {
         auto p = fourierProdAlg();
         return p.trL(fourier_kernel() * p.extR(rho));
@@ -225,4 +246,170 @@ public:
     }
 };
 
+
+
+template<typename LAlg, typename RAlg>
+class ExtProductAlgebra: 
+    public ProductAlgebra<LAlg, RAlg, decltype(PROD_ANTICOMMUTE)> {
+public: 
+    using LAlgebra = LAlg; 
+    using RAlgebra = RAlg; 
+    using BaseAlg = ProductAlgebra<LAlg, RAlg, decltype(PROD_ANTICOMMUTE)>;
+    using Element = typename BaseAlg::Element; 
+    using LElm = typename LAlg::Element; 
+    using RElm = typename RAlg::Element; 
+
+    static LAlg& lAlg() {
+        static LAlg lAlg_{};
+        return lAlg_;
+    }
+
+    static RAlg& rAlg() {
+        static RAlg rAlg_{};
+        return rAlg_;
+    }
+
+    RElm dL(const Element& x) {
+        CoeffMap coeffs; 
+        for (auto const& p:x.coeffs) {
+            // Extract the left half of the coefficients 
+            auto scale = p.second; 
+            auto LKeys = KeyType(p.first.begin(), 
+                p.first.begin()+LAlg::num_generators());
+            auto RKeys = KeyType(p.first.begin()+LAlg::num_generators(), 
+                p.first.end());
+            scale = scale * lAlg().td(LElm({{LKeys, FieldType(1.)}})); 
+            if (scale == 0.) continue; 
+            coeffs[RKeys] = scale; 
+        }
+        return RElm(coeffs);
+    }
+
+    LElm dR(const Element& x) {
+        CoeffMap coeffs; 
+        for (auto const& p:x.coeffs) {
+            // Extract the left half of the coefficients 
+            auto scale = p.second; 
+            auto LKeys = KeyType(p.first.begin(), 
+                p.first.begin()+LAlg::num_generators());
+            auto RKeys = KeyType(p.first.begin()+LAlg::num_generators(), 
+                p.first.end());
+            scale = scale * rAlg().td(RElm({{RKeys, FieldType(1.)}})); 
+            if (scale == 0.) continue; 
+            coeffs[LKeys] = scale; 
+        }
+        return LElm(coeffs);
+    }
+};
+
+typedef std::vector<FieldType> ComplexDispType;
+template<typename T>
+std::vector<T> add_vec(const std::vector<T>& vec1, 
+    const std::vector<T>& vec2) {
+    size_t len = std::min(vec1.size(), vec2.size());
+    std::vector<T> result;
+    for (size_t i = 0; i < len; ++i) {
+        result.push_back(vec1[i] + vec2[i]);
+    }
+    return result;
+}
+template<typename T>
+std::vector<T> neg_vec(const std::vector<T>& v) {
+    std::vector<T> result;
+    for (auto x:v) {
+        result.push_back(x * -1);
+    }
+    return result;
+}
+// ComplexDispType symplectic_product(const ComplexDispType& a, const ComplexDispType& b) {
+//     FieldType result(0.);
+//     assert (a.size() == b.size());
+    
+//     for (uint i=0; i<a.size(); i++) {
+//         result = result + 
+//     }
+// }
+
+template<uint n>
+class DiracAlgebra: public ProductAlgebra<
+        CARAlgebra<2*n>, ExtFreeConjAlgebra<2*n>, decltype(PROD_ANTICOMMUTE)> {
+public:
+    using BaseAlg = ProductAlgebra<
+        CARAlgebra<2*n>, ExtFreeConjAlgebra<2*n>, decltype(PROD_ANTICOMMUTE)>;
+    using Element = BaseAlg::Element; 
+
+    using LAlgebra = BaseAlg::LAlgebra; 
+    using RAlgebra =  BaseAlg::RAlgebra; 
+    using LElm = typename LAlgebra::Element; 
+    using RElm = typename RAlgebra::Element; 
+
+    static BaseAlg& alg() {
+        static BaseAlg alg_{};
+        return alg_;
+    }
+
+    static LAlgebra& lAlg() {
+        static LAlgebra lAlg_{};
+        return lAlg_;
+    }
+
+    static RAlgebra& rAlg() {
+        static RAlgebra rAlg_{};
+        return rAlg_;
+    }
+
+    // Defines the vacuum state 
+    Element vac() const {
+        auto a = lAlg();
+        auto result = a.one(); 
+        for (uint i=0; i<n; i++) {
+            result = result * (a(2*i+1) * a(i) * FieldType(-1.) + 1.);
+        }
+        return alg().extR(result); 
+    }
+
+    // The extended annihilation operators 
+    Element a(uint i) const {
+        assert (i>=0 && i<n); 
+        return alg().extR(lAlg()(2*i));
+    }
+
+    // Returns the displacement operator 
+    Element disp(ComplexDispType d) const {
+        assert (d.size() == n);
+        auto result = alg().zero();
+        auto dvec = disp_vec(d); 
+        for (uint i=0; i<n; i++) {
+            result.add_(a(i).conj() * dvec[i] + a(i) * dvec[i].conj()); 
+        }
+        return result.exp(); 
+    }
+
+    // Encoding of a double element as anticommuting exterior vector
+    std::vector<Element> disp_vec(const ComplexDispType& a) const {
+        auto r = rAlg();
+        assert (a.size() == n);
+        std::vector<Element> ans; 
+        for (uint i=0; i<n; i++) {
+            ans.push_back(alg().extL(r(2*i) * a[i]));
+        }
+        return ans; 
+    }
+
+    // Commutator corresponding to displacement addition
+    // a.disp(add_vec(d1, d2)) == D1 * D2 * a.disp_add(d1, d2)
+    Element disp_add(const ComplexDispType& a, const ComplexDispType& b) const {
+        auto avec = disp_vec(a), bvec = disp_vec(b); 
+        auto k = alg().zero();
+        for (uint i=0; i<n; i++) {
+            k.add_(avec[i] * bvec[i].conj() + avec[i].conj() * bvec[i]);
+        }
+        return (k / 2.).exp();
+    }
+
+    Element coherent(const ComplexDispType& a) {
+        auto D = disp(a); 
+        return D * vac() * D.conj(); 
+    }
+};
 #endif
