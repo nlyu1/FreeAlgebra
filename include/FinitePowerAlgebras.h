@@ -30,15 +30,15 @@ struct ExteriorCommRelation: virtual public BaseRelation<n> {
 };
 
 
+// The trace of exterior commutation is not well-defined 
+//    by itself since its generators are not tensor-independent
 template<uint n>
 struct ExtFreeConjRelation: 
-    public ExteriorCommRelation<n>, public FreeConjRelation<n>, 
-    public ScalarTraceRelation<n, two>
+    public ExteriorCommRelation<n>, public FreeConjRelation<n>
     {};
 template<uint n>
 struct ExtSelfConjRelation: 
-    public ExteriorCommRelation<n>, public SelfConjRelation<n>, 
-    public ScalarTraceRelation<n, two>
+    public ExteriorCommRelation<n>, public SelfConjRelation<n>
     {};
 
 // Augments exterior differentiation 
@@ -123,7 +123,8 @@ using CliffordAlgebra = BaseAlgebra<CliffordRelation<n>>;
 // Canonical ordering {a1, a1*, a2, a2*, ...}
 //    The only nontrivially anti-commuting relation is a1* a1 = 1 - a1 a1* (i=1, j=0)
 template<uint n>
-struct CanonicalAnticommRelation: public FreeConjRelation<n> {
+struct CanonicalAnticommRelation: 
+    public FreeConjRelation<n>, public ScalarTraceRelation<n, TRACE_SCALE> {
     CoeffMap commute_noncanonical(uint i, uint j) const override {
         CoeffMap result;
         if (i == j) {

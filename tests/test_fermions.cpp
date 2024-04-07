@@ -36,6 +36,17 @@ void derivative_tests() {
 }
 
 void relation_tests() {
+    // DiracAlgebra<n> a; 
+    // ComplexDispType d1({
+    //     FieldType(1., 8.)
+    // }), d2({
+    //     FieldType(-3., 5.)
+    // }); 
+    // ComplexDispType ({
+    //     FieldType(1., 2.), FieldType(5., 6.)
+    // }), d2({
+    //     FieldType(3., 4.), FieldType(7., 8.)
+    // }); 
     const uint n = 2;
     DiracAlgebra<n> a; 
     auto l = a.lAlg(); 
@@ -49,6 +60,21 @@ void relation_tests() {
     assert (D1.conj() * a(0) * D1 == a.a(0) + a.disp_vec(d1)[0]); 
     assert (a.disp(add_vec(d1, d2)) == D1 * D2 * a.disp_add(d1, d2)); 
     assert (a.disp(d1).conj() == a.disp(neg_vec(d1))); 
+
+    auto cohr1 = a.coherent(d1);
+    assert ((a.dR(cohr_gamma, d1) == 1)); 
+}
+
+void utility_tests() {
+    // Test that the X-operator is generated correctly 
+    const uint n = 1;
+
+    DiracAlgebra<n> a; 
+    // X = exp(i pi / 2 (1 - (a + adag)))
+    auto coeffs = RealCoeffMap({
+        {{}, M_PI / 2}, {{0}, -M_PI / 2}
+    }); 
+    assert (a.unitary(coeffs) == a(0) + a(0).conj());
 }
 
 int main() {

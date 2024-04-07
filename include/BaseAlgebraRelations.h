@@ -25,7 +25,7 @@ struct BaseRelation {
     virtual FieldType tr(uint gidx, uint pow) const {
         static_cast<void>(gidx);
         static_cast<void>(pow);
-        throw std::invalid_argument("Conjugation not implemented");
+        throw std::invalid_argument("Tracial relation not implemented");
     }
 
     /// Default implementations 
@@ -75,7 +75,7 @@ struct FreeConjRelation: virtual public BaseRelation<n> {
     }
 };
 
-#define TRACE_SCALE 1000000000.
+#define TRACE_SCALE 1000000000
 
 // Assumes that 1 is represented as id on d-dimensional 
 //    space and all other operators are traceless. 
@@ -84,7 +84,7 @@ struct ScalarTraceRelation: virtual public BaseRelation<n> {
     // Specifies the trace of generators  
     FieldType tr(uint gidx, uint pow) const override {
         static_cast<void>(gidx);
-        return pow == 0 ? FieldType(static_cast<double>(d / TRACE_SCALE)) : FieldType(0., 0.);
+        return pow == 0 ? FieldType(static_cast<double>(d) / TRACE_SCALE) : FieldType(0., 0.);
     }
 };
 

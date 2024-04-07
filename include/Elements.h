@@ -11,7 +11,7 @@ class AlgebraElement {
 public:
     inline static constexpr double SERIES_TOLERANCE = 1e-10;
     inline static constexpr double EQ_TOLERANCE = 1e-7;
-    inline static constexpr uint SERIES_MAXITERS = 200;
+    inline static constexpr uint SERIES_MAXITERS = 1000;
 
     // So that we only ever need to instantiate the relation once 
     //    for automorphism relations instantiation is nontrivial 
@@ -267,6 +267,7 @@ public:
         auto power = one(), result=zero();
         auto this_norm = norm();
         for (uint j=1; j<SERIES_MAXITERS; j++) {
+            cout << j << endl;
             power = power * b;
             result.add_(power*(std::pow(-1, j+1)/j));
             auto result_norm = result.norm();
@@ -284,6 +285,7 @@ public:
 
 private:
     uint n; 
+    static unordered_map<KeyType, AlgebraElement<AlgebraRelation>> reorder_cache;
     void validateKeys() {
         for (const auto& pair : coeffs) {
             if (pair.first.size() != n) {
