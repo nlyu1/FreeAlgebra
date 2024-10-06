@@ -33,6 +33,8 @@ public:
         filter_coeffs_();
         validateKeys();
     }
+    // Default initializer
+    AlgebraElement() : coeffs(), n(AlgebraRelation::num_generators()) {}
 
     inline uint num_generators() const { return n; }
 
@@ -152,14 +154,14 @@ public:
     }
 
     AlgebraElement operator*(const AlgebraElement& other) const {
-        AlgebraElement result({});
+        AlgebraElement result = zero();
         for (const auto& pair1: coeffs) {
             for (const auto& pair2: other.coeffs) {
-                reorder(
+                result = result + reorder(
                     mergeVectors(
                         power_to_gen_repr(pair1.first), 
                         power_to_gen_repr(pair2.first)
-                    ), pair1.second * pair2.second, result);
+                    )) * (pair1.second * pair2.second);
             }
         }
         return result;
@@ -177,7 +179,7 @@ public:
     // Conjugation relation
     AlgebraElement conj() const {
         AlgebraRelation R;
-        AlgebraElement result({});
+        AlgebraElement result = zero();
         for (const auto& pair: coeffs) {
             KeyType I; 
             auto K = power_to_gen_repr(pair.first); 
@@ -189,7 +191,7 @@ public:
                 I.push_back(R.conj(K[j]));
             }
             // cout << "Reordering: " << prettyPrint(I) << endl;
-            reorder(I, pair.second.conj(), result);
+            result = result + reorder(I) * pair.second.conj();
         }
         result.filter_coeffs_();
         return result; 
@@ -199,7 +201,7 @@ public:
     // Filters null coefficients
     void filter_coeffs_() {
         for (auto it = coeffs.begin(); it != coeffs.end(); ) {
-            if ((it->second).absq() < 1e-20) { // Check if the value is 0
+            if ((it->second).absq() < 1e-15) { // Check if the value is 0
                 it = coeffs.erase(it); // Remove the entry and update the iterator
             } else {
                 ++it; // Move to the next entry
@@ -263,12 +265,16 @@ public:
     }
 
     AlgebraElement log() const {
-        auto b = operator-(1.); // b = self - 1
+        auto b = clone() - 1.; // b = self - 1
+        // cout << "Log-power: " << b << endl;
         auto power = one(), result=zero();
         auto this_norm = norm();
         for (uint j=1; j<SERIES_MAXITERS; j++) {
-            cout << j << endl;
+            // cout << j << endl;
             power = power * b;
+            if (power == 0.) {
+                break;
+            }
             result.add_(power*(std::pow(-1, j+1)/j));
             auto result_norm = result.norm();
             if (j>3 && power.norm()/j / result_norm < SERIES_TOLERANCE) break;
@@ -280,12 +286,13 @@ public:
                 ));
             }
         }
+        cout << "Log-difference: " << (clone() - result.exp()).norm() << endl;
         return result; 
     }
 
 private:
     uint n; 
-    static unordered_map<KeyType, AlgebraElement<AlgebraRelation>> reorder_cache;
+    inline static unordered_map<KeyType, AlgebraElement, VectorHash> reorder_cache;
     void validateKeys() {
         for (const auto& pair : coeffs) {
             if (pair.first.size() != n) {
@@ -338,19 +345,21 @@ private:
     // Given an accumulator and multi-indices in generator multiplication 
     //   representation (and an existing scale), adds to accum the 
     //   corresponding multiplication argument 
-    void reorder(const KeyType& I, FieldType scale, 
-        AlgebraElement& accum) const {
+    AlgebraElement reorder(const KeyType& I) const {
         if (I.size() == 0) {
-            accum.add_(scale);
-            return;
+            return one();
         }
+        if (reorder_cache.contains(I)) {
+            return reorder_cache.at(I);
+        }
+
         // cout << "Reorder input: " 
         //     << prettyPrint(I) << ": " << scale 
         //     << "    " << accum << endl;
         auto idx = order_violate_idx(I);
         // If in canonical order, arrange homogeneous power then accumulate 
         if (idx == I.size()) {
-            FieldType scale_accum = scale; 
+            FieldType scale_accum = FieldType(1.); 
             auto J = gen_to_power_repr(I, n);
             // cout << "Original: " << prettyPrint(J) << endl;
             for (size_t i=0; i<J.size(); i++) {
@@ -360,26 +369,28 @@ private:
                 J[i] = std::get<0>(t); 
                 // Shortcut: no change if the scale is already 0 
                 if ((scale_accum).abs() == 0.) {
-                    return;
+                    return zero();
                 }
             }
-            AlgebraElement entry({{J, scale_accum}});
+            auto entry = AlgebraElement({{J, scale_accum}});
             // cout << "New index: " << prettyPrint(J) << endl;
             // cout << "    Reorder adding:" << entry << endl;
-            accum.add_(entry);
-            return;
+            reorder_cache[I] = entry; 
+            return entry; 
         }
         // AlgebraRelation R;
         // Use commutation relation on the first pair of 
         //  non-canonical product, then recursively call 
         auto L = Rel().commute(I[idx], I[idx + 1]);
+        auto result = zero(); 
         for (const auto& pair: L) {
             auto newI = KeyType(I.begin(), I.begin()+idx);
             newI.insert(newI.end(), pair.first.begin(), pair.first.end());
             newI.insert(newI.end(), I.begin()+idx+2, I.end());
-            reorder(newI, scale*pair.second, accum);
+            result = result + reorder(newI) * pair.second;
         }
-        return;
+        reorder_cache[I] = result; 
+        return result;
     }
 };
 

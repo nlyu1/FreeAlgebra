@@ -45,12 +45,18 @@ struct ExtSelfConjRelation:
 template<typename AlgRelation>
 class ExteriorAlgebra: public BaseAlgebra<AlgRelation> {
 public:
+    using BaseAlgebra = BaseAlgebra<AlgRelation>;
     using Element = AlgebraElement<AlgRelation>; 
     using Relation = AlgRelation; 
 
     static Relation& rel() {
         static Relation rel_{};
         return rel_;
+    }
+
+    static BaseAlgebra& alg() {
+        static BaseAlgebra alg_{};
+        return alg_;
     }
 
     // Derivative operator (equivalent to integral operator)
@@ -84,6 +90,41 @@ public:
         } else {
             throw(std::invalid_argument("Unexpected case during total derivative"));
         }
+    }
+
+    // Logarithms are always guaranteed to exist
+    // Shift the center so that it converges over a finite number of terms 
+    Element log(const Element& x) {
+        // The key for scalar offshift 
+        auto onekey = KeyType(Relation::num_generators(), 0u);
+        double center = 0.;
+        if (x.coeffs.contains(onekey)) {
+            auto c = x.coeffs.at(onekey);
+            if (std::abs(c.imag()) > 1e-10 || std::abs(c.real()) < 1e-10) {
+                throw(std::invalid_argument(fmt::format(
+                    "Expected vanishing imaginary offset and nontrivial real offset but received {}\n", 
+                    c.to_string()
+                )));
+            }
+            center = c.real(); 
+        } else {
+            throw(std::invalid_argument(
+                    "Expected nontrivial real offset for exterior logarithm.\n"
+                ));
+        }
+        // Subtract the center so only grassmann elements exist 
+        auto b = x / center - 1; 
+        auto power = alg().one(), result=alg().zero()+std::log(center);
+        for (uint j=1; j<=Relation::num_generators(); j++) {
+            // cout << j << endl;
+            power = power * b;
+            if (power == 0.) break;
+            result.add_(power*(std::pow(-1, j+1)/j));
+        }
+        // Consistency check for logarithm
+        cout << "Log-difference: " << (x - result.exp()).norm() << endl;
+        // assert ((x - result.exp()).norm() < 1e-10); 
+        return result; 
     }
 };
 

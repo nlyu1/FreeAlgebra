@@ -9,12 +9,12 @@
 #include<cmath>
 using namespace std; 
 
-const uint n = 2;
+const uint n = 5;
 
 double h(uint a) {
     return (a>n/2)?-1.:1.;
-    // return 0;
 }
+
 double h(uint a, uint b) {
     if (a == b) {
         return 0.;
@@ -24,19 +24,20 @@ double h(uint a, uint b) {
         return 2*a+b;
     }
 }
+
 double g(uint a, uint b) {
     if (a == b) {
         return 0.;
     } else if (a > b) {
         return -g(b, a);
     } else {
-        return (a == 0 && b == 1)? 1.: 0.;
-        // return (a/2==0 && b/3==0)? b*2+a : 0.;
+        return (a/2==0 && b/3==0)? b*2+a : 0.;
     }
 }
+
+// Constant displacement 
 double g(uint k) {
-    return 0;
-    // return k;
+    return k;
 }
 
 void print_h() {
@@ -55,6 +56,7 @@ void print_h() {
     }
     cout << endl;
 }
+
 void print_g() {
     cout << "Matrix: "; 
     for (auto i=0; i<n; i++) {
@@ -71,16 +73,97 @@ void print_g() {
     }
     cout << endl;
 }
+
 double delta(uint a, uint b) {
     return (a==b)? 1. : 0.; 
 }
 
+// int main() {
+//     CliffordAlgebra<n> gamma;
+//     print_h();
+
+//     cout << "G" << endl;
+//     print_g();
+
+//     auto hquad = gamma.zero();
+//     for (uint a=0; a<n; a++) {
+//         for (uint b=0; b<n; b++) {
+//             hquad = hquad + gamma(a) * gamma(b) * (h(a, b) / 2);
+//         }
+//     }
+
+//     auto gquad = gamma.zero();
+//     for (uint a=0; a<n; a++) {
+//         for (uint b=0; b<n; b++) {
+//             gquad = gquad + gamma(a) * gamma(b) * (g(a, b) / 2);
+//         }
+//     }
+
+//     auto glin = gamma.zero();
+//     for (uint a=0; a<n; a++) {
+//         glin = glin + gamma(a) * g(a);
+//     }
+
+//     auto hlin = gamma.zero();
+//     for (uint a=0; a<n; a++) {
+//         hlin = hlin + gamma(a) * h(a);
+//     }
+//     hlin = hlin * FieldType(0., -1.); // Times -i
+
+//     // Now, onto verification of the commutators 
+//     auto qlcom_true = gamma.commutator(hquad, glin); 
+//     auto qlcom = gamma.zero();
+//     for (uint k=0; k<n; k++) {
+//         for (uint a=0; a<n; a++) {
+//             qlcom = qlcom - gamma(a) * (h(k, a) * g(k) * 2); 
+//         }
+//     }
+//     cout << "Quadratic-linear commutator consistency: " << (qlcom == qlcom_true) << endl;
+
+//     auto lqcom_true = gamma.commutator(hlin, gquad); 
+//     auto lqcom = gamma.zero();
+//     for (uint k=0; k<n; k++) {
+//         for (uint a=0; a<n; a++) {
+//             lqcom = lqcom + gamma(a) * (FieldType(0., -2.) * g(k, a) * h(k)); 
+//         }
+//     }
+//     cout << "Quadratic-linear commutator consistency: " << (lqcom == lqcom_true) << endl;
+
+//     auto llcom_true = gamma.commutator(hlin, glin); 
+//     auto llcom = gamma.zero(); 
+//     for (uint j=0; j<n; j++) {
+//         for (uint k=0; k<n; k++) {
+//             if (j == k) continue; 
+//             llcom = llcom + gamma(j) * gamma(k) * (FieldType(0., 2.) * h(k) * g(j));
+//         }
+//     }
+//     cout << "Linear-linear commutator consistency: " << (llcom == llcom_true) << endl;
+
+
+//     auto qqcom_true = gamma.commutator(hquad, gquad); 
+//     auto qqcom = gamma.zero(); 
+
+//     for (uint a=0; a<n; a++) {
+//         for (uint b=0; b<n; b++) {
+//             for (uint u=0; u<n; u++) {
+//                 if (u == b) continue;
+//                 auto bracket = 
+//                     // gamma(b) * gamma(v) * delta(a, u) * (1. - delta(b, v)) * h(b, a) * g(u, v) + 
+//                     gamma(b) * gamma(u) * h(a, b) * g(u, a) * 2;
+//                 qqcom = qqcom + bracket;
+//             }
+//         }
+//     }
+//     cout << "Quadratic-quadratic commutator consistency: " << (qqcom == qqcom_true) << endl;
+// }
+
+
+
 int main() {
     CliffordAlgebra<n> gamma;
-    cout << "H" << endl;
     print_h();
 
-    cout << endl << "G" << endl;
+    cout << "G" << endl;
     print_g();
 
     auto hquad = gamma.zero();
@@ -104,9 +187,6 @@ int main() {
         hlin = hlin + gamma(a) * h(a);
     }
     hlin = hlin * FieldType(0., -1.); // Times -i
-    auto iH = hquad + hlin;
-    cout << "iH anti-Hermitian: " << (iH + iH.conj() == 0.) << endl;
-    auto Op = gquad + glin; 
 
     // Now, onto verification of the commutators 
     auto qlcom_true = gamma.commutator(hquad, glin); 
@@ -125,6 +205,7 @@ int main() {
             lqcom = lqcom + gamma(a) * (FieldType(0., -2.) * g(k, a) * h(k)); 
         }
     }
+    // cout << lqcom_true << endl << lqcom << endl;
     cout << "Quadratic-linear commutator consistency: " << (lqcom == lqcom_true) << endl;
 
     auto llcom_true = gamma.commutator(hlin, glin); 
@@ -135,31 +216,55 @@ int main() {
             llcom = llcom + gamma(j) * gamma(k) * (FieldType(0., 2.) * h(k) * g(j));
         }
     }
+    // cout << llcom_true << endl;
+    // cout << llcom << endl;
     cout << "Linear-linear commutator consistency: " << (llcom == llcom_true) << endl;
 
 
     auto qqcom_true = gamma.commutator(hquad, gquad); 
     auto qqcom = gamma.zero(); 
+    // for (uint a=0; a<n; a++) {
+    //     for (uint b=0; b<n; b++) {
+    //         for (uint u=0; u<n; u++) {
+    //             for (uint v=0; v<n; v++) {
+    //                 // auto bracket = 
+    //                 //     gamma(b) * gamma(v) * -2. * delta(a, u) * (1. - delta(b, v)) + 
+    //                 //     gamma(a) * gamma(v) * 2. * delta(b, u) * (1. - delta(a, v)) + 
+    //                 //     gamma(b) * gamma(u) * 2 * delta(a, v) * (1. - delta(b, u)) + 
+    //                 //     gamma(a) * gamma(u) * -2. * delta(b, v) * (1. - delta(a, u)); 
+    //                 // qqcom = qqcom + bracket * (h(a, b) * g(u, v) * .25);
+    //                 // Second-level equivalence 
+    //                 auto bracket = 
+    //                     // gamma(b) * gamma(v) * delta(a, u) * (1. - delta(b, v)) * h(b, a) * g(u, v) + 
+    //                     gamma(b) * gamma(u) * delta(a, v) * (1. - delta(b, u)) * h(a, b) * g(u, v) * 2;
+    //                 qqcom = qqcom + bracket;
+    //                 // auto true_bracket = gamma.commutator(gamma(a) * gamma(b), gamma(u) * gamma(v)); 
+    //                 // No need to care about these cases, since the coefficients are zero 
+    //                 // if ((a == b) || (u == v)) {
+    //                 //     continue; 
+    //                 // }
+    //                 // if (bracket != true_bracket) {
+    //                 //     cout << fmt::format("({}, {}, {}, {})", a, b, u, v) << bracket << true_bracket << endl;
+    //                 // }
+    //             }
+    //         }
+    //     }
+    // }
 
     for (uint a=0; a<n; a++) {
         for (uint b=0; b<n; b++) {
             for (uint u=0; u<n; u++) {
                 if (u == b) continue;
                 auto bracket = 
+                    // gamma(b) * gamma(v) * delta(a, u) * (1. - delta(b, v)) * h(b, a) * g(u, v) + 
                     gamma(b) * gamma(u) * h(a, b) * g(u, a) * 2;
                 qqcom = qqcom + bracket;
             }
         }
     }
+    // cout << qqcom_true << endl;
+    // cout << qqcom << endl;
     cout << "Quadratic-quadratic commutator consistency: " << (qqcom == qqcom_true) << endl;
-
-    auto bracket_cand = (qlcom + lqcom + llcom + qqcom);
-    auto bracket = gamma.commutator(iH, Op);
-    auto bracket_comp = qlcom_true + lqcom_true + llcom_true + qqcom_true; 
-    cout << "True bracket: " << bracket << endl 
-    << "Added true bracket: " << bracket_comp << endl 
-    << "Estimated bracket: " << bracket_cand << endl;
-    cout << "Overall consistency: " << (bracket_cand == bracket) << endl;
 }
 
 

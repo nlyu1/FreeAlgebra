@@ -8,34 +8,6 @@
 #include "utils.h"
 using namespace std; 
 
-typedef std::vector<FieldType> ComplexDispType;
-template<typename T>
-std::vector<T> add_vec(const std::vector<T>& vec1, 
-    const std::vector<T>& vec2) {
-    size_t len = std::min(vec1.size(), vec2.size());
-    std::vector<T> result;
-    for (size_t i = 0; i < len; ++i) {
-        result.push_back(vec1[i] + vec2[i]);
-    }
-    return result;
-}
-template<typename T>
-std::vector<T> neg_vec(const std::vector<T>& v) {
-    std::vector<T> result;
-    for (auto x:v) {
-        result.push_back(x * -1);
-    }
-    return result;
-}
-// ComplexDispType symplectic_product(const ComplexDispType& a, const ComplexDispType& b) {
-//     FieldType result(0.);
-//     assert (a.size() == b.size());
-    
-//     for (uint i=0; i<a.size(); i++) {
-//         result = result + 
-//     }
-// }
-
 template<uint n>
 class DiracAlgebra: public ProductAlgebra<
         CARAlgebra<2*n>, ExtFreeConjAlgebra<2*n>, decltype(PROD_ANTICOMMUTE)> {
@@ -51,6 +23,8 @@ public:
     // The majorana algebra, in another basis
     using MAlgebra = CliffordAlgebra<2*n>;
     using MElm = typename MAlgebra::Element;
+    using MExtAlgebra = ExtSelfConjAlgebra<2*n>;
+    using MExtElm = typename MExtAlgebra::Element;
 
     static BaseAlg& alg() {
         static BaseAlg alg_{};
@@ -70,6 +44,11 @@ public:
     static MAlgebra& mAlg() {
         static MAlgebra mAlg_{};
         return mAlg_;
+    }
+
+    static MExtAlgebra& mExtAlg() {
+        static MExtAlgebra mExtAlg_{};
+        return mExtAlg_;
     }
 
     // Defines the vacuum state 
@@ -95,6 +74,8 @@ public:
         for (uint i=0; i<n; i++) {
             result.add_(a(i).conj() * dvec[i] + a(i) * dvec[i].conj()); 
         }
+        // cout << "Displacement: " << result << endl;
+        // return result; 
         return result.exp(); 
     }
 
@@ -165,10 +146,11 @@ public:
                     )));
                 }
             }
+
             if (degree * (degree - 1) / 2 % 2 == 0){ 
-                coeffs[key] = pair.second * M_PI;
+                coeffs[key] = pair.second; //  * M_PI;
             } else {
-                coeffs[key] = FieldType(0, 1.) * pair.second * M_PI;
+                coeffs[key] = FieldType(0, 1.) * pair.second; //  * M_PI;
             }
         }
         auto majorana_result = MElm(coeffs);
@@ -260,6 +242,63 @@ public:
             ans.add_(accum);
         }
         return ans; 
+    }
+
+    MExtElm car_to_majorana_ext(const RElm& rho) const {
+        auto c = mExtAlg();
+        auto ans = c.zero(); 
+        for (auto const& pair:rho.coeffs){
+            auto accum = c.one() * pair.second;
+            for (uint i=0; i<n; i++) {
+                auto a = (c(2*i) + c(2*i+1) * FieldType(0., 1.)) / 2; 
+                if (pair.first[2*i] == 1) {
+                    accum = accum * a; 
+                } 
+                if (pair.first[2*i+1] == 1) {
+                    accum = accum * a.conj(); 
+                }
+            }
+            ans.add_(accum);
+        }
+        return ans;
+    }
+
+    RElm majorana_to_car_ext(const MExtElm& rho) const {
+        auto a = rAlg();
+        auto ans = a.zero(); 
+        for (auto const& pair:rho.coeffs){
+            auto accum = a.one() * pair.second;
+            for (uint i=0; i<n; i++) {
+                auto q = (a(2*i) + a(2*i).conj()); 
+                auto p = (a(2*i) - a(2*i).conj()) / FieldType(0., 1.);
+                if (pair.first[2*i] == 1) {
+                    accum = accum * q; 
+                } 
+                if (pair.first[2*i+1] == 1) {
+                    accum = accum * p; 
+                }
+            }
+            ans.add_(accum);
+        }
+        return ans; 
+    }
+
+    RElm fourier_transform(const RElm& chi) const {
+        ExtProductAlgebra<RAlgebra, RAlgebra> b; 
+        auto l = b.lAlg(); 
+        auto r = b.rAlg(); 
+        auto k = b.zero();
+        for (uint i=0; i<n; i++) {
+            auto a = b.extR(l(2*i)), xi=b.extL(r(2*i)); 
+            k.add_(a*xi.conj() + a.conj() * xi); 
+        }
+        k = k.exp();
+        auto result = b.dR(k * b.extL(chi));
+        return result;
+    }
+
+    RElm log(const RElm& chi) const {
+        return rAlg().log(chi); 
     }
 };
 

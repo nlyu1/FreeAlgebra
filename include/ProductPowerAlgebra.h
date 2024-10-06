@@ -97,6 +97,16 @@ public:
                     typename RAlg::Relation, CommutePhase>; 
     using Element = typename BaseAlgebra<Relation>::Element; 
 
+    static LAlgebra& lAlg() {
+        static LAlgebra lAlg_{};
+        return lAlg_;
+    }
+
+    static RAlgebra& rAlg() {
+        static RAlgebra rAlg_{};
+        return rAlg_;
+    }
+
     // Takes the tensor product of x and y
     Element kron(const LElm& x, const RElm& y) {
         CoeffMap coeffs; 
@@ -199,5 +209,74 @@ public:
     }
 };
 
+
+typedef std::vector<FieldType> ComplexDispType;
+template<typename T>
+std::vector<T> add_vec(const std::vector<T>& vec1, 
+    const std::vector<T>& vec2) {
+    size_t len = std::min(vec1.size(), vec2.size());
+    std::vector<T> result;
+    for (size_t i = 0; i < len; ++i) {
+        result.push_back(vec1[i] + vec2[i]);
+    }
+    return result;
+}
+template<typename T>
+std::vector<T> neg_vec(const std::vector<T>& v) {
+    std::vector<T> result;
+    for (auto x:v) {
+        result.push_back(x * -1);
+    }
+    return result;
+}
+
+
+template<typename LAlg, typename RAlg>
+class ExtProductAlgebra: 
+    public ProductAlgebra<RAlg, RAlg, decltype(PROD_ANTICOMMUTE)> {
+public:
+    using LRel = typename LAlg::Relation; 
+    using RRel = typename RAlg::Relation;
+
+    using LElm = typename LAlg::Element; 
+    using RElm = typename RAlg::Element; 
+    using LAlgebra = LAlg; 
+    using RAlgebra = RAlg; 
+    using Relation = ProductRelation<typename LAlg::Relation, 
+                    typename RAlg::Relation, decltype(PROD_ANTICOMMUTE)>; 
+    using Element = typename BaseAlgebra<Relation>::Element; 
+
+    static LAlgebra& lAlg() {
+        static LAlgebra lAlg_{};
+        return lAlg_;
+    }
+
+    static RAlgebra& rAlg() {
+        static RAlgebra rAlg_{};
+        return rAlg_;
+    }
+
+    LElm dR(const Element& x, 
+        const ComplexDispType& c=ComplexDispType(LAlgebra::num_generators(), FieldType(1.))) {
+        CoeffMap coeffs; 
+        assert (c.size() == RAlgebra::num_generators()); 
+        auto s = FieldType(1.);
+        for (auto v:c) {
+            s = s * v.absq(); 
+        }
+        for (auto const& p:x.coeffs) {
+            // Extract the left half of the coefficients 
+            auto scale = p.second; 
+            auto LKeys = KeyType(p.first.begin(), 
+                p.first.begin()+LAlgebra::num_generators());
+            auto RKeys = KeyType(p.first.begin()+LAlgebra::num_generators(), 
+                p.first.end());
+            scale = scale * rAlg().td(RElm({{RKeys, FieldType(1.)}})); 
+            if (scale == 0.) continue; 
+            coeffs[LKeys] = scale / s; 
+        }
+        return LElm(coeffs);
+    }
+};
 
 #endif
